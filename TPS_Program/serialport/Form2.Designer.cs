@@ -31,6 +31,9 @@ namespace serialport
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label59 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label58 = new System.Windows.Forms.Label();
             this.I_Full = new System.Windows.Forms.TextBox();
             this.label115 = new System.Windows.Forms.Label();
             this.Rref = new System.Windows.Forms.TextBox();
@@ -86,10 +89,8 @@ namespace serialport
             this.label8 = new System.Windows.Forms.Label();
             this.label84 = new System.Windows.Forms.Label();
             this.label85 = new System.Windows.Forms.Label();
-            this.label86 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.comboBox25 = new System.Windows.Forms.ComboBox();
             this.value25 = new System.Windows.Forms.NumericUpDown();
             this.comboBox26 = new System.Windows.Forms.ComboBox();
@@ -245,6 +246,11 @@ namespace serialport
             this.value3 = new System.Windows.Forms.NumericUpDown();
             this.value2 = new System.Windows.Forms.NumericUpDown();
             this.value1 = new System.Windows.Forms.NumericUpDown();
+            this.电流组 = new System.Windows.Forms.GroupBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.sure = new System.Windows.Forms.Button();
             this.cancel = new System.Windows.Forms.Button();
             this.output = new System.Windows.Forms.Button();
@@ -294,6 +300,10 @@ namespace serialport
             // 
             // panel2
             // 
+            this.panel2.AutoScroll = true;
+            this.panel2.Controls.Add(this.label59);
+            this.panel2.Controls.Add(this.label7);
+            this.panel2.Controls.Add(this.label58);
             this.panel2.Controls.Add(this.I_Full);
             this.panel2.Controls.Add(this.label115);
             this.panel2.Controls.Add(this.Rref);
@@ -349,10 +359,8 @@ namespace serialport
             this.panel2.Controls.Add(this.label8);
             this.panel2.Controls.Add(this.label84);
             this.panel2.Controls.Add(this.label85);
-            this.panel2.Controls.Add(this.label86);
             this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.label6);
-            this.panel2.Controls.Add(this.label7);
             this.panel2.Controls.Add(this.comboBox25);
             this.panel2.Controls.Add(this.value25);
             this.panel2.Controls.Add(this.comboBox26);
@@ -508,14 +516,50 @@ namespace serialport
             this.panel2.Controls.Add(this.value3);
             this.panel2.Controls.Add(this.value2);
             this.panel2.Controls.Add(this.value1);
-            this.panel2.Location = new System.Drawing.Point(12, 3);
+            this.panel2.Controls.Add(this.电流组);
+            this.panel2.Controls.Add(this.groupBox1);
+            this.panel2.Controls.Add(this.groupBox2);
+            this.panel2.Controls.Add(this.groupBox3);
+            this.panel2.Controls.Add(this.groupBox4);
+            this.panel2.Location = new System.Drawing.Point(12, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1187, 624);
+            this.panel2.Size = new System.Drawing.Size(1189, 678);
             this.panel2.TabIndex = 0;
+            // 
+            // label59
+            // 
+            this.label59.AutoSize = true;
+            this.label59.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label59.ForeColor = System.Drawing.Color.Firebrick;
+            this.label59.Location = new System.Drawing.Point(1086, 60);
+            this.label59.Name = "label59";
+            this.label59.Size = new System.Drawing.Size(89, 19);
+            this.label59.TabIndex = 389;
+            this.label59.Text = "参考电阻！";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(967, 27);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(67, 15);
+            this.label7.TabIndex = 388;
+            this.label7.Text = "占空比( % )";
+            // 
+            // label58
+            // 
+            this.label58.AutoSize = true;
+            this.label58.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label58.Location = new System.Drawing.Point(414, 27);
+            this.label58.Name = "label58";
+            this.label58.Size = new System.Drawing.Size(62, 15);
+            this.label58.TabIndex = 387;
+            this.label58.Text = "电流( mA )";
             // 
             // I_Full
             // 
-            this.I_Full.Location = new System.Drawing.Point(1070, 102);
+            this.I_Full.Location = new System.Drawing.Point(1084, 225);
             this.I_Full.Name = "I_Full";
             this.I_Full.ReadOnly = true;
             this.I_Full.Size = new System.Drawing.Size(87, 21);
@@ -526,7 +570,7 @@ namespace serialport
             // 
             this.label115.AutoSize = true;
             this.label115.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label115.Location = new System.Drawing.Point(1067, 73);
+            this.label115.Location = new System.Drawing.Point(1083, 196);
             this.label115.Name = "label115";
             this.label115.Size = new System.Drawing.Size(88, 19);
             this.label115.TabIndex = 385;
@@ -534,7 +578,7 @@ namespace serialport
             // 
             // Rref
             // 
-            this.Rref.Location = new System.Drawing.Point(1070, 37);
+            this.Rref.Location = new System.Drawing.Point(1084, 87);
             this.Rref.Name = "Rref";
             this.Rref.Size = new System.Drawing.Size(87, 21);
             this.Rref.TabIndex = 384;
@@ -544,7 +588,7 @@ namespace serialport
             // 
             this.label114.AutoSize = true;
             this.label114.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label114.Location = new System.Drawing.Point(1067, 8);
+            this.label114.Location = new System.Drawing.Point(1081, 36);
             this.label114.Name = "label114";
             this.label114.Size = new System.Drawing.Size(97, 19);
             this.label114.TabIndex = 383;
@@ -556,7 +600,7 @@ namespace serialport
             this.comboBox54.Items.AddRange(new object[] {
             "0",
             "1"});
-            this.comboBox54.Location = new System.Drawing.Point(1005, 584);
+            this.comboBox54.Location = new System.Drawing.Point(875, 639);
             this.comboBox54.Name = "comboBox54";
             this.comboBox54.Size = new System.Drawing.Size(84, 20);
             this.comboBox54.TabIndex = 382;
@@ -566,7 +610,7 @@ namespace serialport
             // 
             this.label110.AutoSize = true;
             this.label110.Font = new System.Drawing.Font("宋体", 12F);
-            this.label110.Location = new System.Drawing.Point(1032, 565);
+            this.label110.Location = new System.Drawing.Point(902, 620);
             this.label110.Name = "label110";
             this.label110.Size = new System.Drawing.Size(39, 16);
             this.label110.TabIndex = 381;
@@ -578,7 +622,7 @@ namespace serialport
             this.comboBox55.Items.AddRange(new object[] {
             "0",
             "1"});
-            this.comboBox55.Location = new System.Drawing.Point(915, 584);
+            this.comboBox55.Location = new System.Drawing.Point(785, 639);
             this.comboBox55.Name = "comboBox55";
             this.comboBox55.Size = new System.Drawing.Size(84, 20);
             this.comboBox55.TabIndex = 380;
@@ -588,7 +632,7 @@ namespace serialport
             // 
             this.label111.AutoSize = true;
             this.label111.Font = new System.Drawing.Font("宋体", 12F);
-            this.label111.Location = new System.Drawing.Point(942, 565);
+            this.label111.Location = new System.Drawing.Point(812, 620);
             this.label111.Name = "label111";
             this.label111.Size = new System.Drawing.Size(39, 16);
             this.label111.TabIndex = 379;
@@ -600,7 +644,7 @@ namespace serialport
             this.comboBox56.Items.AddRange(new object[] {
             "0",
             "1"});
-            this.comboBox56.Location = new System.Drawing.Point(823, 584);
+            this.comboBox56.Location = new System.Drawing.Point(693, 639);
             this.comboBox56.Name = "comboBox56";
             this.comboBox56.Size = new System.Drawing.Size(84, 20);
             this.comboBox56.TabIndex = 378;
@@ -610,7 +654,7 @@ namespace serialport
             // 
             this.label112.AutoSize = true;
             this.label112.Font = new System.Drawing.Font("宋体", 12F);
-            this.label112.Location = new System.Drawing.Point(850, 565);
+            this.label112.Location = new System.Drawing.Point(720, 620);
             this.label112.Name = "label112";
             this.label112.Size = new System.Drawing.Size(39, 16);
             this.label112.TabIndex = 377;
@@ -622,7 +666,7 @@ namespace serialport
             this.comboBox57.Items.AddRange(new object[] {
             "0",
             "1"});
-            this.comboBox57.Location = new System.Drawing.Point(731, 584);
+            this.comboBox57.Location = new System.Drawing.Point(601, 639);
             this.comboBox57.Name = "comboBox57";
             this.comboBox57.Size = new System.Drawing.Size(84, 20);
             this.comboBox57.TabIndex = 376;
@@ -632,7 +676,7 @@ namespace serialport
             // 
             this.label113.AutoSize = true;
             this.label113.Font = new System.Drawing.Font("宋体", 12F);
-            this.label113.Location = new System.Drawing.Point(758, 565);
+            this.label113.Location = new System.Drawing.Point(628, 620);
             this.label113.Name = "label113";
             this.label113.Size = new System.Drawing.Size(39, 16);
             this.label113.TabIndex = 375;
@@ -644,7 +688,7 @@ namespace serialport
             this.comboBox50.Items.AddRange(new object[] {
             "0",
             "1"});
-            this.comboBox50.Location = new System.Drawing.Point(1005, 528);
+            this.comboBox50.Location = new System.Drawing.Point(875, 587);
             this.comboBox50.Name = "comboBox50";
             this.comboBox50.Size = new System.Drawing.Size(84, 20);
             this.comboBox50.TabIndex = 374;
@@ -654,7 +698,7 @@ namespace serialport
             // 
             this.label106.AutoSize = true;
             this.label106.Font = new System.Drawing.Font("宋体", 12F);
-            this.label106.Location = new System.Drawing.Point(1032, 509);
+            this.label106.Location = new System.Drawing.Point(902, 568);
             this.label106.Name = "label106";
             this.label106.Size = new System.Drawing.Size(39, 16);
             this.label106.TabIndex = 373;
@@ -666,7 +710,7 @@ namespace serialport
             this.comboBox51.Items.AddRange(new object[] {
             "0",
             "1"});
-            this.comboBox51.Location = new System.Drawing.Point(913, 528);
+            this.comboBox51.Location = new System.Drawing.Point(783, 587);
             this.comboBox51.Name = "comboBox51";
             this.comboBox51.Size = new System.Drawing.Size(84, 20);
             this.comboBox51.TabIndex = 372;
@@ -676,7 +720,7 @@ namespace serialport
             // 
             this.label107.AutoSize = true;
             this.label107.Font = new System.Drawing.Font("宋体", 12F);
-            this.label107.Location = new System.Drawing.Point(940, 509);
+            this.label107.Location = new System.Drawing.Point(810, 568);
             this.label107.Name = "label107";
             this.label107.Size = new System.Drawing.Size(39, 16);
             this.label107.TabIndex = 371;
@@ -688,7 +732,7 @@ namespace serialport
             this.comboBox52.Items.AddRange(new object[] {
             "0",
             "1"});
-            this.comboBox52.Location = new System.Drawing.Point(821, 528);
+            this.comboBox52.Location = new System.Drawing.Point(691, 587);
             this.comboBox52.Name = "comboBox52";
             this.comboBox52.Size = new System.Drawing.Size(84, 20);
             this.comboBox52.TabIndex = 370;
@@ -698,7 +742,7 @@ namespace serialport
             // 
             this.label108.AutoSize = true;
             this.label108.Font = new System.Drawing.Font("宋体", 12F);
-            this.label108.Location = new System.Drawing.Point(848, 509);
+            this.label108.Location = new System.Drawing.Point(718, 568);
             this.label108.Name = "label108";
             this.label108.Size = new System.Drawing.Size(39, 16);
             this.label108.TabIndex = 369;
@@ -710,7 +754,7 @@ namespace serialport
             this.comboBox53.Items.AddRange(new object[] {
             "0",
             "1"});
-            this.comboBox53.Location = new System.Drawing.Point(729, 528);
+            this.comboBox53.Location = new System.Drawing.Point(599, 587);
             this.comboBox53.Name = "comboBox53";
             this.comboBox53.Size = new System.Drawing.Size(84, 20);
             this.comboBox53.TabIndex = 368;
@@ -720,7 +764,7 @@ namespace serialport
             // 
             this.label109.AutoSize = true;
             this.label109.Font = new System.Drawing.Font("宋体", 12F);
-            this.label109.Location = new System.Drawing.Point(756, 509);
+            this.label109.Location = new System.Drawing.Point(626, 568);
             this.label109.Name = "label109";
             this.label109.Size = new System.Drawing.Size(39, 16);
             this.label109.TabIndex = 367;
@@ -730,11 +774,12 @@ namespace serialport
             // 
             this.label105.AutoSize = true;
             this.label105.Font = new System.Drawing.Font("宋体", 12F);
-            this.label105.Location = new System.Drawing.Point(848, 480);
+            this.label105.Location = new System.Drawing.Point(720, 534);
             this.label105.Name = "label105";
             this.label105.Size = new System.Drawing.Size(119, 16);
             this.label105.TabIndex = 366;
             this.label105.Text = "EEP_ADCSHORTTH";
+            this.label105.MouseHover += new System.EventHandler(this.Multi_MouseHover);
             // 
             // comboBox49
             // 
@@ -756,7 +801,7 @@ namespace serialport
             "50us",
             "50us",
             "50us"});
-            this.comboBox49.Location = new System.Drawing.Point(598, 481);
+            this.comboBox49.Location = new System.Drawing.Point(459, 535);
             this.comboBox49.Name = "comboBox49";
             this.comboBox49.Size = new System.Drawing.Size(84, 20);
             this.comboBox49.TabIndex = 365;
@@ -766,11 +811,12 @@ namespace serialport
             // 
             this.label104.AutoSize = true;
             this.label104.Font = new System.Drawing.Font("宋体", 12F);
-            this.label104.Location = new System.Drawing.Point(585, 457);
+            this.label104.Location = new System.Drawing.Point(446, 511);
             this.label104.Name = "label104";
             this.label104.Size = new System.Drawing.Size(111, 16);
             this.label104.TabIndex = 364;
             this.label104.Text = "EEP_INITTIMER";
+            this.label104.MouseHover += new System.EventHandler(this.Multi_MouseHover);
             // 
             // comboBox48
             // 
@@ -792,7 +838,7 @@ namespace serialport
             "Direct to FS",
             "Direct to FS",
             "Direct to FS"});
-            this.comboBox48.Location = new System.Drawing.Point(457, 585);
+            this.comboBox48.Location = new System.Drawing.Point(457, 639);
             this.comboBox48.Name = "comboBox48";
             this.comboBox48.Size = new System.Drawing.Size(84, 20);
             this.comboBox48.TabIndex = 363;
@@ -802,11 +848,12 @@ namespace serialport
             // 
             this.label103.AutoSize = true;
             this.label103.Font = new System.Drawing.Font("宋体", 12F);
-            this.label103.Location = new System.Drawing.Point(456, 561);
+            this.label103.Location = new System.Drawing.Point(456, 615);
             this.label103.Name = "label103";
             this.label103.Size = new System.Drawing.Size(95, 16);
             this.label103.TabIndex = 362;
             this.label103.Text = "EEP_WDTIMER";
+            this.label103.MouseHover += new System.EventHandler(this.Multi_MouseHover);
             // 
             // comboBox47
             // 
@@ -828,7 +875,7 @@ namespace serialport
             "2ms",
             "3ms",
             "5ms"});
-            this.comboBox47.Location = new System.Drawing.Point(459, 533);
+            this.comboBox47.Location = new System.Drawing.Point(459, 587);
             this.comboBox47.Name = "comboBox47";
             this.comboBox47.Size = new System.Drawing.Size(84, 20);
             this.comboBox47.TabIndex = 361;
@@ -838,11 +885,12 @@ namespace serialport
             // 
             this.label102.AutoSize = true;
             this.label102.Font = new System.Drawing.Font("宋体", 12F);
-            this.label102.Location = new System.Drawing.Point(458, 509);
+            this.label102.Location = new System.Drawing.Point(458, 563);
             this.label102.Name = "label102";
             this.label102.Size = new System.Drawing.Size(71, 16);
             this.label102.TabIndex = 360;
             this.label102.Text = "EEP_ODPW";
+            this.label102.MouseHover += new System.EventHandler(this.Multi_MouseHover);
             // 
             // comboBox46
             // 
@@ -864,7 +912,7 @@ namespace serialport
             "13",
             "14",
             "15"});
-            this.comboBox46.Location = new System.Drawing.Point(459, 481);
+            this.comboBox46.Location = new System.Drawing.Point(311, 639);
             this.comboBox46.Name = "comboBox46";
             this.comboBox46.Size = new System.Drawing.Size(84, 20);
             this.comboBox46.TabIndex = 359;
@@ -874,11 +922,12 @@ namespace serialport
             // 
             this.label101.AutoSize = true;
             this.label101.Font = new System.Drawing.Font("宋体", 12F);
-            this.label101.Location = new System.Drawing.Point(458, 457);
+            this.label101.Location = new System.Drawing.Point(310, 615);
             this.label101.Name = "label101";
             this.label101.Size = new System.Drawing.Size(87, 16);
             this.label101.TabIndex = 358;
             this.label101.Text = "EEP_ODIOUT";
+            this.label101.MouseHover += new System.EventHandler(this.Multi_MouseHover);
             // 
             // comboBox45
             // 
@@ -900,7 +949,7 @@ namespace serialport
             "18",
             "19",
             "20"});
-            this.comboBox45.Location = new System.Drawing.Point(311, 585);
+            this.comboBox45.Location = new System.Drawing.Point(311, 587);
             this.comboBox45.Name = "comboBox45";
             this.comboBox45.Size = new System.Drawing.Size(84, 20);
             this.comboBox45.TabIndex = 357;
@@ -910,11 +959,12 @@ namespace serialport
             // 
             this.label100.AutoSize = true;
             this.label100.Font = new System.Drawing.Font("宋体", 12F);
-            this.label100.Location = new System.Drawing.Point(274, 561);
+            this.label100.Location = new System.Drawing.Point(274, 563);
             this.label100.Name = "label100";
             this.label100.Size = new System.Drawing.Size(159, 16);
             this.label100.TabIndex = 356;
             this.label100.Text = "EEP_ADCLOWSYPTH (V)";
+            this.label100.MouseHover += new System.EventHandler(this.Multi_MouseHover);
             // 
             // comboBox44
             // 
@@ -928,7 +978,7 @@ namespace serialport
             "2.5ms",
             "5ms",
             "10ms"});
-            this.comboBox44.Location = new System.Drawing.Point(311, 533);
+            this.comboBox44.Location = new System.Drawing.Point(311, 535);
             this.comboBox44.Name = "comboBox44";
             this.comboBox44.Size = new System.Drawing.Size(84, 20);
             this.comboBox44.TabIndex = 355;
@@ -938,11 +988,12 @@ namespace serialport
             // 
             this.label99.AutoSize = true;
             this.label99.Font = new System.Drawing.Font("宋体", 12F);
-            this.label99.Location = new System.Drawing.Point(298, 509);
+            this.label99.Location = new System.Drawing.Point(298, 511);
             this.label99.Name = "label99";
             this.label99.Size = new System.Drawing.Size(111, 16);
             this.label99.TabIndex = 354;
             this.label99.Text = "EEP_FLTIMEOUT";
+            this.label99.MouseHover += new System.EventHandler(this.Multi_MouseHover);
             // 
             // comboBox43
             // 
@@ -952,7 +1003,7 @@ namespace serialport
             "128",
             "256",
             "512"});
-            this.comboBox43.Location = new System.Drawing.Point(311, 481);
+            this.comboBox43.Location = new System.Drawing.Point(1085, 152);
             this.comboBox43.Name = "comboBox43";
             this.comboBox43.Size = new System.Drawing.Size(84, 20);
             this.comboBox43.TabIndex = 353;
@@ -962,11 +1013,12 @@ namespace serialport
             // 
             this.label98.AutoSize = true;
             this.label98.Font = new System.Drawing.Font("宋体", 12F);
-            this.label98.Location = new System.Drawing.Point(302, 457);
+            this.label98.Location = new System.Drawing.Point(1076, 128);
             this.label98.Name = "label98";
             this.label98.Size = new System.Drawing.Size(103, 16);
             this.label98.TabIndex = 352;
             this.label98.Text = "EEP_REFRANCE";
+            this.label98.MouseHover += new System.EventHandler(this.Multi_MouseHover);
             // 
             // comboBox42
             // 
@@ -974,7 +1026,7 @@ namespace serialport
             this.comboBox42.Items.AddRange(new object[] {
             "One Fail All Fail",
             "One Fail Others On"});
-            this.comboBox42.Location = new System.Drawing.Point(169, 585);
+            this.comboBox42.Location = new System.Drawing.Point(169, 639);
             this.comboBox42.Name = "comboBox42";
             this.comboBox42.Size = new System.Drawing.Size(84, 20);
             this.comboBox42.TabIndex = 351;
@@ -984,11 +1036,12 @@ namespace serialport
             // 
             this.label97.AutoSize = true;
             this.label97.Font = new System.Drawing.Font("宋体", 12F);
-            this.label97.Location = new System.Drawing.Point(176, 561);
+            this.label97.Location = new System.Drawing.Point(176, 615);
             this.label97.Name = "label97";
             this.label97.Size = new System.Drawing.Size(71, 16);
             this.label97.TabIndex = 350;
             this.label97.Text = "EEP_OFAF";
+            this.label97.MouseHover += new System.EventHandler(this.Multi_MouseHover);
             // 
             // comboBox41
             // 
@@ -996,7 +1049,7 @@ namespace serialport
             this.comboBox41.Items.AddRange(new object[] {
             "Enable",
             "Disable"});
-            this.comboBox41.Location = new System.Drawing.Point(169, 533);
+            this.comboBox41.Location = new System.Drawing.Point(169, 587);
             this.comboBox41.Name = "comboBox41";
             this.comboBox41.Size = new System.Drawing.Size(84, 20);
             this.comboBox41.TabIndex = 349;
@@ -1006,11 +1059,12 @@ namespace serialport
             // 
             this.label96.AutoSize = true;
             this.label96.Font = new System.Drawing.Font("宋体", 12F);
-            this.label96.Location = new System.Drawing.Point(164, 509);
+            this.label96.Location = new System.Drawing.Point(164, 563);
             this.label96.Name = "label96";
             this.label96.Size = new System.Drawing.Size(95, 16);
             this.label96.TabIndex = 348;
             this.label96.Text = "EEP_INTADDR";
+            this.label96.MouseHover += new System.EventHandler(this.Multi_MouseHover);
             // 
             // comboBox40
             // 
@@ -1032,7 +1086,7 @@ namespace serialport
             "7800",
             "9600",
             "20800"});
-            this.comboBox40.Location = new System.Drawing.Point(169, 481);
+            this.comboBox40.Location = new System.Drawing.Point(169, 535);
             this.comboBox40.Name = "comboBox40";
             this.comboBox40.Size = new System.Drawing.Size(84, 20);
             this.comboBox40.TabIndex = 347;
@@ -1042,11 +1096,12 @@ namespace serialport
             // 
             this.label95.AutoSize = true;
             this.label95.Font = new System.Drawing.Font("宋体", 12F);
-            this.label95.Location = new System.Drawing.Point(144, 457);
+            this.label95.Location = new System.Drawing.Point(144, 511);
             this.label95.Name = "label95";
             this.label95.Size = new System.Drawing.Size(135, 16);
             this.label95.TabIndex = 346;
             this.label95.Text = "EEP_PWMFREQ (Hz)";
+            this.label95.MouseHover += new System.EventHandler(this.Multi_MouseHover);
             // 
             // comboBox39
             // 
@@ -1068,7 +1123,7 @@ namespace serialport
             "13",
             "14",
             "15"});
-            this.comboBox39.Location = new System.Drawing.Point(31, 585);
+            this.comboBox39.Location = new System.Drawing.Point(31, 639);
             this.comboBox39.Name = "comboBox39";
             this.comboBox39.Size = new System.Drawing.Size(84, 20);
             this.comboBox39.TabIndex = 345;
@@ -1078,11 +1133,12 @@ namespace serialport
             // 
             this.label94.AutoSize = true;
             this.label94.Font = new System.Drawing.Font("宋体", 12F);
-            this.label94.Location = new System.Drawing.Point(26, 561);
+            this.label94.Location = new System.Drawing.Point(26, 615);
             this.label94.Name = "label94";
             this.label94.Size = new System.Drawing.Size(95, 16);
             this.label94.TabIndex = 344;
             this.label94.Text = "EEP_DEVADDR";
+            this.label94.MouseHover += new System.EventHandler(this.Multi_MouseHover);
             // 
             // comboBox38
             // 
@@ -1090,7 +1146,7 @@ namespace serialport
             this.comboBox38.Items.AddRange(new object[] {
             "Enable",
             "Disable"});
-            this.comboBox38.Location = new System.Drawing.Point(31, 533);
+            this.comboBox38.Location = new System.Drawing.Point(31, 587);
             this.comboBox38.Name = "comboBox38";
             this.comboBox38.Size = new System.Drawing.Size(84, 20);
             this.comboBox38.TabIndex = 343;
@@ -1100,11 +1156,12 @@ namespace serialport
             // 
             this.label93.AutoSize = true;
             this.label93.Font = new System.Drawing.Font("宋体", 12F);
-            this.label93.Location = new System.Drawing.Point(34, 509);
+            this.label93.Location = new System.Drawing.Point(34, 563);
             this.label93.Name = "label93";
             this.label93.Size = new System.Drawing.Size(79, 16);
             this.label93.TabIndex = 342;
             this.label93.Text = "EEP_EXPEN";
+            this.label93.MouseHover += new System.EventHandler(this.Multi_MouseHover);
             // 
             // comboBox37
             // 
@@ -1112,7 +1169,7 @@ namespace serialport
             this.comboBox37.Items.AddRange(new object[] {
             "5.0",
             "4.4"});
-            this.comboBox37.Location = new System.Drawing.Point(31, 481);
+            this.comboBox37.Location = new System.Drawing.Point(31, 535);
             this.comboBox37.Name = "comboBox37";
             this.comboBox37.Size = new System.Drawing.Size(84, 20);
             this.comboBox37.TabIndex = 341;
@@ -1122,77 +1179,84 @@ namespace serialport
             // 
             this.label92.AutoSize = true;
             this.label92.Font = new System.Drawing.Font("宋体", 12F);
-            this.label92.Location = new System.Drawing.Point(26, 457);
+            this.label92.Location = new System.Drawing.Point(26, 511);
             this.label92.Name = "label92";
             this.label92.Size = new System.Drawing.Size(95, 16);
             this.label92.TabIndex = 340;
             this.label92.Text = "EEP_LDO (V)";
+            this.label92.MouseHover += new System.EventHandler(this.Multi_MouseHover);
             // 
             // label91
             // 
             this.label91.AutoSize = true;
             this.label91.Font = new System.Drawing.Font("宋体", 12F);
-            this.label91.Location = new System.Drawing.Point(1067, 412);
+            this.label91.Location = new System.Drawing.Point(1067, 466);
             this.label91.Name = "label91";
             this.label91.Size = new System.Drawing.Size(55, 16);
             this.label91.TabIndex = 339;
             this.label91.Text = "EEPM15";
+            this.label91.MouseHover += new System.EventHandler(this.Others_MouseHover);
             // 
             // label90
             // 
             this.label90.AutoSize = true;
             this.label90.Font = new System.Drawing.Font("宋体", 12F);
-            this.label90.Location = new System.Drawing.Point(946, 412);
+            this.label90.Location = new System.Drawing.Point(946, 466);
             this.label90.Name = "label90";
             this.label90.Size = new System.Drawing.Size(55, 16);
             this.label90.TabIndex = 338;
             this.label90.Text = "EEPM14";
+            this.label90.MouseHover += new System.EventHandler(this.NULL_MouseHover);
             // 
             // label89
             // 
             this.label89.AutoSize = true;
             this.label89.Font = new System.Drawing.Font("宋体", 12F);
-            this.label89.Location = new System.Drawing.Point(825, 412);
+            this.label89.Location = new System.Drawing.Point(825, 466);
             this.label89.Name = "label89";
             this.label89.Size = new System.Drawing.Size(55, 16);
             this.label89.TabIndex = 337;
             this.label89.Text = "EEPM13";
+            this.label89.MouseHover += new System.EventHandler(this.NULL_MouseHover);
             // 
             // label88
             // 
             this.label88.AutoSize = true;
             this.label88.Font = new System.Drawing.Font("宋体", 12F);
-            this.label88.Location = new System.Drawing.Point(704, 412);
+            this.label88.Location = new System.Drawing.Point(704, 466);
             this.label88.Name = "label88";
             this.label88.Size = new System.Drawing.Size(55, 16);
             this.label88.TabIndex = 336;
             this.label88.Text = "EEPM12";
+            this.label88.MouseHover += new System.EventHandler(this.NULL_MouseHover);
             // 
             // label87
             // 
             this.label87.AutoSize = true;
             this.label87.Font = new System.Drawing.Font("宋体", 12F);
-            this.label87.Location = new System.Drawing.Point(583, 412);
+            this.label87.Location = new System.Drawing.Point(583, 466);
             this.label87.Name = "label87";
             this.label87.Size = new System.Drawing.Size(55, 16);
             this.label87.TabIndex = 334;
             this.label87.Text = "EEPM11";
+            this.label87.MouseHover += new System.EventHandler(this.Others_MouseHover);
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("宋体", 12F);
-            this.label8.Location = new System.Drawing.Point(462, 412);
+            this.label8.Location = new System.Drawing.Point(462, 466);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(55, 16);
             this.label8.TabIndex = 333;
             this.label8.Text = "EEPM10";
+            this.label8.MouseHover += new System.EventHandler(this.Others_MouseHover);
             // 
             // label84
             // 
             this.label84.AutoSize = true;
             this.label84.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label84.Location = new System.Drawing.Point(257, 8);
+            this.label84.Location = new System.Drawing.Point(256, 27);
             this.label84.Name = "label84";
             this.label84.Size = new System.Drawing.Size(35, 15);
             this.label84.TabIndex = 332;
@@ -1202,27 +1266,17 @@ namespace serialport
             // 
             this.label85.AutoSize = true;
             this.label85.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label85.Location = new System.Drawing.Point(364, 8);
+            this.label85.Location = new System.Drawing.Point(363, 27);
             this.label85.Name = "label85";
             this.label85.Size = new System.Drawing.Size(33, 15);
             this.label85.TabIndex = 331;
             this.label85.Text = "Value";
             // 
-            // label86
-            // 
-            this.label86.AutoSize = true;
-            this.label86.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label86.Location = new System.Drawing.Point(451, 8);
-            this.label86.Name = "label86";
-            this.label86.Size = new System.Drawing.Size(31, 15);
-            this.label86.TabIndex = 330;
-            this.label86.Text = "( % )";
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(784, 8);
+            this.label5.Location = new System.Drawing.Point(789, 27);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(35, 15);
             this.label5.TabIndex = 329;
@@ -1232,21 +1286,11 @@ namespace serialport
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(891, 8);
+            this.label6.Location = new System.Drawing.Point(896, 27);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(33, 15);
             this.label6.TabIndex = 328;
             this.label6.Text = "Value";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(978, 8);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(31, 15);
-            this.label7.TabIndex = 327;
-            this.label7.Text = "( % )";
             // 
             // comboBox25
             // 
@@ -1254,7 +1298,7 @@ namespace serialport
             this.comboBox25.Items.AddRange(new object[] {
             "Enable",
             "Disable"});
-            this.comboBox25.Location = new System.Drawing.Point(1085, 374);
+            this.comboBox25.Location = new System.Drawing.Point(1087, 404);
             this.comboBox25.Name = "comboBox25";
             this.comboBox25.Size = new System.Drawing.Size(84, 20);
             this.comboBox25.TabIndex = 326;
@@ -1263,7 +1307,7 @@ namespace serialport
             // value25
             // 
             this.value25.Font = new System.Drawing.Font("宋体", 12F);
-            this.value25.Location = new System.Drawing.Point(145, 254);
+            this.value25.Location = new System.Drawing.Point(147, 284);
             this.value25.Maximum = new decimal(new int[] {
             255,
             0,
@@ -1280,7 +1324,7 @@ namespace serialport
             this.comboBox26.Items.AddRange(new object[] {
             "Enable",
             "Disable"});
-            this.comboBox26.Location = new System.Drawing.Point(995, 374);
+            this.comboBox26.Location = new System.Drawing.Point(997, 404);
             this.comboBox26.Name = "comboBox26";
             this.comboBox26.Size = new System.Drawing.Size(84, 20);
             this.comboBox26.TabIndex = 324;
@@ -1292,7 +1336,7 @@ namespace serialport
             this.comboBox27.Items.AddRange(new object[] {
             "Enable",
             "Disable"});
-            this.comboBox27.Location = new System.Drawing.Point(903, 374);
+            this.comboBox27.Location = new System.Drawing.Point(905, 404);
             this.comboBox27.Name = "comboBox27";
             this.comboBox27.Size = new System.Drawing.Size(84, 20);
             this.comboBox27.TabIndex = 322;
@@ -1304,7 +1348,7 @@ namespace serialport
             this.comboBox28.Items.AddRange(new object[] {
             "Enable",
             "Disable"});
-            this.comboBox28.Location = new System.Drawing.Point(811, 374);
+            this.comboBox28.Location = new System.Drawing.Point(813, 404);
             this.comboBox28.Name = "comboBox28";
             this.comboBox28.Size = new System.Drawing.Size(84, 20);
             this.comboBox28.TabIndex = 320;
@@ -1316,7 +1360,7 @@ namespace serialport
             this.comboBox29.Items.AddRange(new object[] {
             "Enable",
             "Disable"});
-            this.comboBox29.Location = new System.Drawing.Point(719, 374);
+            this.comboBox29.Location = new System.Drawing.Point(721, 404);
             this.comboBox29.Name = "comboBox29";
             this.comboBox29.Size = new System.Drawing.Size(84, 20);
             this.comboBox29.TabIndex = 318;
@@ -1328,7 +1372,7 @@ namespace serialport
             this.comboBox30.Items.AddRange(new object[] {
             "Enable",
             "Disable"});
-            this.comboBox30.Location = new System.Drawing.Point(627, 374);
+            this.comboBox30.Location = new System.Drawing.Point(629, 404);
             this.comboBox30.Name = "comboBox30";
             this.comboBox30.Size = new System.Drawing.Size(84, 20);
             this.comboBox30.TabIndex = 316;
@@ -1340,7 +1384,7 @@ namespace serialport
             this.comboBox31.Items.AddRange(new object[] {
             "Enable",
             "Disable"});
-            this.comboBox31.Location = new System.Drawing.Point(535, 374);
+            this.comboBox31.Location = new System.Drawing.Point(537, 404);
             this.comboBox31.Name = "comboBox31";
             this.comboBox31.Size = new System.Drawing.Size(84, 20);
             this.comboBox31.TabIndex = 314;
@@ -1352,7 +1396,7 @@ namespace serialport
             this.comboBox32.Items.AddRange(new object[] {
             "Enable",
             "Disable"});
-            this.comboBox32.Location = new System.Drawing.Point(443, 374);
+            this.comboBox32.Location = new System.Drawing.Point(445, 404);
             this.comboBox32.Name = "comboBox32";
             this.comboBox32.Size = new System.Drawing.Size(84, 20);
             this.comboBox32.TabIndex = 312;
@@ -1364,7 +1408,7 @@ namespace serialport
             this.comboBox33.Items.AddRange(new object[] {
             "Enable",
             "Disable"});
-            this.comboBox33.Location = new System.Drawing.Point(351, 374);
+            this.comboBox33.Location = new System.Drawing.Point(353, 404);
             this.comboBox33.Name = "comboBox33";
             this.comboBox33.Size = new System.Drawing.Size(84, 20);
             this.comboBox33.TabIndex = 310;
@@ -1376,7 +1420,7 @@ namespace serialport
             this.comboBox34.Items.AddRange(new object[] {
             "Enable",
             "Disable"});
-            this.comboBox34.Location = new System.Drawing.Point(259, 374);
+            this.comboBox34.Location = new System.Drawing.Point(261, 404);
             this.comboBox34.Name = "comboBox34";
             this.comboBox34.Size = new System.Drawing.Size(84, 20);
             this.comboBox34.TabIndex = 308;
@@ -1388,7 +1432,7 @@ namespace serialport
             this.comboBox35.Items.AddRange(new object[] {
             "Enable",
             "Disable"});
-            this.comboBox35.Location = new System.Drawing.Point(167, 374);
+            this.comboBox35.Location = new System.Drawing.Point(169, 404);
             this.comboBox35.Name = "comboBox35";
             this.comboBox35.Size = new System.Drawing.Size(84, 20);
             this.comboBox35.TabIndex = 306;
@@ -1400,7 +1444,7 @@ namespace serialport
             this.comboBox36.Items.AddRange(new object[] {
             "Enable",
             "Disable"});
-            this.comboBox36.Location = new System.Drawing.Point(75, 374);
+            this.comboBox36.Location = new System.Drawing.Point(77, 404);
             this.comboBox36.Name = "comboBox36";
             this.comboBox36.Size = new System.Drawing.Size(84, 20);
             this.comboBox36.TabIndex = 304;
@@ -1410,11 +1454,12 @@ namespace serialport
             // 
             this.label83.AutoSize = true;
             this.label83.Font = new System.Drawing.Font("宋体", 12F);
-            this.label83.Location = new System.Drawing.Point(11, 374);
+            this.label83.Location = new System.Drawing.Point(13, 404);
             this.label83.Name = "label83";
             this.label83.Size = new System.Drawing.Size(55, 16);
             this.label83.TabIndex = 303;
-            this.label83.Text = "Diagno";
+            this.label83.Text = "DIAGEN";
+            this.label83.MouseHover += new System.EventHandler(this.Diagen_MouseHover);
             // 
             // comboBox13
             // 
@@ -1422,7 +1467,7 @@ namespace serialport
             this.comboBox13.Items.AddRange(new object[] {
             "Enable",
             "Disable"});
-            this.comboBox13.Location = new System.Drawing.Point(1085, 346);
+            this.comboBox13.Location = new System.Drawing.Point(1087, 376);
             this.comboBox13.Name = "comboBox13";
             this.comboBox13.Size = new System.Drawing.Size(84, 20);
             this.comboBox13.TabIndex = 301;
@@ -1434,7 +1479,7 @@ namespace serialport
             this.comboBox14.Items.AddRange(new object[] {
             "Enable",
             "Disable"});
-            this.comboBox14.Location = new System.Drawing.Point(995, 346);
+            this.comboBox14.Location = new System.Drawing.Point(997, 376);
             this.comboBox14.Name = "comboBox14";
             this.comboBox14.Size = new System.Drawing.Size(84, 20);
             this.comboBox14.TabIndex = 299;
@@ -1446,7 +1491,7 @@ namespace serialport
             this.comboBox15.Items.AddRange(new object[] {
             "Enable",
             "Disable"});
-            this.comboBox15.Location = new System.Drawing.Point(903, 346);
+            this.comboBox15.Location = new System.Drawing.Point(905, 376);
             this.comboBox15.Name = "comboBox15";
             this.comboBox15.Size = new System.Drawing.Size(84, 20);
             this.comboBox15.TabIndex = 297;
@@ -1455,7 +1500,7 @@ namespace serialport
             // value30
             // 
             this.value30.Font = new System.Drawing.Font("宋体", 12F);
-            this.value30.Location = new System.Drawing.Point(995, 254);
+            this.value30.Location = new System.Drawing.Point(997, 284);
             this.value30.Maximum = new decimal(new int[] {
             15,
             0,
@@ -1469,7 +1514,7 @@ namespace serialport
             // value28
             // 
             this.value28.Font = new System.Drawing.Font("宋体", 12F);
-            this.value28.Location = new System.Drawing.Point(627, 254);
+            this.value28.Location = new System.Drawing.Point(629, 284);
             this.value28.Maximum = new decimal(new int[] {
             15,
             0,
@@ -1483,7 +1528,7 @@ namespace serialport
             // value29
             // 
             this.value29.Font = new System.Drawing.Font("宋体", 12F);
-            this.value29.Location = new System.Drawing.Point(867, 254);
+            this.value29.Location = new System.Drawing.Point(869, 284);
             this.value29.Maximum = new decimal(new int[] {
             255,
             0,
@@ -1500,7 +1545,7 @@ namespace serialport
             this.comboBox16.Items.AddRange(new object[] {
             "Enable",
             "Disable"});
-            this.comboBox16.Location = new System.Drawing.Point(811, 346);
+            this.comboBox16.Location = new System.Drawing.Point(813, 376);
             this.comboBox16.Name = "comboBox16";
             this.comboBox16.Size = new System.Drawing.Size(84, 20);
             this.comboBox16.TabIndex = 295;
@@ -1509,7 +1554,7 @@ namespace serialport
             // value27
             // 
             this.value27.Font = new System.Drawing.Font("宋体", 12F);
-            this.value27.Location = new System.Drawing.Point(499, 254);
+            this.value27.Location = new System.Drawing.Point(501, 284);
             this.value27.Maximum = new decimal(new int[] {
             255,
             0,
@@ -1523,7 +1568,7 @@ namespace serialport
             // value26
             // 
             this.value26.Font = new System.Drawing.Font("宋体", 12F);
-            this.value26.Location = new System.Drawing.Point(284, 254);
+            this.value26.Location = new System.Drawing.Point(286, 284);
             this.value26.Maximum = new decimal(new int[] {
             15,
             0,
@@ -1540,7 +1585,7 @@ namespace serialport
             this.comboBox17.Items.AddRange(new object[] {
             "Enable",
             "Disable"});
-            this.comboBox17.Location = new System.Drawing.Point(719, 346);
+            this.comboBox17.Location = new System.Drawing.Point(721, 376);
             this.comboBox17.Name = "comboBox17";
             this.comboBox17.Size = new System.Drawing.Size(84, 20);
             this.comboBox17.TabIndex = 293;
@@ -1550,11 +1595,12 @@ namespace serialport
             // 
             this.label39.AutoSize = true;
             this.label39.Font = new System.Drawing.Font("宋体", 12F);
-            this.label39.Location = new System.Drawing.Point(940, 259);
+            this.label39.Location = new System.Drawing.Point(942, 289);
             this.label39.Name = "label39";
             this.label39.Size = new System.Drawing.Size(47, 16);
             this.label39.TabIndex = 253;
             this.label39.Text = "EEPM5";
+            this.label39.MouseHover += new System.EventHandler(this.Diagen_MouseHover);
             // 
             // comboBox18
             // 
@@ -1562,7 +1608,7 @@ namespace serialport
             this.comboBox18.Items.AddRange(new object[] {
             "Enable",
             "Disable"});
-            this.comboBox18.Location = new System.Drawing.Point(627, 346);
+            this.comboBox18.Location = new System.Drawing.Point(629, 376);
             this.comboBox18.Name = "comboBox18";
             this.comboBox18.Size = new System.Drawing.Size(84, 20);
             this.comboBox18.TabIndex = 291;
@@ -1572,11 +1618,12 @@ namespace serialport
             // 
             this.label40.AutoSize = true;
             this.label40.Font = new System.Drawing.Font("宋体", 12F);
-            this.label40.Location = new System.Drawing.Point(808, 259);
+            this.label40.Location = new System.Drawing.Point(810, 289);
             this.label40.Name = "label40";
             this.label40.Size = new System.Drawing.Size(47, 16);
             this.label40.TabIndex = 252;
             this.label40.Text = "EEPM4";
+            this.label40.MouseHover += new System.EventHandler(this.Diagen_MouseHover);
             // 
             // comboBox19
             // 
@@ -1584,7 +1631,7 @@ namespace serialport
             this.comboBox19.Items.AddRange(new object[] {
             "Enable",
             "Disable"});
-            this.comboBox19.Location = new System.Drawing.Point(535, 346);
+            this.comboBox19.Location = new System.Drawing.Point(537, 376);
             this.comboBox19.Name = "comboBox19";
             this.comboBox19.Size = new System.Drawing.Size(84, 20);
             this.comboBox19.TabIndex = 289;
@@ -1594,11 +1641,12 @@ namespace serialport
             // 
             this.label42.AutoSize = true;
             this.label42.Font = new System.Drawing.Font("宋体", 12F);
-            this.label42.Location = new System.Drawing.Point(562, 259);
+            this.label42.Location = new System.Drawing.Point(564, 289);
             this.label42.Name = "label42";
             this.label42.Size = new System.Drawing.Size(47, 16);
             this.label42.TabIndex = 250;
             this.label42.Text = "EEPM3";
+            this.label42.MouseHover += new System.EventHandler(this.Failsafe_MouseHover);
             // 
             // comboBox20
             // 
@@ -1606,7 +1654,7 @@ namespace serialport
             this.comboBox20.Items.AddRange(new object[] {
             "Enable",
             "Disable"});
-            this.comboBox20.Location = new System.Drawing.Point(443, 346);
+            this.comboBox20.Location = new System.Drawing.Point(445, 376);
             this.comboBox20.Name = "comboBox20";
             this.comboBox20.Size = new System.Drawing.Size(84, 20);
             this.comboBox20.TabIndex = 287;
@@ -1616,11 +1664,12 @@ namespace serialport
             // 
             this.label41.AutoSize = true;
             this.label41.Font = new System.Drawing.Font("宋体", 12F);
-            this.label41.Location = new System.Drawing.Point(434, 259);
+            this.label41.Location = new System.Drawing.Point(436, 289);
             this.label41.Name = "label41";
             this.label41.Size = new System.Drawing.Size(47, 16);
             this.label41.TabIndex = 251;
             this.label41.Text = "EEPM2";
+            this.label41.MouseHover += new System.EventHandler(this.Failsafe_MouseHover);
             // 
             // comboBox21
             // 
@@ -1628,7 +1677,7 @@ namespace serialport
             this.comboBox21.Items.AddRange(new object[] {
             "Enable",
             "Disable"});
-            this.comboBox21.Location = new System.Drawing.Point(351, 346);
+            this.comboBox21.Location = new System.Drawing.Point(353, 376);
             this.comboBox21.Name = "comboBox21";
             this.comboBox21.Size = new System.Drawing.Size(84, 20);
             this.comboBox21.TabIndex = 285;
@@ -1638,11 +1687,12 @@ namespace serialport
             // 
             this.label43.AutoSize = true;
             this.label43.Font = new System.Drawing.Font("宋体", 12F);
-            this.label43.Location = new System.Drawing.Point(214, 259);
+            this.label43.Location = new System.Drawing.Point(216, 289);
             this.label43.Name = "label43";
             this.label43.Size = new System.Drawing.Size(47, 16);
             this.label43.TabIndex = 249;
             this.label43.Text = "EEPM1";
+            this.label43.MouseHover += new System.EventHandler(this.Failsafe_MouseHover);
             // 
             // comboBox22
             // 
@@ -1650,7 +1700,7 @@ namespace serialport
             this.comboBox22.Items.AddRange(new object[] {
             "Enable",
             "Disable"});
-            this.comboBox22.Location = new System.Drawing.Point(259, 346);
+            this.comboBox22.Location = new System.Drawing.Point(261, 376);
             this.comboBox22.Name = "comboBox22";
             this.comboBox22.Size = new System.Drawing.Size(84, 20);
             this.comboBox22.TabIndex = 283;
@@ -1660,11 +1710,12 @@ namespace serialport
             // 
             this.label44.AutoSize = true;
             this.label44.Font = new System.Drawing.Font("宋体", 12F);
-            this.label44.Location = new System.Drawing.Point(83, 259);
+            this.label44.Location = new System.Drawing.Point(85, 289);
             this.label44.Name = "label44";
             this.label44.Size = new System.Drawing.Size(47, 16);
             this.label44.TabIndex = 248;
             this.label44.Text = "EEPM0";
+            this.label44.MouseHover += new System.EventHandler(this.Failsafe_MouseHover);
             // 
             // comboBox23
             // 
@@ -1672,7 +1723,7 @@ namespace serialport
             this.comboBox23.Items.AddRange(new object[] {
             "Enable",
             "Disable"});
-            this.comboBox23.Location = new System.Drawing.Point(167, 346);
+            this.comboBox23.Location = new System.Drawing.Point(169, 376);
             this.comboBox23.Name = "comboBox23";
             this.comboBox23.Size = new System.Drawing.Size(84, 20);
             this.comboBox23.TabIndex = 281;
@@ -1684,7 +1735,7 @@ namespace serialport
             this.comboBox24.Items.AddRange(new object[] {
             "Enable",
             "Disable"});
-            this.comboBox24.Location = new System.Drawing.Point(75, 346);
+            this.comboBox24.Location = new System.Drawing.Point(77, 376);
             this.comboBox24.Name = "comboBox24";
             this.comboBox24.Size = new System.Drawing.Size(84, 20);
             this.comboBox24.TabIndex = 279;
@@ -1694,11 +1745,12 @@ namespace serialport
             // 
             this.label70.AutoSize = true;
             this.label70.Font = new System.Drawing.Font("宋体", 12F);
-            this.label70.Location = new System.Drawing.Point(11, 346);
+            this.label70.Location = new System.Drawing.Point(13, 376);
             this.label70.Name = "label70";
             this.label70.Size = new System.Drawing.Size(63, 16);
             this.label70.TabIndex = 278;
             this.label70.Text = "EEP_FS1";
+            this.label70.MouseHover += new System.EventHandler(this.Failsafe_MouseHover);
             // 
             // comboBox12
             // 
@@ -1706,7 +1758,7 @@ namespace serialport
             this.comboBox12.Items.AddRange(new object[] {
             "Enable",
             "Disable"});
-            this.comboBox12.Location = new System.Drawing.Point(1085, 316);
+            this.comboBox12.Location = new System.Drawing.Point(1087, 346);
             this.comboBox12.Name = "comboBox12";
             this.comboBox12.Size = new System.Drawing.Size(84, 20);
             this.comboBox12.TabIndex = 276;
@@ -1716,7 +1768,7 @@ namespace serialport
             // 
             this.label57.AutoSize = true;
             this.label57.Font = new System.Drawing.Font("宋体", 12F);
-            this.label57.Location = new System.Drawing.Point(1112, 297);
+            this.label57.Location = new System.Drawing.Point(1114, 327);
             this.label57.Name = "label57";
             this.label57.Size = new System.Drawing.Size(31, 16);
             this.label57.TabIndex = 275;
@@ -1728,7 +1780,7 @@ namespace serialport
             this.comboBox11.Items.AddRange(new object[] {
             "Enable",
             "Disable"});
-            this.comboBox11.Location = new System.Drawing.Point(995, 316);
+            this.comboBox11.Location = new System.Drawing.Point(997, 346);
             this.comboBox11.Name = "comboBox11";
             this.comboBox11.Size = new System.Drawing.Size(84, 20);
             this.comboBox11.TabIndex = 274;
@@ -1738,7 +1790,7 @@ namespace serialport
             // 
             this.label56.AutoSize = true;
             this.label56.Font = new System.Drawing.Font("宋体", 12F);
-            this.label56.Location = new System.Drawing.Point(1022, 297);
+            this.label56.Location = new System.Drawing.Point(1024, 327);
             this.label56.Name = "label56";
             this.label56.Size = new System.Drawing.Size(31, 16);
             this.label56.TabIndex = 273;
@@ -1750,7 +1802,7 @@ namespace serialport
             this.comboBox10.Items.AddRange(new object[] {
             "Enable",
             "Disable"});
-            this.comboBox10.Location = new System.Drawing.Point(903, 316);
+            this.comboBox10.Location = new System.Drawing.Point(905, 346);
             this.comboBox10.Name = "comboBox10";
             this.comboBox10.Size = new System.Drawing.Size(84, 20);
             this.comboBox10.TabIndex = 272;
@@ -1760,7 +1812,7 @@ namespace serialport
             // 
             this.label55.AutoSize = true;
             this.label55.Font = new System.Drawing.Font("宋体", 12F);
-            this.label55.Location = new System.Drawing.Point(930, 297);
+            this.label55.Location = new System.Drawing.Point(932, 327);
             this.label55.Name = "label55";
             this.label55.Size = new System.Drawing.Size(31, 16);
             this.label55.TabIndex = 271;
@@ -1772,7 +1824,7 @@ namespace serialport
             this.comboBox9.Items.AddRange(new object[] {
             "Enable",
             "Disable"});
-            this.comboBox9.Location = new System.Drawing.Point(811, 316);
+            this.comboBox9.Location = new System.Drawing.Point(813, 346);
             this.comboBox9.Name = "comboBox9";
             this.comboBox9.Size = new System.Drawing.Size(84, 20);
             this.comboBox9.TabIndex = 270;
@@ -1782,7 +1834,7 @@ namespace serialport
             // 
             this.label54.AutoSize = true;
             this.label54.Font = new System.Drawing.Font("宋体", 12F);
-            this.label54.Location = new System.Drawing.Point(838, 297);
+            this.label54.Location = new System.Drawing.Point(840, 327);
             this.label54.Name = "label54";
             this.label54.Size = new System.Drawing.Size(31, 16);
             this.label54.TabIndex = 269;
@@ -1794,7 +1846,7 @@ namespace serialport
             this.comboBox8.Items.AddRange(new object[] {
             "Enable",
             "Disable"});
-            this.comboBox8.Location = new System.Drawing.Point(719, 316);
+            this.comboBox8.Location = new System.Drawing.Point(721, 346);
             this.comboBox8.Name = "comboBox8";
             this.comboBox8.Size = new System.Drawing.Size(84, 20);
             this.comboBox8.TabIndex = 268;
@@ -1804,7 +1856,7 @@ namespace serialport
             // 
             this.label53.AutoSize = true;
             this.label53.Font = new System.Drawing.Font("宋体", 12F);
-            this.label53.Location = new System.Drawing.Point(746, 297);
+            this.label53.Location = new System.Drawing.Point(748, 327);
             this.label53.Name = "label53";
             this.label53.Size = new System.Drawing.Size(31, 16);
             this.label53.TabIndex = 267;
@@ -1816,7 +1868,7 @@ namespace serialport
             this.comboBox7.Items.AddRange(new object[] {
             "Enable",
             "Disable"});
-            this.comboBox7.Location = new System.Drawing.Point(627, 316);
+            this.comboBox7.Location = new System.Drawing.Point(629, 346);
             this.comboBox7.Name = "comboBox7";
             this.comboBox7.Size = new System.Drawing.Size(84, 20);
             this.comboBox7.TabIndex = 266;
@@ -1826,7 +1878,7 @@ namespace serialport
             // 
             this.label52.AutoSize = true;
             this.label52.Font = new System.Drawing.Font("宋体", 12F);
-            this.label52.Location = new System.Drawing.Point(654, 297);
+            this.label52.Location = new System.Drawing.Point(656, 327);
             this.label52.Name = "label52";
             this.label52.Size = new System.Drawing.Size(31, 16);
             this.label52.TabIndex = 265;
@@ -1838,7 +1890,7 @@ namespace serialport
             this.comboBox6.Items.AddRange(new object[] {
             "Enable",
             "Disable"});
-            this.comboBox6.Location = new System.Drawing.Point(535, 316);
+            this.comboBox6.Location = new System.Drawing.Point(537, 346);
             this.comboBox6.Name = "comboBox6";
             this.comboBox6.Size = new System.Drawing.Size(84, 20);
             this.comboBox6.TabIndex = 264;
@@ -1848,7 +1900,7 @@ namespace serialport
             // 
             this.label51.AutoSize = true;
             this.label51.Font = new System.Drawing.Font("宋体", 12F);
-            this.label51.Location = new System.Drawing.Point(562, 297);
+            this.label51.Location = new System.Drawing.Point(564, 327);
             this.label51.Name = "label51";
             this.label51.Size = new System.Drawing.Size(31, 16);
             this.label51.TabIndex = 263;
@@ -1860,7 +1912,7 @@ namespace serialport
             this.comboBox5.Items.AddRange(new object[] {
             "Enable",
             "Disable"});
-            this.comboBox5.Location = new System.Drawing.Point(443, 316);
+            this.comboBox5.Location = new System.Drawing.Point(445, 346);
             this.comboBox5.Name = "comboBox5";
             this.comboBox5.Size = new System.Drawing.Size(84, 20);
             this.comboBox5.TabIndex = 262;
@@ -1870,7 +1922,7 @@ namespace serialport
             // 
             this.label50.AutoSize = true;
             this.label50.Font = new System.Drawing.Font("宋体", 12F);
-            this.label50.Location = new System.Drawing.Point(470, 297);
+            this.label50.Location = new System.Drawing.Point(472, 327);
             this.label50.Name = "label50";
             this.label50.Size = new System.Drawing.Size(31, 16);
             this.label50.TabIndex = 261;
@@ -1882,7 +1934,7 @@ namespace serialport
             this.comboBox4.Items.AddRange(new object[] {
             "Enable",
             "Disable"});
-            this.comboBox4.Location = new System.Drawing.Point(351, 316);
+            this.comboBox4.Location = new System.Drawing.Point(353, 346);
             this.comboBox4.Name = "comboBox4";
             this.comboBox4.Size = new System.Drawing.Size(84, 20);
             this.comboBox4.TabIndex = 260;
@@ -1892,7 +1944,7 @@ namespace serialport
             // 
             this.label49.AutoSize = true;
             this.label49.Font = new System.Drawing.Font("宋体", 12F);
-            this.label49.Location = new System.Drawing.Point(378, 297);
+            this.label49.Location = new System.Drawing.Point(380, 327);
             this.label49.Name = "label49";
             this.label49.Size = new System.Drawing.Size(31, 16);
             this.label49.TabIndex = 259;
@@ -1904,7 +1956,7 @@ namespace serialport
             this.comboBox3.Items.AddRange(new object[] {
             "Enable",
             "Disable"});
-            this.comboBox3.Location = new System.Drawing.Point(259, 316);
+            this.comboBox3.Location = new System.Drawing.Point(261, 346);
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(84, 20);
             this.comboBox3.TabIndex = 258;
@@ -1914,7 +1966,7 @@ namespace serialport
             // 
             this.label48.AutoSize = true;
             this.label48.Font = new System.Drawing.Font("宋体", 12F);
-            this.label48.Location = new System.Drawing.Point(286, 297);
+            this.label48.Location = new System.Drawing.Point(288, 327);
             this.label48.Name = "label48";
             this.label48.Size = new System.Drawing.Size(31, 16);
             this.label48.TabIndex = 257;
@@ -1926,7 +1978,7 @@ namespace serialport
             this.comboBox2.Items.AddRange(new object[] {
             "Enable",
             "Disable"});
-            this.comboBox2.Location = new System.Drawing.Point(167, 316);
+            this.comboBox2.Location = new System.Drawing.Point(169, 346);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(84, 20);
             this.comboBox2.TabIndex = 256;
@@ -1936,7 +1988,7 @@ namespace serialport
             // 
             this.label47.AutoSize = true;
             this.label47.Font = new System.Drawing.Font("宋体", 12F);
-            this.label47.Location = new System.Drawing.Point(190, 297);
+            this.label47.Location = new System.Drawing.Point(192, 327);
             this.label47.Name = "label47";
             this.label47.Size = new System.Drawing.Size(39, 16);
             this.label47.TabIndex = 255;
@@ -1948,7 +2000,7 @@ namespace serialport
             this.comboBox1.Items.AddRange(new object[] {
             "Enable",
             "Disable"});
-            this.comboBox1.Location = new System.Drawing.Point(75, 316);
+            this.comboBox1.Location = new System.Drawing.Point(77, 346);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(84, 20);
             this.comboBox1.TabIndex = 254;
@@ -1958,7 +2010,7 @@ namespace serialport
             // 
             this.label46.AutoSize = true;
             this.label46.Font = new System.Drawing.Font("宋体", 12F);
-            this.label46.Location = new System.Drawing.Point(98, 297);
+            this.label46.Location = new System.Drawing.Point(100, 327);
             this.label46.Name = "label46";
             this.label46.Size = new System.Drawing.Size(39, 16);
             this.label46.TabIndex = 246;
@@ -1968,86 +2020,94 @@ namespace serialport
             // 
             this.label45.AutoSize = true;
             this.label45.Font = new System.Drawing.Font("宋体", 12F);
-            this.label45.Location = new System.Drawing.Point(11, 316);
+            this.label45.Location = new System.Drawing.Point(13, 346);
             this.label45.Name = "label45";
             this.label45.Size = new System.Drawing.Size(63, 16);
             this.label45.TabIndex = 247;
             this.label45.Text = "EEP_FS0";
+            this.label45.MouseHover += new System.EventHandler(this.Failsafe_MouseHover);
             // 
             // label34
             // 
             this.label34.AutoSize = true;
             this.label34.Font = new System.Drawing.Font("宋体", 12F);
-            this.label34.Location = new System.Drawing.Point(783, 209);
+            this.label34.Location = new System.Drawing.Point(788, 228);
             this.label34.Name = "label34";
             this.label34.Size = new System.Drawing.Size(103, 16);
             this.label34.TabIndex = 152;
             this.label34.Text = "EEP_PWMOUT11";
+            this.label34.MouseHover += new System.EventHandler(this.DutyCycle_MouseHover);
             // 
             // label33
             // 
             this.label33.AutoSize = true;
             this.label33.Font = new System.Drawing.Font("宋体", 12F);
-            this.label33.Location = new System.Drawing.Point(783, 175);
+            this.label33.Location = new System.Drawing.Point(788, 194);
             this.label33.Name = "label33";
             this.label33.Size = new System.Drawing.Size(103, 16);
             this.label33.TabIndex = 151;
             this.label33.Text = "EEP_PWMOUT10";
+            this.label33.MouseHover += new System.EventHandler(this.DutyCycle_MouseHover);
             // 
             // label21
             // 
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("宋体", 12F);
-            this.label21.Location = new System.Drawing.Point(783, 141);
+            this.label21.Location = new System.Drawing.Point(788, 160);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(95, 16);
             this.label21.TabIndex = 150;
             this.label21.Text = "EEP_PWMOUT9";
+            this.label21.MouseHover += new System.EventHandler(this.DutyCycle_MouseHover);
             // 
             // label22
             // 
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("宋体", 12F);
-            this.label22.Location = new System.Drawing.Point(783, 107);
+            this.label22.Location = new System.Drawing.Point(788, 126);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(95, 16);
             this.label22.TabIndex = 149;
             this.label22.Text = "EEP_PWMOUT8";
+            this.label22.MouseHover += new System.EventHandler(this.DutyCycle_MouseHover);
             // 
             // label23
             // 
             this.label23.AutoSize = true;
             this.label23.Font = new System.Drawing.Font("宋体", 12F);
-            this.label23.Location = new System.Drawing.Point(783, 73);
+            this.label23.Location = new System.Drawing.Point(788, 92);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(95, 16);
             this.label23.TabIndex = 148;
             this.label23.Text = "EEP_PWMOUT7";
+            this.label23.MouseHover += new System.EventHandler(this.DutyCycle_MouseHover);
             // 
             // label24
             // 
             this.label24.AutoSize = true;
             this.label24.Font = new System.Drawing.Font("宋体", 12F);
-            this.label24.Location = new System.Drawing.Point(783, 39);
+            this.label24.Location = new System.Drawing.Point(788, 58);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(95, 16);
             this.label24.TabIndex = 147;
             this.label24.Text = "EEP_PWMOUT6";
+            this.label24.MouseHover += new System.EventHandler(this.DutyCycle_MouseHover);
             // 
             // label25
             // 
             this.label25.AutoSize = true;
             this.label25.Font = new System.Drawing.Font("宋体", 12F);
-            this.label25.Location = new System.Drawing.Point(514, 209);
+            this.label25.Location = new System.Drawing.Point(519, 228);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(95, 16);
             this.label25.TabIndex = 146;
             this.label25.Text = "EEP_PWMOUT5";
+            this.label25.MouseHover += new System.EventHandler(this.DutyCycle_MouseHover);
             // 
             // value31
             // 
             this.value31.Font = new System.Drawing.Font("宋体", 12F);
-            this.value31.Location = new System.Drawing.Point(65, 407);
+            this.value31.Location = new System.Drawing.Point(65, 461);
             this.value31.Maximum = new decimal(new int[] {
             255,
             0,
@@ -2061,7 +2121,7 @@ namespace serialport
             // value32
             // 
             this.value32.Font = new System.Drawing.Font("宋体", 12F);
-            this.value32.Location = new System.Drawing.Point(178, 407);
+            this.value32.Location = new System.Drawing.Point(178, 461);
             this.value32.Maximum = new decimal(new int[] {
             255,
             0,
@@ -2076,16 +2136,17 @@ namespace serialport
             // 
             this.label26.AutoSize = true;
             this.label26.Font = new System.Drawing.Font("宋体", 12F);
-            this.label26.Location = new System.Drawing.Point(514, 175);
+            this.label26.Location = new System.Drawing.Point(519, 194);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(95, 16);
             this.label26.TabIndex = 145;
             this.label26.Text = "EEP_PWMOUT4";
+            this.label26.MouseHover += new System.EventHandler(this.DutyCycle_MouseHover);
             // 
             // value33
             // 
             this.value33.Font = new System.Drawing.Font("宋体", 12F);
-            this.value33.Location = new System.Drawing.Point(291, 407);
+            this.value33.Location = new System.Drawing.Point(291, 461);
             this.value33.Maximum = new decimal(new int[] {
             127,
             0,
@@ -2100,16 +2161,17 @@ namespace serialport
             // 
             this.label27.AutoSize = true;
             this.label27.Font = new System.Drawing.Font("宋体", 12F);
-            this.label27.Location = new System.Drawing.Point(514, 141);
+            this.label27.Location = new System.Drawing.Point(519, 160);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(95, 16);
             this.label27.TabIndex = 144;
             this.label27.Text = "EEP_PWMOUT3";
+            this.label27.MouseHover += new System.EventHandler(this.DutyCycle_MouseHover);
             // 
             // value34
             // 
             this.value34.Font = new System.Drawing.Font("宋体", 12F);
-            this.value34.Location = new System.Drawing.Point(404, 407);
+            this.value34.Location = new System.Drawing.Point(404, 461);
             this.value34.Maximum = new decimal(new int[] {
             255,
             0,
@@ -2124,16 +2186,17 @@ namespace serialport
             // 
             this.label28.AutoSize = true;
             this.label28.Font = new System.Drawing.Font("宋体", 12F);
-            this.label28.Location = new System.Drawing.Point(514, 107);
+            this.label28.Location = new System.Drawing.Point(519, 126);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(95, 16);
             this.label28.TabIndex = 143;
             this.label28.Text = "EEP_PWMOUT2";
+            this.label28.MouseHover += new System.EventHandler(this.DutyCycle_MouseHover);
             // 
             // value35
             // 
             this.value35.Font = new System.Drawing.Font("宋体", 12F);
-            this.value35.Location = new System.Drawing.Point(525, 407);
+            this.value35.Location = new System.Drawing.Point(525, 461);
             this.value35.Maximum = new decimal(new int[] {
             255,
             0,
@@ -2148,16 +2211,17 @@ namespace serialport
             // 
             this.label29.AutoSize = true;
             this.label29.Font = new System.Drawing.Font("宋体", 12F);
-            this.label29.Location = new System.Drawing.Point(514, 73);
+            this.label29.Location = new System.Drawing.Point(519, 92);
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(95, 16);
             this.label29.TabIndex = 142;
             this.label29.Text = "EEP_PWMOUT1";
+            this.label29.MouseHover += new System.EventHandler(this.DutyCycle_MouseHover);
             // 
             // value37
             // 
             this.value37.Font = new System.Drawing.Font("宋体", 12F);
-            this.value37.Location = new System.Drawing.Point(767, 407);
+            this.value37.Location = new System.Drawing.Point(767, 461);
             this.value37.Maximum = new decimal(new int[] {
             255,
             0,
@@ -2172,16 +2236,17 @@ namespace serialport
             // 
             this.label30.AutoSize = true;
             this.label30.Font = new System.Drawing.Font("宋体", 12F);
-            this.label30.Location = new System.Drawing.Point(514, 39);
+            this.label30.Location = new System.Drawing.Point(519, 58);
             this.label30.Name = "label30";
             this.label30.Size = new System.Drawing.Size(95, 16);
             this.label30.TabIndex = 141;
             this.label30.Text = "EEP_PWMOUT0";
+            this.label30.MouseHover += new System.EventHandler(this.DutyCycle_MouseHover);
             // 
             // value38
             // 
             this.value38.Font = new System.Drawing.Font("宋体", 12F);
-            this.value38.Location = new System.Drawing.Point(888, 407);
+            this.value38.Location = new System.Drawing.Point(888, 461);
             this.value38.Maximum = new decimal(new int[] {
             255,
             0,
@@ -2196,7 +2261,7 @@ namespace serialport
             // 
             this.label31.AutoSize = true;
             this.label31.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label31.Location = new System.Drawing.Point(515, 8);
+            this.label31.Location = new System.Drawing.Point(520, 27);
             this.label31.Name = "label31";
             this.label31.Size = new System.Drawing.Size(35, 15);
             this.label31.TabIndex = 140;
@@ -2206,7 +2271,7 @@ namespace serialport
             // 
             this.value40.Enabled = false;
             this.value40.Font = new System.Drawing.Font("宋体", 12F);
-            this.value40.Location = new System.Drawing.Point(1130, 407);
+            this.value40.Location = new System.Drawing.Point(1130, 461);
             this.value40.Maximum = new decimal(new int[] {
             255,
             0,
@@ -2220,16 +2285,17 @@ namespace serialport
             // 
             this.label32.AutoSize = true;
             this.label32.Font = new System.Drawing.Font("宋体", 12F);
-            this.label32.Location = new System.Drawing.Point(256, 209);
+            this.label32.Location = new System.Drawing.Point(255, 228);
             this.label32.Name = "label32";
             this.label32.Size = new System.Drawing.Size(79, 16);
             this.label32.TabIndex = 139;
             this.label32.Text = "EEPIOUT11";
+            this.label32.MouseHover += new System.EventHandler(this.Current_MouseHover);
             // 
             // value36
             // 
             this.value36.Font = new System.Drawing.Font("宋体", 12F);
-            this.value36.Location = new System.Drawing.Point(646, 407);
+            this.value36.Location = new System.Drawing.Point(646, 461);
             this.value36.Maximum = new decimal(new int[] {
             255,
             0,
@@ -2244,16 +2310,17 @@ namespace serialport
             // 
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("宋体", 12F);
-            this.label20.Location = new System.Drawing.Point(256, 175);
+            this.label20.Location = new System.Drawing.Point(255, 194);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(79, 16);
             this.label20.TabIndex = 138;
             this.label20.Text = "EEPIOUT10";
+            this.label20.MouseHover += new System.EventHandler(this.Current_MouseHover);
             // 
             // value39
             // 
             this.value39.Font = new System.Drawing.Font("宋体", 12F);
-            this.value39.Location = new System.Drawing.Point(1009, 407);
+            this.value39.Location = new System.Drawing.Point(1009, 461);
             this.value39.Maximum = new decimal(new int[] {
             255,
             0,
@@ -2268,137 +2335,150 @@ namespace serialport
             // 
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("宋体", 12F);
-            this.label19.Location = new System.Drawing.Point(256, 141);
+            this.label19.Location = new System.Drawing.Point(255, 160);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(71, 16);
             this.label19.TabIndex = 137;
             this.label19.Text = "EEPIOUT9";
+            this.label19.MouseHover += new System.EventHandler(this.Current_MouseHover);
             // 
             // label18
             // 
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("宋体", 12F);
-            this.label18.Location = new System.Drawing.Point(256, 107);
+            this.label18.Location = new System.Drawing.Point(255, 126);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(71, 16);
             this.label18.TabIndex = 136;
             this.label18.Text = "EEPIOUT8";
+            this.label18.MouseHover += new System.EventHandler(this.Current_MouseHover);
             // 
             // label17
             // 
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("宋体", 12F);
-            this.label17.Location = new System.Drawing.Point(256, 73);
+            this.label17.Location = new System.Drawing.Point(255, 92);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(71, 16);
             this.label17.TabIndex = 135;
             this.label17.Text = "EEPIOUT7";
+            this.label17.MouseHover += new System.EventHandler(this.Current_MouseHover);
             // 
             // label38
             // 
             this.label38.AutoSize = true;
             this.label38.Font = new System.Drawing.Font("宋体", 12F);
-            this.label38.Location = new System.Drawing.Point(10, 412);
+            this.label38.Location = new System.Drawing.Point(10, 466);
             this.label38.Name = "label38";
             this.label38.Size = new System.Drawing.Size(47, 16);
             this.label38.TabIndex = 162;
             this.label38.Text = "EEPM6";
+            this.label38.MouseHover += new System.EventHandler(this.Others_MouseHover);
             // 
             // label37
             // 
             this.label37.AutoSize = true;
             this.label37.Font = new System.Drawing.Font("宋体", 12F);
-            this.label37.Location = new System.Drawing.Point(123, 412);
+            this.label37.Location = new System.Drawing.Point(123, 466);
             this.label37.Name = "label37";
             this.label37.Size = new System.Drawing.Size(47, 16);
             this.label37.TabIndex = 163;
             this.label37.Text = "EEPM7";
+            this.label37.MouseHover += new System.EventHandler(this.Others_MouseHover);
             // 
             // label16
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("宋体", 12F);
-            this.label16.Location = new System.Drawing.Point(256, 39);
+            this.label16.Location = new System.Drawing.Point(255, 58);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(71, 16);
             this.label16.TabIndex = 134;
             this.label16.Text = "EEPIOUT6";
+            this.label16.MouseHover += new System.EventHandler(this.Current_MouseHover);
             // 
             // label36
             // 
             this.label36.AutoSize = true;
             this.label36.Font = new System.Drawing.Font("宋体", 12F);
-            this.label36.Location = new System.Drawing.Point(236, 412);
+            this.label36.Location = new System.Drawing.Point(236, 466);
             this.label36.Name = "label36";
             this.label36.Size = new System.Drawing.Size(47, 16);
             this.label36.TabIndex = 164;
             this.label36.Text = "EEPM8";
+            this.label36.MouseHover += new System.EventHandler(this.Others_MouseHover);
             // 
             // label15
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("宋体", 12F);
-            this.label15.Location = new System.Drawing.Point(11, 209);
+            this.label15.Location = new System.Drawing.Point(10, 228);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(71, 16);
             this.label15.TabIndex = 133;
             this.label15.Text = "EEPIOUT5";
+            this.label15.MouseHover += new System.EventHandler(this.Current_MouseHover);
             // 
             // label35
             // 
             this.label35.AutoSize = true;
             this.label35.Font = new System.Drawing.Font("宋体", 12F);
-            this.label35.Location = new System.Drawing.Point(349, 412);
+            this.label35.Location = new System.Drawing.Point(349, 466);
             this.label35.Name = "label35";
             this.label35.Size = new System.Drawing.Size(47, 16);
             this.label35.TabIndex = 165;
             this.label35.Text = "EEPM9";
+            this.label35.MouseHover += new System.EventHandler(this.Others_MouseHover);
             // 
             // label14
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("宋体", 12F);
-            this.label14.Location = new System.Drawing.Point(11, 175);
+            this.label14.Location = new System.Drawing.Point(10, 194);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(71, 16);
             this.label14.TabIndex = 132;
             this.label14.Text = "EEPIOUT4";
+            this.label14.MouseHover += new System.EventHandler(this.Current_MouseHover);
             // 
             // label13
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("宋体", 12F);
-            this.label13.Location = new System.Drawing.Point(11, 141);
+            this.label13.Location = new System.Drawing.Point(10, 160);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(71, 16);
             this.label13.TabIndex = 131;
             this.label13.Text = "EEPIOUT3";
+            this.label13.MouseHover += new System.EventHandler(this.Current_MouseHover);
             // 
             // label12
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("宋体", 12F);
-            this.label12.Location = new System.Drawing.Point(11, 107);
+            this.label12.Location = new System.Drawing.Point(10, 126);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(71, 16);
             this.label12.TabIndex = 130;
             this.label12.Text = "EEPIOUT2";
+            this.label12.MouseHover += new System.EventHandler(this.Current_MouseHover);
             // 
             // label11
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("宋体", 12F);
-            this.label11.Location = new System.Drawing.Point(11, 73);
+            this.label11.Location = new System.Drawing.Point(10, 92);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(71, 16);
             this.label11.TabIndex = 129;
             this.label11.Text = "EEPIOUT1";
+            this.label11.MouseHover += new System.EventHandler(this.Current_MouseHover);
             // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(12, 8);
+            this.label10.Location = new System.Drawing.Point(11, 27);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(35, 15);
             this.label10.TabIndex = 128;
@@ -2408,17 +2488,18 @@ namespace serialport
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("宋体", 12F);
-            this.label9.Location = new System.Drawing.Point(11, 39);
+            this.label9.Location = new System.Drawing.Point(10, 58);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(71, 16);
             this.label9.TabIndex = 127;
             this.label9.Text = "EEPIOUT0";
+            this.label9.MouseHover += new System.EventHandler(this.Current_MouseHover);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(622, 8);
+            this.label4.Location = new System.Drawing.Point(627, 27);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(33, 15);
             this.label4.TabIndex = 123;
@@ -2428,17 +2509,17 @@ namespace serialport
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(709, 8);
+            this.label3.Location = new System.Drawing.Point(701, 27);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(31, 15);
+            this.label3.Size = new System.Drawing.Size(67, 15);
             this.label3.TabIndex = 122;
-            this.label3.Text = "( % )";
+            this.label3.Text = "占空比( % )";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(96, 8);
+            this.label2.Location = new System.Drawing.Point(95, 27);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(33, 15);
             this.label2.TabIndex = 121;
@@ -2448,15 +2529,15 @@ namespace serialport
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(175, 8);
+            this.label1.Location = new System.Drawing.Point(167, 27);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(38, 15);
+            this.label1.Size = new System.Drawing.Size(62, 15);
             this.label1.TabIndex = 120;
-            this.label1.Text = "( mA )";
+            this.label1.Text = "电流( mA )";
             // 
             // value24p
             // 
-            this.value24p.Location = new System.Drawing.Point(952, 207);
+            this.value24p.Location = new System.Drawing.Point(957, 226);
             this.value24p.Name = "value24p";
             this.value24p.ReadOnly = true;
             this.value24p.Size = new System.Drawing.Size(87, 21);
@@ -2464,7 +2545,7 @@ namespace serialport
             // 
             // value23p
             // 
-            this.value23p.Location = new System.Drawing.Point(952, 173);
+            this.value23p.Location = new System.Drawing.Point(957, 192);
             this.value23p.Name = "value23p";
             this.value23p.ReadOnly = true;
             this.value23p.Size = new System.Drawing.Size(87, 21);
@@ -2472,7 +2553,7 @@ namespace serialport
             // 
             // value21p
             // 
-            this.value21p.Location = new System.Drawing.Point(952, 105);
+            this.value21p.Location = new System.Drawing.Point(957, 124);
             this.value21p.Name = "value21p";
             this.value21p.ReadOnly = true;
             this.value21p.Size = new System.Drawing.Size(87, 21);
@@ -2480,7 +2561,7 @@ namespace serialport
             // 
             // value22p
             // 
-            this.value22p.Location = new System.Drawing.Point(952, 139);
+            this.value22p.Location = new System.Drawing.Point(957, 158);
             this.value22p.Name = "value22p";
             this.value22p.ReadOnly = true;
             this.value22p.Size = new System.Drawing.Size(87, 21);
@@ -2489,7 +2570,7 @@ namespace serialport
             // value24
             // 
             this.value24.Font = new System.Drawing.Font("宋体", 12F);
-            this.value24.Location = new System.Drawing.Point(893, 204);
+            this.value24.Location = new System.Drawing.Point(898, 223);
             this.value24.Maximum = new decimal(new int[] {
             255,
             0,
@@ -2503,7 +2584,7 @@ namespace serialport
             // value23
             // 
             this.value23.Font = new System.Drawing.Font("宋体", 12F);
-            this.value23.Location = new System.Drawing.Point(893, 170);
+            this.value23.Location = new System.Drawing.Point(898, 189);
             this.value23.Maximum = new decimal(new int[] {
             255,
             0,
@@ -2517,7 +2598,7 @@ namespace serialport
             // value22
             // 
             this.value22.Font = new System.Drawing.Font("宋体", 12F);
-            this.value22.Location = new System.Drawing.Point(893, 136);
+            this.value22.Location = new System.Drawing.Point(898, 155);
             this.value22.Maximum = new decimal(new int[] {
             255,
             0,
@@ -2531,7 +2612,7 @@ namespace serialport
             // value21
             // 
             this.value21.Font = new System.Drawing.Font("宋体", 12F);
-            this.value21.Location = new System.Drawing.Point(893, 102);
+            this.value21.Location = new System.Drawing.Point(898, 121);
             this.value21.Maximum = new decimal(new int[] {
             255,
             0,
@@ -2544,7 +2625,7 @@ namespace serialport
             // 
             // value20p
             // 
-            this.value20p.Location = new System.Drawing.Point(952, 71);
+            this.value20p.Location = new System.Drawing.Point(957, 90);
             this.value20p.Name = "value20p";
             this.value20p.ReadOnly = true;
             this.value20p.Size = new System.Drawing.Size(87, 21);
@@ -2552,7 +2633,7 @@ namespace serialport
             // 
             // value19p
             // 
-            this.value19p.Location = new System.Drawing.Point(952, 37);
+            this.value19p.Location = new System.Drawing.Point(957, 56);
             this.value19p.Name = "value19p";
             this.value19p.ReadOnly = true;
             this.value19p.Size = new System.Drawing.Size(87, 21);
@@ -2560,7 +2641,7 @@ namespace serialport
             // 
             // value17p
             // 
-            this.value17p.Location = new System.Drawing.Point(683, 173);
+            this.value17p.Location = new System.Drawing.Point(688, 192);
             this.value17p.Name = "value17p";
             this.value17p.ReadOnly = true;
             this.value17p.Size = new System.Drawing.Size(87, 21);
@@ -2568,7 +2649,7 @@ namespace serialport
             // 
             // value16p
             // 
-            this.value16p.Location = new System.Drawing.Point(683, 139);
+            this.value16p.Location = new System.Drawing.Point(688, 158);
             this.value16p.Name = "value16p";
             this.value16p.ReadOnly = true;
             this.value16p.Size = new System.Drawing.Size(87, 21);
@@ -2576,7 +2657,7 @@ namespace serialport
             // 
             // value18p
             // 
-            this.value18p.Location = new System.Drawing.Point(683, 207);
+            this.value18p.Location = new System.Drawing.Point(688, 226);
             this.value18p.Name = "value18p";
             this.value18p.ReadOnly = true;
             this.value18p.Size = new System.Drawing.Size(87, 21);
@@ -2584,7 +2665,7 @@ namespace serialport
             // 
             // value15p
             // 
-            this.value15p.Location = new System.Drawing.Point(683, 105);
+            this.value15p.Location = new System.Drawing.Point(688, 124);
             this.value15p.Name = "value15p";
             this.value15p.ReadOnly = true;
             this.value15p.Size = new System.Drawing.Size(87, 21);
@@ -2592,7 +2673,7 @@ namespace serialport
             // 
             // value14p
             // 
-            this.value14p.Location = new System.Drawing.Point(683, 71);
+            this.value14p.Location = new System.Drawing.Point(688, 90);
             this.value14p.Name = "value14p";
             this.value14p.ReadOnly = true;
             this.value14p.Size = new System.Drawing.Size(87, 21);
@@ -2600,7 +2681,7 @@ namespace serialport
             // 
             // value13p
             // 
-            this.value13p.Location = new System.Drawing.Point(683, 37);
+            this.value13p.Location = new System.Drawing.Point(688, 56);
             this.value13p.Name = "value13p";
             this.value13p.ReadOnly = true;
             this.value13p.Size = new System.Drawing.Size(87, 21);
@@ -2608,7 +2689,7 @@ namespace serialport
             // 
             // value11d
             // 
-            this.value11d.Location = new System.Drawing.Point(399, 173);
+            this.value11d.Location = new System.Drawing.Point(398, 192);
             this.value11d.Name = "value11d";
             this.value11d.ReadOnly = true;
             this.value11d.Size = new System.Drawing.Size(87, 21);
@@ -2616,7 +2697,7 @@ namespace serialport
             // 
             // value12d
             // 
-            this.value12d.Location = new System.Drawing.Point(399, 207);
+            this.value12d.Location = new System.Drawing.Point(398, 226);
             this.value12d.Name = "value12d";
             this.value12d.ReadOnly = true;
             this.value12d.Size = new System.Drawing.Size(87, 21);
@@ -2625,7 +2706,7 @@ namespace serialport
             // value19
             // 
             this.value19.Font = new System.Drawing.Font("宋体", 12F);
-            this.value19.Location = new System.Drawing.Point(893, 34);
+            this.value19.Location = new System.Drawing.Point(898, 53);
             this.value19.Maximum = new decimal(new int[] {
             255,
             0,
@@ -2639,7 +2720,7 @@ namespace serialport
             // value16
             // 
             this.value16.Font = new System.Drawing.Font("宋体", 12F);
-            this.value16.Location = new System.Drawing.Point(624, 136);
+            this.value16.Location = new System.Drawing.Point(629, 155);
             this.value16.Maximum = new decimal(new int[] {
             255,
             0,
@@ -2653,7 +2734,7 @@ namespace serialport
             // value20
             // 
             this.value20.Font = new System.Drawing.Font("宋体", 12F);
-            this.value20.Location = new System.Drawing.Point(893, 68);
+            this.value20.Location = new System.Drawing.Point(898, 87);
             this.value20.Maximum = new decimal(new int[] {
             255,
             0,
@@ -2667,7 +2748,7 @@ namespace serialport
             // value18
             // 
             this.value18.Font = new System.Drawing.Font("宋体", 12F);
-            this.value18.Location = new System.Drawing.Point(624, 204);
+            this.value18.Location = new System.Drawing.Point(629, 223);
             this.value18.Maximum = new decimal(new int[] {
             255,
             0,
@@ -2681,7 +2762,7 @@ namespace serialport
             // value17
             // 
             this.value17.Font = new System.Drawing.Font("宋体", 12F);
-            this.value17.Location = new System.Drawing.Point(624, 170);
+            this.value17.Location = new System.Drawing.Point(629, 189);
             this.value17.Maximum = new decimal(new int[] {
             255,
             0,
@@ -2695,7 +2776,7 @@ namespace serialport
             // value15
             // 
             this.value15.Font = new System.Drawing.Font("宋体", 12F);
-            this.value15.Location = new System.Drawing.Point(624, 102);
+            this.value15.Location = new System.Drawing.Point(629, 121);
             this.value15.Maximum = new decimal(new int[] {
             255,
             0,
@@ -2709,7 +2790,7 @@ namespace serialport
             // value14
             // 
             this.value14.Font = new System.Drawing.Font("宋体", 12F);
-            this.value14.Location = new System.Drawing.Point(624, 68);
+            this.value14.Location = new System.Drawing.Point(629, 87);
             this.value14.Maximum = new decimal(new int[] {
             255,
             0,
@@ -2723,7 +2804,7 @@ namespace serialport
             // value13
             // 
             this.value13.Font = new System.Drawing.Font("宋体", 12F);
-            this.value13.Location = new System.Drawing.Point(624, 34);
+            this.value13.Location = new System.Drawing.Point(629, 53);
             this.value13.Maximum = new decimal(new int[] {
             255,
             0,
@@ -2737,7 +2818,7 @@ namespace serialport
             // value12
             // 
             this.value12.Font = new System.Drawing.Font("宋体", 12F);
-            this.value12.Location = new System.Drawing.Point(343, 204);
+            this.value12.Location = new System.Drawing.Point(342, 223);
             this.value12.Maximum = new decimal(new int[] {
             63,
             0,
@@ -2751,7 +2832,7 @@ namespace serialport
             // value11
             // 
             this.value11.Font = new System.Drawing.Font("宋体", 12F);
-            this.value11.Location = new System.Drawing.Point(343, 170);
+            this.value11.Location = new System.Drawing.Point(342, 189);
             this.value11.Maximum = new decimal(new int[] {
             63,
             0,
@@ -2764,7 +2845,7 @@ namespace serialport
             // 
             // value10d
             // 
-            this.value10d.Location = new System.Drawing.Point(399, 139);
+            this.value10d.Location = new System.Drawing.Point(398, 158);
             this.value10d.Name = "value10d";
             this.value10d.ReadOnly = true;
             this.value10d.Size = new System.Drawing.Size(87, 21);
@@ -2772,7 +2853,7 @@ namespace serialport
             // 
             // value9d
             // 
-            this.value9d.Location = new System.Drawing.Point(399, 105);
+            this.value9d.Location = new System.Drawing.Point(398, 124);
             this.value9d.Name = "value9d";
             this.value9d.ReadOnly = true;
             this.value9d.Size = new System.Drawing.Size(87, 21);
@@ -2780,7 +2861,7 @@ namespace serialport
             // 
             // value7d
             // 
-            this.value7d.Location = new System.Drawing.Point(399, 37);
+            this.value7d.Location = new System.Drawing.Point(398, 56);
             this.value7d.Name = "value7d";
             this.value7d.ReadOnly = true;
             this.value7d.Size = new System.Drawing.Size(87, 21);
@@ -2788,7 +2869,7 @@ namespace serialport
             // 
             // value6d
             // 
-            this.value6d.Location = new System.Drawing.Point(154, 207);
+            this.value6d.Location = new System.Drawing.Point(153, 226);
             this.value6d.Name = "value6d";
             this.value6d.ReadOnly = true;
             this.value6d.Size = new System.Drawing.Size(87, 21);
@@ -2796,7 +2877,7 @@ namespace serialport
             // 
             // value8d
             // 
-            this.value8d.Location = new System.Drawing.Point(399, 71);
+            this.value8d.Location = new System.Drawing.Point(398, 90);
             this.value8d.Name = "value8d";
             this.value8d.ReadOnly = true;
             this.value8d.Size = new System.Drawing.Size(87, 21);
@@ -2804,7 +2885,7 @@ namespace serialport
             // 
             // value5d
             // 
-            this.value5d.Location = new System.Drawing.Point(154, 173);
+            this.value5d.Location = new System.Drawing.Point(153, 192);
             this.value5d.Name = "value5d";
             this.value5d.ReadOnly = true;
             this.value5d.Size = new System.Drawing.Size(87, 21);
@@ -2812,7 +2893,7 @@ namespace serialport
             // 
             // value4d
             // 
-            this.value4d.Location = new System.Drawing.Point(154, 139);
+            this.value4d.Location = new System.Drawing.Point(153, 158);
             this.value4d.Name = "value4d";
             this.value4d.ReadOnly = true;
             this.value4d.Size = new System.Drawing.Size(87, 21);
@@ -2820,7 +2901,7 @@ namespace serialport
             // 
             // value3d
             // 
-            this.value3d.Location = new System.Drawing.Point(154, 105);
+            this.value3d.Location = new System.Drawing.Point(153, 124);
             this.value3d.Name = "value3d";
             this.value3d.ReadOnly = true;
             this.value3d.Size = new System.Drawing.Size(87, 21);
@@ -2828,7 +2909,7 @@ namespace serialport
             // 
             // value1d
             // 
-            this.value1d.Location = new System.Drawing.Point(154, 37);
+            this.value1d.Location = new System.Drawing.Point(153, 56);
             this.value1d.Name = "value1d";
             this.value1d.ReadOnly = true;
             this.value1d.Size = new System.Drawing.Size(87, 21);
@@ -2836,7 +2917,7 @@ namespace serialport
             // 
             // value2d
             // 
-            this.value2d.Location = new System.Drawing.Point(154, 71);
+            this.value2d.Location = new System.Drawing.Point(153, 90);
             this.value2d.Name = "value2d";
             this.value2d.ReadOnly = true;
             this.value2d.Size = new System.Drawing.Size(87, 21);
@@ -2845,7 +2926,7 @@ namespace serialport
             // value9
             // 
             this.value9.Font = new System.Drawing.Font("宋体", 12F);
-            this.value9.Location = new System.Drawing.Point(343, 102);
+            this.value9.Location = new System.Drawing.Point(342, 121);
             this.value9.Maximum = new decimal(new int[] {
             63,
             0,
@@ -2859,7 +2940,7 @@ namespace serialport
             // value6
             // 
             this.value6.Font = new System.Drawing.Font("宋体", 12F);
-            this.value6.Location = new System.Drawing.Point(98, 204);
+            this.value6.Location = new System.Drawing.Point(97, 223);
             this.value6.Maximum = new decimal(new int[] {
             63,
             0,
@@ -2873,7 +2954,7 @@ namespace serialport
             // value10
             // 
             this.value10.Font = new System.Drawing.Font("宋体", 12F);
-            this.value10.Location = new System.Drawing.Point(343, 136);
+            this.value10.Location = new System.Drawing.Point(342, 155);
             this.value10.Maximum = new decimal(new int[] {
             63,
             0,
@@ -2887,7 +2968,7 @@ namespace serialport
             // value8
             // 
             this.value8.Font = new System.Drawing.Font("宋体", 12F);
-            this.value8.Location = new System.Drawing.Point(343, 68);
+            this.value8.Location = new System.Drawing.Point(342, 87);
             this.value8.Maximum = new decimal(new int[] {
             63,
             0,
@@ -2901,7 +2982,7 @@ namespace serialport
             // value7
             // 
             this.value7.Font = new System.Drawing.Font("宋体", 12F);
-            this.value7.Location = new System.Drawing.Point(343, 34);
+            this.value7.Location = new System.Drawing.Point(342, 53);
             this.value7.Maximum = new decimal(new int[] {
             63,
             0,
@@ -2915,7 +2996,7 @@ namespace serialport
             // value5
             // 
             this.value5.Font = new System.Drawing.Font("宋体", 12F);
-            this.value5.Location = new System.Drawing.Point(98, 170);
+            this.value5.Location = new System.Drawing.Point(97, 189);
             this.value5.Maximum = new decimal(new int[] {
             63,
             0,
@@ -2929,7 +3010,7 @@ namespace serialport
             // value4
             // 
             this.value4.Font = new System.Drawing.Font("宋体", 12F);
-            this.value4.Location = new System.Drawing.Point(98, 136);
+            this.value4.Location = new System.Drawing.Point(97, 155);
             this.value4.Maximum = new decimal(new int[] {
             63,
             0,
@@ -2943,7 +3024,7 @@ namespace serialport
             // value3
             // 
             this.value3.Font = new System.Drawing.Font("宋体", 12F);
-            this.value3.Location = new System.Drawing.Point(98, 102);
+            this.value3.Location = new System.Drawing.Point(97, 121);
             this.value3.Maximum = new decimal(new int[] {
             63,
             0,
@@ -2957,7 +3038,7 @@ namespace serialport
             // value2
             // 
             this.value2.Font = new System.Drawing.Font("宋体", 12F);
-            this.value2.Location = new System.Drawing.Point(98, 68);
+            this.value2.Location = new System.Drawing.Point(97, 87);
             this.value2.Maximum = new decimal(new int[] {
             63,
             0,
@@ -2971,7 +3052,7 @@ namespace serialport
             // value1
             // 
             this.value1.Font = new System.Drawing.Font("宋体", 12F);
-            this.value1.Location = new System.Drawing.Point(98, 34);
+            this.value1.Location = new System.Drawing.Point(97, 53);
             this.value1.Maximum = new decimal(new int[] {
             63,
             0,
@@ -2982,21 +3063,67 @@ namespace serialport
             this.value1.TabIndex = 0;
             this.value1.ValueChanged += new System.EventHandler(this.IOUT_Change);
             // 
+            // 电流组
+            // 
+            this.电流组.Location = new System.Drawing.Point(5, 8);
+            this.电流组.Name = "电流组";
+            this.电流组.Size = new System.Drawing.Size(498, 249);
+            this.电流组.TabIndex = 390;
+            this.电流组.TabStop = false;
+            this.电流组.Text = "电流组";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Location = new System.Drawing.Point(513, 8);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(550, 249);
+            this.groupBox1.TabIndex = 391;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "占空比组";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Location = new System.Drawing.Point(1072, 10);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(106, 249);
+            this.groupBox2.TabIndex = 7;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "参考电流组";
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Location = new System.Drawing.Point(5, 263);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(1175, 174);
+            this.groupBox3.TabIndex = 7;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Fail Safe组";
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Location = new System.Drawing.Point(5, 443);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(1175, 226);
+            this.groupBox4.TabIndex = 7;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "其它组";
+            // 
             // sure
             // 
+            this.sure.BackColor = System.Drawing.Color.ForestGreen;
             this.sure.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.sure.Location = new System.Drawing.Point(1033, 632);
+            this.sure.Location = new System.Drawing.Point(1021, 686);
             this.sure.Name = "sure";
             this.sure.Size = new System.Drawing.Size(83, 45);
             this.sure.TabIndex = 1;
             this.sure.Text = "确定";
-            this.sure.UseVisualStyleBackColor = true;
+            this.sure.UseVisualStyleBackColor = false;
             this.sure.Click += new System.EventHandler(this.Sure_Click);
             // 
             // cancel
             // 
             this.cancel.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.cancel.Location = new System.Drawing.Point(1122, 632);
+            this.cancel.Location = new System.Drawing.Point(1110, 686);
             this.cancel.Name = "cancel";
             this.cancel.Size = new System.Drawing.Size(83, 45);
             this.cancel.TabIndex = 2;
@@ -3007,7 +3134,7 @@ namespace serialport
             // output
             // 
             this.output.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.output.Location = new System.Drawing.Point(547, 636);
+            this.output.Location = new System.Drawing.Point(535, 690);
             this.output.Name = "output";
             this.output.Size = new System.Drawing.Size(133, 36);
             this.output.TabIndex = 5;
@@ -3018,7 +3145,7 @@ namespace serialport
             // path2
             // 
             this.path2.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.path2.Location = new System.Drawing.Point(17, 640);
+            this.path2.Location = new System.Drawing.Point(5, 694);
             this.path2.Name = "path2";
             this.path2.ReadOnly = true;
             this.path2.Size = new System.Drawing.Size(519, 29);
@@ -3027,7 +3154,7 @@ namespace serialport
             // 
             // Form2
             // 
-            this.ClientSize = new System.Drawing.Size(1211, 679);
+            this.ClientSize = new System.Drawing.Size(1211, 738);
             this.Controls.Add(this.path2);
             this.Controls.Add(this.output);
             this.Controls.Add(this.cancel);
@@ -3250,10 +3377,8 @@ namespace serialport
         private System.Windows.Forms.Label label45;
         private System.Windows.Forms.Label label84;
         private System.Windows.Forms.Label label85;
-        private System.Windows.Forms.Label label86;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label87;
         private System.Windows.Forms.Label label90;
@@ -3307,5 +3432,13 @@ namespace serialport
         private System.Windows.Forms.TextBox Rref;
         private System.Windows.Forms.TextBox I_Full;
         private System.Windows.Forms.Label label115;
+        private System.Windows.Forms.Label label58;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label59;
+        private System.Windows.Forms.GroupBox 电流组;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.GroupBox groupBox4;
     }
 }

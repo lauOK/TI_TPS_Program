@@ -549,14 +549,13 @@ namespace serialport
             this.comboBox48.SelectedIndex = (temp & 0xF0) >> 4;
             this.comboBox49.SelectedIndex = temp & 15;
         }
-        /********************************************************************************************************************************
+        /***********************************************************************************
         * EEPM10 Change  Over
-        ********************************************************************************************************************************/
+        ************************************************************************************/
 
-
-        /********************************************************************************************************************************
+        /***********************************************************************************
         * EEPM11 Change  Begin
-        ********************************************************************************************************************************/
+        ************************************************************************************/
         private void EEPM11_Change(object sender, EventArgs e)
         {
             EEPM11_Change_CB();
@@ -602,7 +601,6 @@ namespace serialport
         * EEPM11 Change  Over
         ********************************************************************************************************************************/
 
-
         /********************************************************************************************************************************
         * EEPM12_14 Change  Begin
         ********************************************************************************************************************************/
@@ -613,7 +611,6 @@ namespace serialport
         /********************************************************************************************************************************
         * EEPM12_14 Change  Over
         ********************************************************************************************************************************/
-
 
         /********************************************************************************************************************************
          * Data Refresh Begin
@@ -645,6 +642,152 @@ namespace serialport
             this.value40.Value = Data.CRC(temp, 39);
         }
 
-    }
+        private void Current_MouseHover(object sender, EventArgs e)
+        {
+            Label lb = sender as Label;
 
+            ToolTip toolTip = new ToolTip();
+
+            toolTip.AutoPopDelay = 5000;
+            toolTip.InitialDelay = 200;
+            toolTip.ReshowDelay = 500;
+            toolTip.ShowAlways = true;
+            toolTip.SetToolTip(lb, "设定通道电流");
+        }
+
+        private void DutyCycle_MouseHover(object sender, EventArgs e)
+        {
+            Label lb = sender as Label;
+
+            ToolTip toolTip = new ToolTip();
+
+            toolTip.AutoPopDelay = 5000;
+            toolTip.InitialDelay = 200;
+            toolTip.ReshowDelay = 500;
+            toolTip.ShowAlways = true;
+            toolTip.SetToolTip(lb, "设定通道占空比");
+        }
+
+        private void Failsafe_MouseHover(object sender, EventArgs e)
+        {
+            Label lb = sender as Label;
+
+            ToolTip toolTip = new ToolTip();
+
+            toolTip.AutoPopDelay = 5000;
+            toolTip.InitialDelay = 200;
+            toolTip.ReshowDelay = 500;
+            toolTip.ShowAlways = true;
+            if (lb.Text == "EEPM0")
+            {
+                toolTip.SetToolTip(lb, "设定FAIL SAFE 0 通道0-7");
+            }
+            else if (lb.Text == "EEPM1")
+            {
+                toolTip.SetToolTip(lb, "设定FAIL SAFE 0 通道8-11");
+            }
+            else if (lb.Text == "EEPM2")
+            {
+                toolTip.SetToolTip(lb, "设定FAIL SAFE 1 通道0-7");
+            }
+            else if (lb.Text == "EEPM3")
+            {
+                toolTip.SetToolTip(lb, "设定FAIL SAFE 1 通道8-11");
+            }
+            else if (lb.Text == "EEP_FS0")
+            {
+                toolTip.SetToolTip(lb, "FAIL SAFE 0 通道0-11");
+            }
+            else if (lb.Text == "EEP_FS1")
+            {
+                toolTip.SetToolTip(lb, "FAIL SAFE 1 通道0-11");
+            }
+        }
+
+        private void Diagen_MouseHover(object sender, EventArgs e)
+        {
+            Label lb = sender as Label;
+
+            ToolTip toolTip = new ToolTip();
+
+            toolTip.AutoPopDelay = 5000;
+            toolTip.InitialDelay = 200;
+            toolTip.ReshowDelay = 500;
+            toolTip.ShowAlways = true;
+            if (lb.Text == "EEPM4")
+            {
+                toolTip.SetToolTip(lb, "设定诊断使能 通道0-7");
+            }
+            else if (lb.Text == "EEPM5")
+            {
+                toolTip.SetToolTip(lb, "设定诊断使能 通道8-11");
+            }
+            else if (lb.Text == "DIAGEN")
+            {
+                toolTip.SetToolTip(lb, "设定诊断使能 通道0-11");
+            }
+        }
+
+        private void Others_MouseHover(object sender, EventArgs e)
+        {
+            Label lb = sender as Label;
+
+            ToolTip toolTip = new ToolTip();
+
+            toolTip.AutoPopDelay = 5000;
+            toolTip.InitialDelay = 200;
+            toolTip.ReshowDelay = 500;
+            toolTip.ShowAlways = true;
+            if (lb.Text == "EEPM15")
+            {
+                toolTip.SetToolTip(lb, "只读 CRC校验值");
+            }
+            else
+            {
+                toolTip.SetToolTip(lb, "详见以下各项详细设定");
+            }
+        }
+
+        private void NULL_MouseHover(object sender, EventArgs e)
+        {
+            Label lb = sender as Label;
+
+            ToolTip toolTip = new ToolTip();
+
+            toolTip.AutoPopDelay = 5000;
+            toolTip.InitialDelay = 200;
+            toolTip.ReshowDelay = 500;
+            toolTip.ShowAlways = true;
+            toolTip.SetToolTip(lb, "保留位，无需设置");
+        }
+
+        private void Multi_MouseHover(object sender, EventArgs e)
+        {
+            Label lb = sender as Label;
+
+            ToolTip toolTip = new ToolTip();
+
+            toolTip.AutoPopDelay = 5000;
+            toolTip.InitialDelay = 200;
+            toolTip.ReshowDelay = 500;
+            toolTip.ShowAlways = true;
+            switch (lb.Text)
+            {
+                case "EEP_LDO (V)": toolTip.SetToolTip(lb, "EEPM6，LDO输出电压设置"); break;
+                case "EEP_EXPEN": toolTip.SetToolTip(lb, "EEPM6，PWM发生器指数调光使能"); break;
+                case "EEP_DEVADDR": toolTip.SetToolTip(lb, "EEPM6，芯片从地址设置"); break;
+                case "EEP_PWMFREQ (Hz)": toolTip.SetToolTip(lb, "EEPM7，PWM频率选择"); break;
+                case "EEP_INTADDR": toolTip.SetToolTip(lb, "EEPM7，芯片从地址选择由外部引脚或内部寄存器配置"); break;
+                case "EEP_OFAF": toolTip.SetToolTip(lb, "EEPM7，One Fail Others On/One Fail All Fail"); break;
+                case "EEP_FLTIMEOUT": toolTip.SetToolTip(lb, "EEPM8，FlexWire超时设置"); break;
+                case "EEP_ADCLOWSYPTH (V)": toolTip.SetToolTip(lb, "EEPM8，ADC电源监视阈值设定"); break;
+                case "EEP_ODIOUT": toolTip.SetToolTip(lb, "EEPM9，按需诊断输出电流设置"); break;
+                case "EEP_INITTIMER": toolTip.SetToolTip(lb, "EEPM9，按需诊断脉冲宽度设置"); break;
+                case "EEP_ODPW": toolTip.SetToolTip(lb, "EEPM10，看门狗时钟设置"); break;
+                case "EEP_WDTIMER": toolTip.SetToolTip(lb, "EEPM10，初始化时钟设置"); break;
+                case "EEP_ADCSHORTTH": toolTip.SetToolTip(lb, "EEPM11，ADC短路检测阈值设定"); break;
+                case "EEP_REFRANCE": toolTip.SetToolTip(lb, "EEPM7，参考电流系数"); break;
+            }
+        }
+    }
 }
