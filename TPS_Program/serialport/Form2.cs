@@ -29,15 +29,12 @@ namespace serialport
 
         private void Form2_Load(object sender, EventArgs e)
         {
-            if (!Data.flag)
+            for (int i = 1; i < 41; i++)
             {
-                for (int i = 1; i < 41; i++)
-                {
-                    NumericUpDown nud = (NumericUpDown)this.panel2.Controls["Value" + i.ToString()];
-                    nud.Value = Data.EEPvalue[i - 1];
-                }
-                Data_Refresh();
+                NumericUpDown nud = (NumericUpDown)this.panel2.Controls["value" + i.ToString()];
+                nud.Value = Data.EEPvalue[i - 1];
             }
+            Data_Refresh();
             CRC_Check();
             this.path2.Text = Data.path_output;
             this.Rref.Text = Data.RREF.ToString();
@@ -48,13 +45,10 @@ namespace serialport
          *************************************************************************************************/
         private void Sure_Click(object sender, EventArgs e)
         {
-            if (!Data.flag)
+            for (int i = 1; i < 41; i++)
             {
-                for (int i = 1; i < 41; i++)
-                {
-                    NumericUpDown nud = (NumericUpDown)this.panel2.Controls["Value" + i.ToString()];
-                    Data.EEPvalue[i - 1] = (byte)nud.Value;
-                }
+                NumericUpDown nud = (NumericUpDown)this.panel2.Controls["value" + i.ToString()];
+                Data.EEPvalue[i - 1] = (byte)nud.Value;
             }
             fm1.I_Full.Text = Data.IFULL.ToString("0.000000");
             this.Close();
@@ -70,56 +64,45 @@ namespace serialport
 
 
         /**************************************************************************************************
-         * Input & Output Function Begin
+         * Output Function Begin
          * ***********************************************************************************************/
         private void Output_Click(object sender, EventArgs e)
         {
-            if (this.path2.Text != string.Empty)
+            if (this.path2.Text == string.Empty)
             {
-                if (Save_CSV(this.path2.Text))
+                OpenFileDialog ofd = new OpenFileDialog();
+                ofd.Filter = "CSV文件 | *.csv; *.CSV";
+                ofd.ShowDialog();
+                Data.path_output = ofd.FileName;
+                this.path2.Text = Data.path_output;
+            }
+
+            var result = MessageBox.Show(null, "要导出的文件路径为：" + Data.path_output, "导出确认", MessageBoxButtons.YesNo);
+            if (result == DialogResult.Yes)
+            {
+                FileStream fs = new FileStream(Data.path_output, FileMode.Create, FileAccess.Write);
+                StreamWriter sw = new StreamWriter(fs);
+
+                string col_txt = "ADDRESS" + "," + "VALUE";
+                sw.WriteLine(col_txt);
+
+                for (int i = 1; i < 41; i++)
                 {
-                    MessageBox.Show("导出完成");
-                    Data.flag = false;
+                    string row_txt;
+                    NumericUpDown nud = (NumericUpDown)this.panel2.Controls["value" + i.ToString()];
+                    row_txt = Data.EEPaddress[i - 1].ToString() + "," + nud.Value.ToString();
+                    sw.WriteLine(row_txt);
                 }
+                sw.Flush();
+                sw.Close();
+                fs.Close();
+                MessageBox.Show("导出完成");
             }
             else
             {
-                MessageBox.Show("导出失败");
+                this.path2.Text = String.Empty;
             }
         }
-
-        private void Path2_Click(object sender, EventArgs e)
-        {
-            OpenFileDialog ofd = new OpenFileDialog();
-            ofd.Filter = "CSV文件 | *.csv; *.CSV";
-            ofd.ShowDialog();
-            Data.path_output = ofd.FileName;
-            this.path2.Text = Data.path_output;
-        }
-
-
-        private bool Save_CSV(string filePath)
-        {
-            FileStream fs = new FileStream(filePath, FileMode.Create, FileAccess.Write);
-            StreamWriter sw = new StreamWriter(fs);
-
-            string col_txt = "ADDRESS" + "," + "VALUE";
-            sw.WriteLine(col_txt);
-
-            for (int i = 1; i < 41; i++)
-            {
-                string row_txt;
-                NumericUpDown nud = (NumericUpDown)this.panel2.Controls["Value" + i.ToString()];
-                row_txt = Data.EEPaddress[i - 1].ToString() + "," + nud.Value.ToString();
-                sw.WriteLine(row_txt);
-            }
-            sw.Flush();
-            sw.Close();
-            fs.Close();
-
-            return true;
-        }
-
         /**************************************************************************************************
          * Input & Output Function Over
          * ***********************************************************************************************/
@@ -130,7 +113,7 @@ namespace serialport
          * ***********************************************************************************************/
         private void RREF_Change(object sender, EventArgs e)
         {
-            Data.flag = false;
+            //Data.flag = false;
             if (this.comboBox43.Text != String.Empty && this.Rref.Text != String.Empty)
             {
                 Data.RREF = Convert.ToDouble(Rref.Text);
@@ -230,7 +213,6 @@ namespace serialport
         * FS0 ComboBox & NumericUpDown Over
         ********************************************************************************************************************************/
 
-
         /********************************************************************************************************************************
         * FS1 ComboBox & NumericUpDown  Begin
         ********************************************************************************************************************************/
@@ -288,7 +270,6 @@ namespace serialport
         /********************************************************************************************************************************
         * FS1 ComboBox & NumericUpDown  Over
         ********************************************************************************************************************************/
-
 
         /********************************************************************************************************************************
         * Diagnostic ComboBox & NumericUpDown  Begin

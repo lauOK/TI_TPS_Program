@@ -3085,7 +3085,7 @@ namespace serialport
             // 
             this.groupBox2.Location = new System.Drawing.Point(1072, 10);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(106, 249);
+            this.groupBox2.Size = new System.Drawing.Size(106, 247);
             this.groupBox2.TabIndex = 7;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "参考电流组";
@@ -3134,7 +3134,7 @@ namespace serialport
             // output
             // 
             this.output.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.output.Location = new System.Drawing.Point(535, 690);
+            this.output.Location = new System.Drawing.Point(820, 689);
             this.output.Name = "output";
             this.output.Size = new System.Drawing.Size(133, 36);
             this.output.TabIndex = 5;
@@ -3144,13 +3144,13 @@ namespace serialport
             // 
             // path2
             // 
+            this.path2.BackColor = System.Drawing.Color.White;
             this.path2.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.path2.Location = new System.Drawing.Point(5, 694);
             this.path2.Name = "path2";
             this.path2.ReadOnly = true;
-            this.path2.Size = new System.Drawing.Size(519, 29);
+            this.path2.Size = new System.Drawing.Size(812, 29);
             this.path2.TabIndex = 6;
-            this.path2.Click += new System.EventHandler(this.Path2_Click);
             // 
             // Form2
             // 

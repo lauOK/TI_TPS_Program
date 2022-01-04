@@ -1,23 +1,18 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace serialport
 {
     public partial class Form1 : Form
     {
+        private byte[] data_output = new byte[144];
         private byte[] ReadyToSend, RTS;
         private int SDNumb;
         private int RENumb;
         private byte[] buf = new byte[10];
-        private byte flag = 0;
+        private byte flag_to_view = 0;
 
         public Form1()
         {
@@ -26,12 +21,11 @@ namespace serialport
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            string[] baud = {"9600","19200","38400","56000","57600","115200",
-                             "128000", "230400", "256000", "460800","500000",};
+            string[] baud = { "115200", "128000", "230400", "256000", "460800", "500000" };
             Band.Items.AddRange(baud);
             port_Num.Items.AddRange(System.IO.Ports.SerialPort.GetPortNames());
             //串口默认设置
-            port_Num.Text = "COM1";
+            port_Num.Text = System.IO.Ports.SerialPort.GetPortNames()[0];
             Band.Text = "500000";
             data_bits.Text = "8";
             crc_bits.Text = "None";
@@ -41,7 +35,6 @@ namespace serialport
             OneAddr.Checked = true;
             Addr.SelectedIndex = 0;
             Rref.Text = Data.RREF.ToString();
-            //I_Full.Text = Data.IFULL.ToString();
         }
 
         private void OpenPort_Click(object sender, EventArgs e)//串口初始化
@@ -144,7 +137,7 @@ namespace serialport
                         for (int j = 0; j < 40; j++)
                         {
                             InputBox.Clear();
-                            byte len = Data.tps_write_1byte(Data.addr, Data.EEPaddress[j], Data.EEPvalue[j], ref buf);
+                            byte len = Data.TPS_write_1byte(Data.addr, Data.EEPaddress[j], Data.EEPvalue[j], ref buf);
                             for (int k = 0; k < len; k++)
                             {
                                 InputBox.Text += buf[k].ToString("X2") + " ";
@@ -162,7 +155,7 @@ namespace serialport
                     for (int i = 0; i < 40; i++)
                     {
                         InputBox.Clear();
-                        byte len = Data.tps_write_1byte(Data.addr, Data.EEPaddress[i], Data.EEPvalue[i], ref buf);
+                        byte len = Data.TPS_write_1byte(Data.addr, Data.EEPaddress[i], Data.EEPvalue[i], ref buf);
                         for (int j = 0; j < len; j++)
                         {
                             InputBox.Text += buf[j].ToString("X2") + " ";
@@ -172,6 +165,7 @@ namespace serialport
                     }
                     TPS_Lock();
                 }
+                Input_Data_Change();
             }
             else
             {
@@ -197,6 +191,8 @@ namespace serialport
                 }
                 OutputBox.AppendText(RecvBuff[i].ToString("X2") + " ");
             }
+            OutputBox.Text = OutputBox.Text.Trim();
+            Output_Data_Check();
         }
 
         private void Clear_RSV_Click(object sender, EventArgs e)//清除接受缓冲区
@@ -242,11 +238,11 @@ namespace serialport
             //CONF_EEPMODE   0x63 bit0
             //CONF_STAYINEEP 0x62 bit7
             //CONF_EEPPROG   0x64 bit2
-            byte len = Data.tps_write_1byte(Data.addr, 0x64, 0x04, ref buf);
+            byte len = Data.TPS_write_1byte(Data.addr, 0x64, 0x04, ref buf);
             serialPort1.Write(buf, 0, len);
             System.Threading.Thread.Sleep(200);
 
-            len = Data.tps_write_1byte(Data.addr, 0x62, 0x00, ref buf);
+            len = Data.TPS_write_1byte(Data.addr, 0x62, 0x00, ref buf);
             serialPort1.Write(buf, 0, len);
         }
 
@@ -263,7 +259,7 @@ namespace serialport
 
             for (int i = 0; i < 10; i++)
             {
-                byte len = Data.tps_write_1byte(Data.addr, reg[i], dat[i], ref buf);
+                byte len = Data.TPS_write_1byte(Data.addr, reg[i], dat[i], ref buf);
                 serialPort1.Write(buf, 0, len);
                 System.Threading.Thread.Sleep(10);
             }
@@ -286,78 +282,118 @@ namespace serialport
             }
         }
 
-        private void InputPath_Click(object sender, EventArgs e)
-        {
-            OpenFileDialog ofd = new OpenFileDialog();
-            ofd.Filter = "CSV文件|*.csv;*.CSV";
-            ofd.ShowDialog();
-            Data.path_input = ofd.FileName;
-            Input_path.Text = Data.path_input;
-        }
-
         private void Data_input_Click(object sender, EventArgs e)
         {
-            if (Input_path.Text != string.Empty)
+            if (Input_path.Text == string.Empty)
             {
-                if (Input_CSV(Input_path.Text))
+                OpenFileDialog ofd = new OpenFileDialog();
+                ofd.Filter = "CSV文件|*.csv;*.CSV";
+                ofd.ShowDialog();
+                Data.path_input = ofd.FileName;
+                Input_path.Text = Data.path_input;
+            }
+
+            var result = MessageBox.Show(null, "要导入的文件路径为：" + Data.path_input, "导入确认", MessageBoxButtons.YesNo);
+            if (result == DialogResult.Yes)
+            {
+                FileStream fs = new FileStream(Data.path_input, FileMode.Open, FileAccess.Read);
+                StreamReader sw = new StreamReader(fs);
+                sw.ReadLine();//先读一行，去除标题
+                for (int i = 0; i < 39; i++)//写入EEP0~38，不导入CRC
                 {
-                    Data.Ifull_Calcu();
-                    I_Full.Text = Data.IFULL.ToString("0.000000");
-                    MessageBox.Show("导入完成");
-                    Data.flag = false;
+                    Data.EEPvalue[i] = Convert.ToByte(sw.ReadLine().Split(',')[1]);
                 }
+                Data.EEPvalue[39] = Data.CRC(Data.EEPvalue, 39);
+                sw.Close();
+                fs.Close();
+
+                Data.Ifull_Calcu();
+                I_Full.Text = Data.IFULL.ToString("0.000000");
+                //Data.flag = false;
+
+                MessageBox.Show("导入完成");
             }
             else
             {
-                MessageBox.Show("请选择导入文件");
+                Input_path.Text = String.Empty;
             }
-        }
-
-        private bool Input_CSV(string filePath)
-        {
-            FileStream fs = new FileStream(filePath, FileMode.Open, FileAccess.Read);
-            StreamReader sw = new StreamReader(fs);
-
-            sw.ReadLine();//先读一行，去除标题
-            for (int i = 0; i < 39; i++)//写入EEP0~38，不导入CRC
-            {
-                Data.EEPvalue[i] = Convert.ToByte(sw.ReadLine().Split(',')[1]);
-            }
-            Data.EEPvalue[39] = Data.CRC(Data.EEPvalue, 39);
-            sw.Close();
-            fs.Close();
-
-            return true;
         }
 
         private void TPS_Test_Click(object sender, EventArgs e)
         {
             if (serialPort1.IsOpen)
             {
-                byte length = Data.tps_read_1byte(Data.addr, 0x71, ref buf);
-                serialPort1.Write(buf, 0, length);
+                OutputBox.Clear();
+                for (int i = 0; i < 24; i++)
+                {
+                    byte length = Data.TPS_read_1byte(Data.addr, Data.EEPaddress[i], ref buf);
+                    serialPort1.Write(buf, 0, length);
+                    System.Threading.Thread.Sleep(10);
+                }
             }
             else
             {
-                MessageBox.Show("请打开串口");
+                MessageBox.Show("123");
             }
-
         }
 
         private void Label_state_double_Click(object sender, EventArgs e)
         {
-            flag++;
-            if (flag == 4)
+            flag_to_view++;
+            if (flag_to_view == 4)
             {
                 DataSet.Visible = !DataSet.Visible;
-                flag = 0;
+                flag_to_view = 0;
             }
-
         }
 
         private void Addr_SelectedIndexChanged(object sender, EventArgs e)
         {
             Data.addr = Convert.ToByte(Addr.Text);
+        }
+
+        private void Input_Data_Change()
+        {
+            for (int i = 1; i < 13; i++)
+            {
+                TextBox tb = (TextBox)this.groupBox1.Controls["value" + i.ToString() + "d"];
+                tb.Text = ((double)Data.EEPvalue[i - 1] / (double)63 * Data.IFULL).ToString("0.000000");
+            }
+            for (int i = 13; i < 25; i++)
+            {
+                TextBox tb = (TextBox)this.groupBox1.Controls["value" + i.ToString() + "p"];
+                tb.Text = ((double)Data.EEPvalue[i - 1] / (double)255 * (double)100).ToString("#0.0");
+            }
+        }
+
+        private void Output_Data_Check()
+        {
+
+            string str = OutputBox.Text.Replace("\r\n", "");
+            str = str.Replace(" ", "");
+            Input_path.Text = str;
+
+            if (str.Length == 192)
+            {
+                for (int i = 0; i < 96; i++)
+                {
+                    data_output[i] = Convert.ToByte(str.Substring(i * 2, 2), 16);
+                }
+
+                for (int i = 1; i < 25; i++)
+                {
+                    if (i < 13)
+                    {
+                        TextBox tb = (TextBox)this.groupBox1.Controls["value" + i.ToString()];
+                        tb.Text = ((double)data_output[(i - 1) * 4 + 1] / (double)63 * Data.IFULL).ToString("0.000000");
+                    }
+                    else
+                    {
+                        TextBox tb = (TextBox)this.groupBox1.Controls["value" + i.ToString()];
+                        tb.Text = ((double)data_output[(i - 1) * 4 + 1] / (double)255 * (double)100).ToString("#0.0");
+                    }
+                }
+            }
         }
     }
 }

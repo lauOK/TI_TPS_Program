@@ -24,10 +24,10 @@ namespace serialport
     {
         public static string path_input = string.Empty;  //输入路径
         public static string path_output = string.Empty; //输出路径
-        public static bool flag = true; //是否有值发生改变
         public static double RREF = 8.431; //参考电阻默认值
         public static double IFULL = 74.999407;//参考电流默认值
         public static byte addr;//芯片地址
+        public static double RFE = 0;
 
         public static byte[] EEPaddress = new byte[40] { 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139,
                                                          160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171,
@@ -39,24 +39,23 @@ namespace serialport
 
         public static void Ifull_Calcu()
         {
-            double temp2 = 0;
             byte temp = Data.EEPvalue[31];
             if ((temp & 3) == 0)
-                temp2 = 64;
+                RFE = 64;
             else if ((temp & 3) == 1)
-                temp2 = 128;
+                RFE = 128;
             else if ((temp & 3) == 2)
-                temp2 = 256;
+                RFE = 256;
             else if ((temp & 3) == 3)
-                temp2 = 512;
+                RFE = 512;
 
-            Data.IFULL = 1.235 / Data.RREF * temp2;
+            Data.IFULL = 1.235 / Data.RREF * RFE;
         }
 
         /****************************************************************************************************************
          * CRC Calculation Begin @ShuGuang
          * *************************************************************************************************************/
-        private static byte crr_calculation(byte crc_init, byte input_data)
+        private static byte CRC_Calculation(byte crc_init, byte input_data)
         {
             byte temp_bit, input_bit;
             byte bit0, bit1, bit2, bit3, bit4, bit5, bit6, bit7;
@@ -100,9 +99,9 @@ namespace serialport
             for (j = 0; j < length; j++)
             {
                 if (j == 0)
-                    crctemp = crr_calculation(0xff, commandframe[j]);
+                    crctemp = CRC_Calculation(0xff, commandframe[j]);
                 else
-                    crctemp = crr_calculation(crctemp, commandframe[j]);
+                    crctemp = CRC_Calculation(crctemp, commandframe[j]);
             }
             return crctemp;
         }
@@ -113,7 +112,7 @@ namespace serialport
         /****************************************************************************
         * TPS Frame Begin  @ShuGuang
         * ************************************************************************/
-        enum cmd_len_t
+        enum Cmd_len_t
         {
             Single_1byte = 0,
             Burst_2byte = 1,
@@ -122,7 +121,7 @@ namespace serialport
         };
 
         /* 生成DEV_ADDR结构 */
-        private static byte tps_dev_get(byte addr, cmd_len_t len, byte broascast, byte readwrite)
+        private static byte TPS_dev_get(byte addr, Cmd_len_t len, byte broascast, byte readwrite)
         {
             byte tps_dev;
 
@@ -130,21 +129,21 @@ namespace serialport
 
             switch (len)
             {
-                case cmd_len_t.Single_1byte: tps_dev |= (0 << 4); break;
-                case cmd_len_t.Burst_2byte: tps_dev |= (1 << 4); break;
-                case cmd_len_t.Burst_4byte: tps_dev |= (2 << 4); break;
-                case cmd_len_t.Burst_8byte: tps_dev |= (3 << 4); break;
+                case Cmd_len_t.Single_1byte: tps_dev |= (0 << 4); break;
+                case Cmd_len_t.Burst_2byte: tps_dev |= (1 << 4); break;
+                case Cmd_len_t.Burst_4byte: tps_dev |= (2 << 4); break;
+                case Cmd_len_t.Burst_8byte: tps_dev |= (3 << 4); break;
             }
 
             return tps_dev;
         }
 
         /* 写1个字节 */
-        public static byte tps_write_1byte(byte addr, byte reg, byte data, ref byte[] buf)
+        public static byte TPS_write_1byte(byte addr, byte reg, byte data, ref byte[] buf)
         {
             byte[] temp = new byte[10];
             buf[0] = 0x55;
-            buf[1] = tps_dev_get(addr, cmd_len_t.Single_1byte, 0, 1);
+            buf[1] = TPS_dev_get(addr, Cmd_len_t.Single_1byte, 0, 1);
             buf[2] = reg;
             buf[3] = data;
 
@@ -305,11 +304,11 @@ namespace serialport
 #endif
 
         /* 读1个字节 */
-        public static byte tps_read_1byte(byte addr, byte reg, ref byte[] buf)
+        public static byte TPS_read_1byte(byte addr, byte reg, ref byte[] buf)
         {
             byte[] temp = new byte[10];
             buf[0] = 0x55;
-            buf[1] = tps_dev_get(addr, cmd_len_t.Single_1byte, 0, 0);
+            buf[1] = TPS_dev_get(addr, Cmd_len_t.Single_1byte, 0, 0);
             buf[2] = reg;
 
             for (int i = 0; i < 3; i++)
