@@ -166,13 +166,14 @@
             // 
             // TPS_Test
             // 
+            this.TPS_Test.BackColor = System.Drawing.Color.ForestGreen;
             this.TPS_Test.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.TPS_Test.Location = new System.Drawing.Point(12, 68);
             this.TPS_Test.Name = "TPS_Test";
             this.TPS_Test.Size = new System.Drawing.Size(154, 30);
             this.TPS_Test.TabIndex = 10;
-            this.TPS_Test.Text = "测试";
-            this.TPS_Test.UseVisualStyleBackColor = true;
+            this.TPS_Test.Text = "参数读取";
+            this.TPS_Test.UseVisualStyleBackColor = false;
             this.TPS_Test.Click += new System.EventHandler(this.TPS_Test_Click);
             // 
             // Clear_Tran

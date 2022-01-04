@@ -191,7 +191,6 @@ namespace serialport
                 }
                 OutputBox.AppendText(RecvBuff[i].ToString("X2") + " ");
             }
-            OutputBox.Text = OutputBox.Text.Trim();
             Output_Data_Check();
         }
 
@@ -333,7 +332,7 @@ namespace serialport
             }
             else
             {
-                MessageBox.Show("123");
+                MessageBox.Show("请打开串口");
             }
         }
 
@@ -368,14 +367,12 @@ namespace serialport
 
         private void Output_Data_Check()
         {
-
             string str = OutputBox.Text.Replace("\r\n", "");
             str = str.Replace(" ", "");
-            Input_path.Text = str;
 
-            if (str.Length == 192)
+            if (str.Length == 288)
             {
-                for (int i = 0; i < 96; i++)
+                for (int i = 0; i < 144; i++)
                 {
                     data_output[i] = Convert.ToByte(str.Substring(i * 2, 2), 16);
                 }
@@ -385,12 +382,12 @@ namespace serialport
                     if (i < 13)
                     {
                         TextBox tb = (TextBox)this.groupBox1.Controls["value" + i.ToString()];
-                        tb.Text = ((double)data_output[(i - 1) * 4 + 1] / (double)63 * Data.IFULL).ToString("0.000000");
+                        tb.Text = ((double)data_output[(i - 1) * 6 + 4] / (double)63 * Data.IFULL).ToString("0.000000");
                     }
                     else
                     {
                         TextBox tb = (TextBox)this.groupBox1.Controls["value" + i.ToString()];
-                        tb.Text = ((double)data_output[(i - 1) * 4 + 1] / (double)255 * (double)100).ToString("#0.0");
+                        tb.Text = ((double)data_output[(i - 1) * 6 + 4] / (double)255 * (double)100).ToString("#0.0");
                     }
                 }
             }
