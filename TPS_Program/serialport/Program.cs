@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace serialport
@@ -28,6 +25,7 @@ namespace serialport
         public static double IFULL = 74.999407;//参考电流默认值
         public static byte addr;//芯片地址
         public static double RFE = 0;
+        public static int addr_to_write;
 
         public static byte[] EEPaddress = new byte[40] { 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139,
                                                          160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171,
@@ -39,7 +37,7 @@ namespace serialport
 
         public static void Ifull_Calcu()
         {
-            byte temp = Data.EEPvalue[31];
+            byte temp = EEPvalue[31];
             if ((temp & 3) == 0)
                 RFE = 64;
             else if ((temp & 3) == 1)
@@ -49,7 +47,12 @@ namespace serialport
             else if ((temp & 3) == 3)
                 RFE = 512;
 
-            Data.IFULL = 1.235 / Data.RREF * RFE;
+            IFULL = 1.235 / RREF * RFE;
+        }
+
+        public static void Dev_Addr_To_Write()
+        {
+            addr_to_write = EEPvalue[30] & 15;
         }
 
         /****************************************************************************************************************
@@ -134,7 +137,6 @@ namespace serialport
                 case Cmd_len_t.Burst_4byte: tps_dev |= (2 << 4); break;
                 case Cmd_len_t.Burst_8byte: tps_dev |= (3 << 4); break;
             }
-
             return tps_dev;
         }
 

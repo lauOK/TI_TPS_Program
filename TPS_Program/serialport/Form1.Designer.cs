@@ -145,6 +145,8 @@
             this.value3d = new System.Windows.Forms.TextBox();
             this.value1d = new System.Windows.Forms.TextBox();
             this.value2d = new System.Windows.Forms.TextBox();
+            this.tb_devaddr = new System.Windows.Forms.TextBox();
+            this.label_devaddr = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -536,7 +538,7 @@
             // 
             // I_Full
             // 
-            this.I_Full.Location = new System.Drawing.Point(318, 434);
+            this.I_Full.Location = new System.Drawing.Point(268, 435);
             this.I_Full.Name = "I_Full";
             this.I_Full.ReadOnly = true;
             this.I_Full.Size = new System.Drawing.Size(87, 21);
@@ -546,7 +548,7 @@
             // 
             this.label_Ifull.AutoSize = true;
             this.label_Ifull.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_Ifull.Location = new System.Drawing.Point(224, 436);
+            this.label_Ifull.Location = new System.Drawing.Point(177, 436);
             this.label_Ifull.Name = "label_Ifull";
             this.label_Ifull.Size = new System.Drawing.Size(88, 19);
             this.label_Ifull.TabIndex = 389;
@@ -554,10 +556,10 @@
             // 
             // Rref
             // 
-            this.Rref.Location = new System.Drawing.Point(112, 434);
+            this.Rref.Location = new System.Drawing.Point(87, 434);
             this.Rref.Name = "Rref";
             this.Rref.ReadOnly = true;
-            this.Rref.Size = new System.Drawing.Size(87, 21);
+            this.Rref.Size = new System.Drawing.Size(83, 21);
             this.Rref.TabIndex = 388;
             // 
             // label_REF
@@ -566,9 +568,9 @@
             this.label_REF.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_REF.Location = new System.Drawing.Point(12, 435);
             this.label_REF.Name = "label_REF";
-            this.label_REF.Size = new System.Drawing.Size(97, 19);
+            this.label_REF.Size = new System.Drawing.Size(71, 19);
             this.label_REF.TabIndex = 387;
-            this.label_REF.Text = "REF （KΩ）";
+            this.label_REF.Text = "REF(KΩ)";
             // 
             // groupBox1
             // 
@@ -1341,12 +1343,32 @@
             this.value2d.Size = new System.Drawing.Size(87, 21);
             this.value2d.TabIndex = 389;
             // 
+            // tb_devaddr
+            // 
+            this.tb_devaddr.Location = new System.Drawing.Point(457, 435);
+            this.tb_devaddr.Name = "tb_devaddr";
+            this.tb_devaddr.ReadOnly = true;
+            this.tb_devaddr.Size = new System.Drawing.Size(68, 21);
+            this.tb_devaddr.TabIndex = 393;
+            // 
+            // label_devaddr
+            // 
+            this.label_devaddr.AutoSize = true;
+            this.label_devaddr.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_devaddr.Location = new System.Drawing.Point(362, 436);
+            this.label_devaddr.Name = "label_devaddr";
+            this.label_devaddr.Size = new System.Drawing.Size(91, 19);
+            this.label_devaddr.TabIndex = 392;
+            this.label_devaddr.Text = "DEV_ADDR";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1191, 498);
+            this.Controls.Add(this.tb_devaddr);
+            this.Controls.Add(this.label_devaddr);
             this.Controls.Add(this.I_Full);
             this.Controls.Add(this.label_Ifull);
             this.Controls.Add(this.Rref);
@@ -1497,6 +1519,8 @@
         private System.Windows.Forms.TextBox value15;
         private System.Windows.Forms.TextBox value14;
         private System.Windows.Forms.TextBox value13;
+        public System.Windows.Forms.TextBox tb_devaddr;
+        private System.Windows.Forms.Label label_devaddr;
     }
 }
 

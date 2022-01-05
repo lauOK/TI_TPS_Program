@@ -1,12 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 
@@ -51,6 +45,7 @@ namespace serialport
                 Data.EEPvalue[i - 1] = (byte)nud.Value;
             }
             fm1.I_Full.Text = Data.IFULL.ToString("0.000000");
+            fm1.tb_devaddr.Text = Data.addr_to_write.ToString();
             this.Close();
         }
 
@@ -68,39 +63,35 @@ namespace serialport
          * ***********************************************************************************************/
         private void Output_Click(object sender, EventArgs e)
         {
-            if (this.path2.Text == string.Empty)
+            OpenFileDialog ofd = new OpenFileDialog();
+            ofd.Filter = "CSV文件 | *.csv; *.CSV";
+            var Diaresult = ofd.ShowDialog();
+            if (Diaresult == DialogResult.OK)
             {
-                OpenFileDialog ofd = new OpenFileDialog();
-                ofd.Filter = "CSV文件 | *.csv; *.CSV";
-                ofd.ShowDialog();
                 Data.path_output = ofd.FileName;
                 this.path2.Text = Data.path_output;
-            }
 
-            var result = MessageBox.Show(null, "要导出的文件路径为：" + Data.path_output, "导出确认", MessageBoxButtons.YesNo);
-            if (result == DialogResult.Yes)
-            {
-                FileStream fs = new FileStream(Data.path_output, FileMode.Create, FileAccess.Write);
-                StreamWriter sw = new StreamWriter(fs);
-
-                string col_txt = "ADDRESS" + "," + "VALUE";
-                sw.WriteLine(col_txt);
-
-                for (int i = 1; i < 41; i++)
+                var result = MessageBox.Show(null, "要导出的文件路径为：" + Data.path_output, "导出确认", MessageBoxButtons.YesNo);
+                if (result == DialogResult.Yes)
                 {
-                    string row_txt;
-                    NumericUpDown nud = (NumericUpDown)this.panel2.Controls["value" + i.ToString()];
-                    row_txt = Data.EEPaddress[i - 1].ToString() + "," + nud.Value.ToString();
-                    sw.WriteLine(row_txt);
+                    FileStream fs = new FileStream(Data.path_output, FileMode.Create, FileAccess.Write);
+                    StreamWriter sw = new StreamWriter(fs);
+
+                    string col_txt = "ADDRESS" + "," + "VALUE";
+                    sw.WriteLine(col_txt);
+
+                    for (int i = 1; i < 41; i++)
+                    {
+                        string row_txt;
+                        NumericUpDown nud = (NumericUpDown)this.panel2.Controls["value" + i.ToString()];
+                        row_txt = Data.EEPaddress[i - 1].ToString() + "," + nud.Value.ToString();
+                        sw.WriteLine(row_txt);
+                    }
+                    sw.Flush();
+                    sw.Close();
+                    fs.Close();
+                    MessageBox.Show("导出完成");
                 }
-                sw.Flush();
-                sw.Close();
-                fs.Close();
-                MessageBox.Show("导出完成");
-            }
-            else
-            {
-                this.path2.Text = String.Empty;
             }
         }
         /**************************************************************************************************
@@ -113,7 +104,6 @@ namespace serialport
          * ***********************************************************************************************/
         private void RREF_Change(object sender, EventArgs e)
         {
-            //Data.flag = false;
             if (this.comboBox43.Text != String.Empty && this.Rref.Text != String.Empty)
             {
                 Data.RREF = Convert.ToDouble(Rref.Text);
@@ -351,6 +341,8 @@ namespace serialport
             bit6 = this.comboBox37.Text == "4.4" ? 1 : 0;
 
             this.value31.Value = bit6 << 6 | bit4 << 4 | bit0_3;
+
+            Data.addr_to_write = bit0_3;
         }
 
         private void EEPM6_Change_CB()

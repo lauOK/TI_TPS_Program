@@ -25,7 +25,7 @@ namespace serialport
             Band.Items.AddRange(baud);
             port_Num.Items.AddRange(System.IO.Ports.SerialPort.GetPortNames());
             //串口默认设置
-            port_Num.Text = System.IO.Ports.SerialPort.GetPortNames()[0];
+            port_Num.Text = string.Empty;
             Band.Text = "500000";
             data_bits.Text = "8";
             crc_bits.Text = "None";
@@ -194,15 +194,41 @@ namespace serialport
             Output_Data_Check();
         }
 
-        private void Clear_RSV_Click(object sender, EventArgs e)//清除接受缓冲区
+        private void Clear_RSV_Click(object sender, EventArgs e)//清除接收区
         {
+            for (int i = 1; i < 25; i++)
+            {
+                if (i < 13)
+                {
+                    TextBox tb = (TextBox)this.groupBox1.Controls["value" + i.ToString()];
+                    tb.Text = null;
+                }
+                else
+                {
+                    TextBox tb = (TextBox)this.groupBox1.Controls["value" + i.ToString()];
+                    tb.Text = null;
+                }
+            }
             OutputBox.Text = null;
             RENumb = 0;
             label_Rx.Text = "RX:0Bytes";
         }
 
-        private void Clear_Tran_Click(object sender, EventArgs e)//清除发送缓冲区
+        private void Clear_Tran_Click(object sender, EventArgs e)//清除发送区
         {
+            for (int i = 1; i < 25; i++)
+            {
+                if (i < 13)
+                {
+                    TextBox tb = (TextBox)this.groupBox1.Controls["value" + i.ToString() + "d"];
+                    tb.Text = null;
+                }
+                else
+                {
+                    TextBox tb = (TextBox)this.groupBox1.Controls["value" + i.ToString() + "p"];
+                    tb.Text = null;
+                }
+            }
             InputBox.Text = null;
             SDNumb = 0;
             label_Tx.Text = "TX:0Bytes";
@@ -283,38 +309,35 @@ namespace serialport
 
         private void Data_input_Click(object sender, EventArgs e)
         {
-            if (Input_path.Text == string.Empty)
+            OpenFileDialog ofd = new OpenFileDialog();
+            ofd.Filter = "CSV文件|*.csv;*.CSV";
+            var DiaResult = ofd.ShowDialog();
+            if (DiaResult == DialogResult.OK)
             {
-                OpenFileDialog ofd = new OpenFileDialog();
-                ofd.Filter = "CSV文件|*.csv;*.CSV";
-                ofd.ShowDialog();
                 Data.path_input = ofd.FileName;
                 Input_path.Text = Data.path_input;
-            }
 
-            var result = MessageBox.Show(null, "要导入的文件路径为：" + Data.path_input, "导入确认", MessageBoxButtons.YesNo);
-            if (result == DialogResult.Yes)
-            {
-                FileStream fs = new FileStream(Data.path_input, FileMode.Open, FileAccess.Read);
-                StreamReader sw = new StreamReader(fs);
-                sw.ReadLine();//先读一行，去除标题
-                for (int i = 0; i < 39; i++)//写入EEP0~38，不导入CRC
+                var result = MessageBox.Show(null, "要导入的文件路径为：" + Data.path_input, "导入确认", MessageBoxButtons.YesNo);
+                if (result == DialogResult.Yes)
                 {
-                    Data.EEPvalue[i] = Convert.ToByte(sw.ReadLine().Split(',')[1]);
+                    FileStream fs = new FileStream(Data.path_input, FileMode.Open, FileAccess.Read);
+                    StreamReader sw = new StreamReader(fs);
+                    sw.ReadLine();//先读一行，去除标题
+                    for (int i = 0; i < 39; i++)//写入EEP0~38，不导入CRC
+                    {
+                        Data.EEPvalue[i] = Convert.ToByte(sw.ReadLine().Split(',')[1]);
+                    }
+                    Data.EEPvalue[39] = Data.CRC(Data.EEPvalue, 39);
+                    sw.Close();
+                    fs.Close();
+
+                    Data.Ifull_Calcu();
+                    Data.Dev_Addr_To_Write();
+                    I_Full.Text = Data.IFULL.ToString("0.000000");
+                    tb_devaddr.Text = Data.addr_to_write.ToString();
+
+                    MessageBox.Show("导入完成");
                 }
-                Data.EEPvalue[39] = Data.CRC(Data.EEPvalue, 39);
-                sw.Close();
-                fs.Close();
-
-                Data.Ifull_Calcu();
-                I_Full.Text = Data.IFULL.ToString("0.000000");
-                //Data.flag = false;
-
-                MessageBox.Show("导入完成");
-            }
-            else
-            {
-                Input_path.Text = String.Empty;
             }
         }
 
