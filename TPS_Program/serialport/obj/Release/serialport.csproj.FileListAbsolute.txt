@@ -1,0 +1,12 @@
+C:\Users\tibbe\Desktop\TI_TPS_Program\TPS_Program\serialport\bin\Release\serialport.exe.config
+C:\Users\tibbe\Desktop\TI_TPS_Program\TPS_Program\serialport\bin\Release\serialport.exe
+C:\Users\tibbe\Desktop\TI_TPS_Program\TPS_Program\serialport\bin\Release\serialport.pdb
+C:\Users\tibbe\Desktop\TI_TPS_Program\TPS_Program\serialport\obj\Release\serialport.csproj.AssemblyReference.cache
+C:\Users\tibbe\Desktop\TI_TPS_Program\TPS_Program\serialport\obj\Release\serialport.csproj.SuggestedBindingRedirects.cache
+C:\Users\tibbe\Desktop\TI_TPS_Program\TPS_Program\serialport\obj\Release\serialport.Form1.resources
+C:\Users\tibbe\Desktop\TI_TPS_Program\TPS_Program\serialport\obj\Release\serialport.Form2.resources
+C:\Users\tibbe\Desktop\TI_TPS_Program\TPS_Program\serialport\obj\Release\serialport.Properties.Resources.resources
+C:\Users\tibbe\Desktop\TI_TPS_Program\TPS_Program\serialport\obj\Release\serialport.csproj.GenerateResource.cache
+C:\Users\tibbe\Desktop\TI_TPS_Program\TPS_Program\serialport\obj\Release\serialport.csproj.CoreCompileInputs.cache
+C:\Users\tibbe\Desktop\TI_TPS_Program\TPS_Program\serialport\obj\Release\serialport.exe
+C:\Users\tibbe\Desktop\TI_TPS_Program\TPS_Program\serialport\obj\Release\serialport.pdb
