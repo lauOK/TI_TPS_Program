@@ -1228,11 +1228,11 @@ namespace serialport
             // 
             this.label114.AutoSize = true;
             this.label114.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label114.Location = new System.Drawing.Point(1081, 36);
+            this.label114.Location = new System.Drawing.Point(1086, 36);
             this.label114.Name = "label114";
-            this.label114.Size = new System.Drawing.Size(97, 19);
+            this.label114.Size = new System.Drawing.Size(71, 19);
             this.label114.TabIndex = 383;
-            this.label114.Text = "REF （KΩ）";
+            this.label114.Text = "REF(KΩ)";
             // 
             // label113
             // 
