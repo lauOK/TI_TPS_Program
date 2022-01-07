@@ -38,13 +38,13 @@ namespace serialport
             this.comboBox42 = new System.Windows.Forms.ComboBox();
             this.comboBox44 = new System.Windows.Forms.ComboBox();
             this.label103 = new System.Windows.Forms.Label();
-            this.value40 = new System.Windows.Forms.NumericUpDown();
+            this.value39 = new System.Windows.Forms.NumericUpDown();
             this.comboBox48 = new System.Windows.Forms.ComboBox();
             this.label100 = new System.Windows.Forms.Label();
             this.label97 = new System.Windows.Forms.Label();
             this.label59 = new System.Windows.Forms.Label();
             this.comboBox49 = new System.Windows.Forms.ComboBox();
-            this.value35 = new System.Windows.Forms.NumericUpDown();
+            this.value34 = new System.Windows.Forms.NumericUpDown();
             this.comboBox41 = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -52,20 +52,20 @@ namespace serialport
             this.label96 = new System.Windows.Forms.Label();
             this.label58 = new System.Windows.Forms.Label();
             this.comboBox40 = new System.Windows.Forms.ComboBox();
-            this.value36 = new System.Windows.Forms.NumericUpDown();
+            this.value35 = new System.Windows.Forms.NumericUpDown();
             this.I_Full = new System.Windows.Forms.TextBox();
             this.label95 = new System.Windows.Forms.Label();
+            this.value30 = new System.Windows.Forms.NumericUpDown();
             this.value31 = new System.Windows.Forms.NumericUpDown();
-            this.value32 = new System.Windows.Forms.NumericUpDown();
             this.comboBox51 = new System.Windows.Forms.ComboBox();
             this.label38 = new System.Windows.Forms.Label();
             this.label36 = new System.Windows.Forms.Label();
             this.label37 = new System.Windows.Forms.Label();
             this.comboBox54 = new System.Windows.Forms.ComboBox();
             this.label92 = new System.Windows.Forms.Label();
-            this.value33 = new System.Windows.Forms.NumericUpDown();
+            this.value32 = new System.Windows.Forms.NumericUpDown();
             this.comboBox37 = new System.Windows.Forms.ComboBox();
-            this.value39 = new System.Windows.Forms.NumericUpDown();
+            this.value38 = new System.Windows.Forms.NumericUpDown();
             this.label93 = new System.Windows.Forms.Label();
             this.label35 = new System.Windows.Forms.Label();
             this.comboBox38 = new System.Windows.Forms.ComboBox();
@@ -73,7 +73,7 @@ namespace serialport
             this.label94 = new System.Windows.Forms.Label();
             this.comboBox39 = new System.Windows.Forms.ComboBox();
             this.label115 = new System.Windows.Forms.Label();
-            this.value34 = new System.Windows.Forms.NumericUpDown();
+            this.value33 = new System.Windows.Forms.NumericUpDown();
             this.label107 = new System.Windows.Forms.Label();
             this.Rref = new System.Windows.Forms.TextBox();
             this.label104 = new System.Windows.Forms.Label();
@@ -86,7 +86,7 @@ namespace serialport
             this.comboBox43 = new System.Windows.Forms.ComboBox();
             this.label108 = new System.Windows.Forms.Label();
             this.label101 = new System.Windows.Forms.Label();
-            this.value38 = new System.Windows.Forms.NumericUpDown();
+            this.value37 = new System.Windows.Forms.NumericUpDown();
             this.comboBox57 = new System.Windows.Forms.ComboBox();
             this.label98 = new System.Windows.Forms.Label();
             this.comboBox53 = new System.Windows.Forms.ComboBox();
@@ -96,7 +96,7 @@ namespace serialport
             this.label109 = new System.Windows.Forms.Label();
             this.label88 = new System.Windows.Forms.Label();
             this.comboBox56 = new System.Windows.Forms.ComboBox();
-            this.value37 = new System.Windows.Forms.NumericUpDown();
+            this.value36 = new System.Windows.Forms.NumericUpDown();
             this.label105 = new System.Windows.Forms.Label();
             this.label111 = new System.Windows.Forms.Label();
             this.comboBox55 = new System.Windows.Forms.ComboBox();
@@ -106,7 +106,7 @@ namespace serialport
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.comboBox25 = new System.Windows.Forms.ComboBox();
-            this.value25 = new System.Windows.Forms.NumericUpDown();
+            this.value24 = new System.Windows.Forms.NumericUpDown();
             this.comboBox26 = new System.Windows.Forms.ComboBox();
             this.comboBox27 = new System.Windows.Forms.ComboBox();
             this.comboBox28 = new System.Windows.Forms.ComboBox();
@@ -122,12 +122,12 @@ namespace serialport
             this.comboBox13 = new System.Windows.Forms.ComboBox();
             this.comboBox14 = new System.Windows.Forms.ComboBox();
             this.comboBox15 = new System.Windows.Forms.ComboBox();
-            this.value30 = new System.Windows.Forms.NumericUpDown();
-            this.value28 = new System.Windows.Forms.NumericUpDown();
             this.value29 = new System.Windows.Forms.NumericUpDown();
-            this.comboBox16 = new System.Windows.Forms.ComboBox();
             this.value27 = new System.Windows.Forms.NumericUpDown();
+            this.value28 = new System.Windows.Forms.NumericUpDown();
+            this.comboBox16 = new System.Windows.Forms.ComboBox();
             this.value26 = new System.Windows.Forms.NumericUpDown();
+            this.value25 = new System.Windows.Forms.NumericUpDown();
             this.comboBox17 = new System.Windows.Forms.ComboBox();
             this.label39 = new System.Windows.Forms.Label();
             this.comboBox18 = new System.Windows.Forms.ComboBox();
@@ -198,54 +198,54 @@ namespace serialport
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.value24p = new System.Windows.Forms.TextBox();
             this.value23p = new System.Windows.Forms.TextBox();
-            this.value21p = new System.Windows.Forms.TextBox();
             this.value22p = new System.Windows.Forms.TextBox();
-            this.value24 = new System.Windows.Forms.NumericUpDown();
+            this.value20p = new System.Windows.Forms.TextBox();
+            this.value21p = new System.Windows.Forms.TextBox();
             this.value23 = new System.Windows.Forms.NumericUpDown();
             this.value22 = new System.Windows.Forms.NumericUpDown();
             this.value21 = new System.Windows.Forms.NumericUpDown();
-            this.value20p = new System.Windows.Forms.TextBox();
+            this.value20 = new System.Windows.Forms.NumericUpDown();
             this.value19p = new System.Windows.Forms.TextBox();
-            this.value17p = new System.Windows.Forms.TextBox();
-            this.value16p = new System.Windows.Forms.TextBox();
             this.value18p = new System.Windows.Forms.TextBox();
+            this.value16p = new System.Windows.Forms.TextBox();
             this.value15p = new System.Windows.Forms.TextBox();
+            this.value17p = new System.Windows.Forms.TextBox();
             this.value14p = new System.Windows.Forms.TextBox();
             this.value13p = new System.Windows.Forms.TextBox();
+            this.value12p = new System.Windows.Forms.TextBox();
+            this.value10d = new System.Windows.Forms.TextBox();
             this.value11d = new System.Windows.Forms.TextBox();
-            this.value12d = new System.Windows.Forms.TextBox();
-            this.value19 = new System.Windows.Forms.NumericUpDown();
-            this.value16 = new System.Windows.Forms.NumericUpDown();
-            this.value20 = new System.Windows.Forms.NumericUpDown();
             this.value18 = new System.Windows.Forms.NumericUpDown();
-            this.value17 = new System.Windows.Forms.NumericUpDown();
             this.value15 = new System.Windows.Forms.NumericUpDown();
+            this.value19 = new System.Windows.Forms.NumericUpDown();
+            this.value17 = new System.Windows.Forms.NumericUpDown();
+            this.value16 = new System.Windows.Forms.NumericUpDown();
             this.value14 = new System.Windows.Forms.NumericUpDown();
             this.value13 = new System.Windows.Forms.NumericUpDown();
             this.value12 = new System.Windows.Forms.NumericUpDown();
             this.value11 = new System.Windows.Forms.NumericUpDown();
-            this.value10d = new System.Windows.Forms.TextBox();
+            this.value10 = new System.Windows.Forms.NumericUpDown();
             this.value9d = new System.Windows.Forms.TextBox();
-            this.value7d = new System.Windows.Forms.TextBox();
-            this.value6d = new System.Windows.Forms.TextBox();
             this.value8d = new System.Windows.Forms.TextBox();
+            this.value6d = new System.Windows.Forms.TextBox();
             this.value5d = new System.Windows.Forms.TextBox();
+            this.value7d = new System.Windows.Forms.TextBox();
             this.value4d = new System.Windows.Forms.TextBox();
             this.value3d = new System.Windows.Forms.TextBox();
-            this.value1d = new System.Windows.Forms.TextBox();
             this.value2d = new System.Windows.Forms.TextBox();
-            this.value9 = new System.Windows.Forms.NumericUpDown();
-            this.value6 = new System.Windows.Forms.NumericUpDown();
-            this.value10 = new System.Windows.Forms.NumericUpDown();
+            this.value0d = new System.Windows.Forms.TextBox();
+            this.value1d = new System.Windows.Forms.TextBox();
             this.value8 = new System.Windows.Forms.NumericUpDown();
-            this.value7 = new System.Windows.Forms.NumericUpDown();
             this.value5 = new System.Windows.Forms.NumericUpDown();
+            this.value9 = new System.Windows.Forms.NumericUpDown();
+            this.value7 = new System.Windows.Forms.NumericUpDown();
+            this.value6 = new System.Windows.Forms.NumericUpDown();
             this.value4 = new System.Windows.Forms.NumericUpDown();
             this.value3 = new System.Windows.Forms.NumericUpDown();
             this.value2 = new System.Windows.Forms.NumericUpDown();
             this.value1 = new System.Windows.Forms.NumericUpDown();
+            this.value0 = new System.Windows.Forms.NumericUpDown();
             this.电流组 = new System.Windows.Forms.GroupBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -262,46 +262,46 @@ namespace serialport
             this.output = new System.Windows.Forms.Button();
             this.path2 = new System.Windows.Forms.TextBox();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.value40)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.value35)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.value36)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.value31)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.value32)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.value33)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.value39)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.value34)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.value38)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.value37)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.value25)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.value35)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.value30)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.value28)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.value31)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.value32)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.value38)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.value33)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.value37)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.value36)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.value24)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.value29)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.value27)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.value28)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.value26)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.value24)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.value25)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.value23)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.value22)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.value21)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.value19)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.value16)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.value20)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.value18)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.value17)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.value15)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.value19)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.value17)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.value16)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.value14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.value13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.value12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.value11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.value9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.value6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.value10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.value8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.value7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.value5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.value9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.value7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.value6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.value4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.value3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.value2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.value1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.value0)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
@@ -314,13 +314,13 @@ namespace serialport
             this.panel2.Controls.Add(this.comboBox42);
             this.panel2.Controls.Add(this.comboBox44);
             this.panel2.Controls.Add(this.label103);
-            this.panel2.Controls.Add(this.value40);
+            this.panel2.Controls.Add(this.value39);
             this.panel2.Controls.Add(this.comboBox48);
             this.panel2.Controls.Add(this.label100);
             this.panel2.Controls.Add(this.label97);
             this.panel2.Controls.Add(this.label59);
             this.panel2.Controls.Add(this.comboBox49);
-            this.panel2.Controls.Add(this.value35);
+            this.panel2.Controls.Add(this.value34);
             this.panel2.Controls.Add(this.comboBox41);
             this.panel2.Controls.Add(this.label8);
             this.panel2.Controls.Add(this.label7);
@@ -328,20 +328,20 @@ namespace serialport
             this.panel2.Controls.Add(this.label96);
             this.panel2.Controls.Add(this.label58);
             this.panel2.Controls.Add(this.comboBox40);
-            this.panel2.Controls.Add(this.value36);
+            this.panel2.Controls.Add(this.value35);
             this.panel2.Controls.Add(this.I_Full);
             this.panel2.Controls.Add(this.label95);
+            this.panel2.Controls.Add(this.value30);
             this.panel2.Controls.Add(this.value31);
-            this.panel2.Controls.Add(this.value32);
             this.panel2.Controls.Add(this.comboBox51);
             this.panel2.Controls.Add(this.label38);
             this.panel2.Controls.Add(this.label36);
             this.panel2.Controls.Add(this.label37);
             this.panel2.Controls.Add(this.comboBox54);
             this.panel2.Controls.Add(this.label92);
-            this.panel2.Controls.Add(this.value33);
+            this.panel2.Controls.Add(this.value32);
             this.panel2.Controls.Add(this.comboBox37);
-            this.panel2.Controls.Add(this.value39);
+            this.panel2.Controls.Add(this.value38);
             this.panel2.Controls.Add(this.label93);
             this.panel2.Controls.Add(this.label35);
             this.panel2.Controls.Add(this.comboBox38);
@@ -349,7 +349,7 @@ namespace serialport
             this.panel2.Controls.Add(this.label94);
             this.panel2.Controls.Add(this.comboBox39);
             this.panel2.Controls.Add(this.label115);
-            this.panel2.Controls.Add(this.value34);
+            this.panel2.Controls.Add(this.value33);
             this.panel2.Controls.Add(this.label107);
             this.panel2.Controls.Add(this.Rref);
             this.panel2.Controls.Add(this.label104);
@@ -362,7 +362,7 @@ namespace serialport
             this.panel2.Controls.Add(this.comboBox43);
             this.panel2.Controls.Add(this.label108);
             this.panel2.Controls.Add(this.label101);
-            this.panel2.Controls.Add(this.value38);
+            this.panel2.Controls.Add(this.value37);
             this.panel2.Controls.Add(this.comboBox57);
             this.panel2.Controls.Add(this.label98);
             this.panel2.Controls.Add(this.comboBox53);
@@ -372,7 +372,7 @@ namespace serialport
             this.panel2.Controls.Add(this.label109);
             this.panel2.Controls.Add(this.label88);
             this.panel2.Controls.Add(this.comboBox56);
-            this.panel2.Controls.Add(this.value37);
+            this.panel2.Controls.Add(this.value36);
             this.panel2.Controls.Add(this.label105);
             this.panel2.Controls.Add(this.label111);
             this.panel2.Controls.Add(this.comboBox55);
@@ -382,7 +382,7 @@ namespace serialport
             this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.label6);
             this.panel2.Controls.Add(this.comboBox25);
-            this.panel2.Controls.Add(this.value25);
+            this.panel2.Controls.Add(this.value24);
             this.panel2.Controls.Add(this.comboBox26);
             this.panel2.Controls.Add(this.comboBox27);
             this.panel2.Controls.Add(this.comboBox28);
@@ -398,12 +398,12 @@ namespace serialport
             this.panel2.Controls.Add(this.comboBox13);
             this.panel2.Controls.Add(this.comboBox14);
             this.panel2.Controls.Add(this.comboBox15);
-            this.panel2.Controls.Add(this.value30);
-            this.panel2.Controls.Add(this.value28);
             this.panel2.Controls.Add(this.value29);
-            this.panel2.Controls.Add(this.comboBox16);
             this.panel2.Controls.Add(this.value27);
+            this.panel2.Controls.Add(this.value28);
+            this.panel2.Controls.Add(this.comboBox16);
             this.panel2.Controls.Add(this.value26);
+            this.panel2.Controls.Add(this.value25);
             this.panel2.Controls.Add(this.comboBox17);
             this.panel2.Controls.Add(this.label39);
             this.panel2.Controls.Add(this.comboBox18);
@@ -474,54 +474,54 @@ namespace serialport
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.value24p);
             this.panel2.Controls.Add(this.value23p);
-            this.panel2.Controls.Add(this.value21p);
             this.panel2.Controls.Add(this.value22p);
-            this.panel2.Controls.Add(this.value24);
+            this.panel2.Controls.Add(this.value20p);
+            this.panel2.Controls.Add(this.value21p);
             this.panel2.Controls.Add(this.value23);
             this.panel2.Controls.Add(this.value22);
             this.panel2.Controls.Add(this.value21);
-            this.panel2.Controls.Add(this.value20p);
+            this.panel2.Controls.Add(this.value20);
             this.panel2.Controls.Add(this.value19p);
-            this.panel2.Controls.Add(this.value17p);
-            this.panel2.Controls.Add(this.value16p);
             this.panel2.Controls.Add(this.value18p);
+            this.panel2.Controls.Add(this.value16p);
             this.panel2.Controls.Add(this.value15p);
+            this.panel2.Controls.Add(this.value17p);
             this.panel2.Controls.Add(this.value14p);
             this.panel2.Controls.Add(this.value13p);
+            this.panel2.Controls.Add(this.value12p);
+            this.panel2.Controls.Add(this.value10d);
             this.panel2.Controls.Add(this.value11d);
-            this.panel2.Controls.Add(this.value12d);
-            this.panel2.Controls.Add(this.value19);
-            this.panel2.Controls.Add(this.value16);
-            this.panel2.Controls.Add(this.value20);
             this.panel2.Controls.Add(this.value18);
-            this.panel2.Controls.Add(this.value17);
             this.panel2.Controls.Add(this.value15);
+            this.panel2.Controls.Add(this.value19);
+            this.panel2.Controls.Add(this.value17);
+            this.panel2.Controls.Add(this.value16);
             this.panel2.Controls.Add(this.value14);
             this.panel2.Controls.Add(this.value13);
             this.panel2.Controls.Add(this.value12);
             this.panel2.Controls.Add(this.value11);
-            this.panel2.Controls.Add(this.value10d);
+            this.panel2.Controls.Add(this.value10);
             this.panel2.Controls.Add(this.value9d);
-            this.panel2.Controls.Add(this.value7d);
-            this.panel2.Controls.Add(this.value6d);
             this.panel2.Controls.Add(this.value8d);
+            this.panel2.Controls.Add(this.value6d);
             this.panel2.Controls.Add(this.value5d);
+            this.panel2.Controls.Add(this.value7d);
             this.panel2.Controls.Add(this.value4d);
             this.panel2.Controls.Add(this.value3d);
-            this.panel2.Controls.Add(this.value1d);
             this.panel2.Controls.Add(this.value2d);
-            this.panel2.Controls.Add(this.value9);
-            this.panel2.Controls.Add(this.value6);
-            this.panel2.Controls.Add(this.value10);
+            this.panel2.Controls.Add(this.value0d);
+            this.panel2.Controls.Add(this.value1d);
             this.panel2.Controls.Add(this.value8);
-            this.panel2.Controls.Add(this.value7);
             this.panel2.Controls.Add(this.value5);
+            this.panel2.Controls.Add(this.value9);
+            this.panel2.Controls.Add(this.value7);
+            this.panel2.Controls.Add(this.value6);
             this.panel2.Controls.Add(this.value4);
             this.panel2.Controls.Add(this.value3);
             this.panel2.Controls.Add(this.value2);
             this.panel2.Controls.Add(this.value1);
+            this.panel2.Controls.Add(this.value0);
             this.panel2.Controls.Add(this.电流组);
             this.panel2.Controls.Add(this.groupBox1);
             this.panel2.Controls.Add(this.groupBox2);
@@ -653,19 +653,19 @@ namespace serialport
             this.label103.Text = "EEP_WDTIMER";
             this.label103.MouseHover += new System.EventHandler(this.Multi_MouseHover);
             // 
-            // value40
+            // value39
             // 
-            this.value40.Enabled = false;
-            this.value40.Font = new System.Drawing.Font("宋体", 12F);
-            this.value40.Location = new System.Drawing.Point(1098, 625);
-            this.value40.Maximum = new decimal(new int[] {
+            this.value39.Enabled = false;
+            this.value39.Font = new System.Drawing.Font("宋体", 12F);
+            this.value39.Location = new System.Drawing.Point(1098, 625);
+            this.value39.Maximum = new decimal(new int[] {
             255,
             0,
             0,
             0});
-            this.value40.Name = "value40";
-            this.value40.Size = new System.Drawing.Size(50, 26);
-            this.value40.TabIndex = 39;
+            this.value39.Name = "value39";
+            this.value39.Size = new System.Drawing.Size(50, 26);
+            this.value39.TabIndex = 39;
             // 
             // comboBox48
             // 
@@ -752,19 +752,19 @@ namespace serialport
             this.comboBox49.TabIndex = 87;
             this.comboBox49.TextChanged += new System.EventHandler(this.EEPM10_CB_Change);
             // 
-            // value35
+            // value34
             // 
-            this.value35.Font = new System.Drawing.Font("宋体", 12F);
-            this.value35.Location = new System.Drawing.Point(717, 460);
-            this.value35.Maximum = new decimal(new int[] {
+            this.value34.Font = new System.Drawing.Font("宋体", 12F);
+            this.value34.Location = new System.Drawing.Point(717, 460);
+            this.value34.Maximum = new decimal(new int[] {
             255,
             0,
             0,
             0});
-            this.value35.Name = "value35";
-            this.value35.Size = new System.Drawing.Size(50, 26);
-            this.value35.TabIndex = 34;
-            this.value35.ValueChanged += new System.EventHandler(this.EEPM10_Change);
+            this.value34.Name = "value34";
+            this.value34.Size = new System.Drawing.Size(50, 26);
+            this.value34.TabIndex = 34;
+            this.value34.ValueChanged += new System.EventHandler(this.EEPM10_Change);
             // 
             // comboBox41
             // 
@@ -857,19 +857,19 @@ namespace serialport
             this.comboBox40.TabIndex = 81;
             this.comboBox40.TextChanged += new System.EventHandler(this.EEPM7_CB_Change);
             // 
-            // value36
+            // value35
             // 
-            this.value36.Font = new System.Drawing.Font("宋体", 12F);
-            this.value36.Location = new System.Drawing.Point(904, 460);
-            this.value36.Maximum = new decimal(new int[] {
+            this.value35.Font = new System.Drawing.Font("宋体", 12F);
+            this.value35.Location = new System.Drawing.Point(904, 460);
+            this.value35.Maximum = new decimal(new int[] {
             255,
             0,
             0,
             0});
-            this.value36.Name = "value36";
-            this.value36.Size = new System.Drawing.Size(50, 26);
-            this.value36.TabIndex = 35;
-            this.value36.ValueChanged += new System.EventHandler(this.EEPM11_Change);
+            this.value35.Name = "value35";
+            this.value35.Size = new System.Drawing.Size(50, 26);
+            this.value35.TabIndex = 35;
+            this.value35.ValueChanged += new System.EventHandler(this.EEPM11_Change);
             // 
             // I_Full
             // 
@@ -892,10 +892,24 @@ namespace serialport
             this.label95.Text = "EEP_PWMFREQ(Hz)";
             this.label95.MouseHover += new System.EventHandler(this.Multi_MouseHover);
             // 
+            // value30
+            // 
+            this.value30.Font = new System.Drawing.Font("宋体", 12F);
+            this.value30.Location = new System.Drawing.Point(72, 460);
+            this.value30.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.value30.Name = "value30";
+            this.value30.Size = new System.Drawing.Size(50, 26);
+            this.value30.TabIndex = 30;
+            this.value30.ValueChanged += new System.EventHandler(this.EEPM6_Change);
+            // 
             // value31
             // 
             this.value31.Font = new System.Drawing.Font("宋体", 12F);
-            this.value31.Location = new System.Drawing.Point(72, 460);
+            this.value31.Location = new System.Drawing.Point(226, 460);
             this.value31.Maximum = new decimal(new int[] {
             255,
             0,
@@ -903,22 +917,8 @@ namespace serialport
             0});
             this.value31.Name = "value31";
             this.value31.Size = new System.Drawing.Size(50, 26);
-            this.value31.TabIndex = 30;
-            this.value31.ValueChanged += new System.EventHandler(this.EEPM6_Change);
-            // 
-            // value32
-            // 
-            this.value32.Font = new System.Drawing.Font("宋体", 12F);
-            this.value32.Location = new System.Drawing.Point(226, 460);
-            this.value32.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.value32.Name = "value32";
-            this.value32.Size = new System.Drawing.Size(50, 26);
-            this.value32.TabIndex = 31;
-            this.value32.ValueChanged += new System.EventHandler(this.EEPM7_Change);
+            this.value31.TabIndex = 31;
+            this.value31.ValueChanged += new System.EventHandler(this.EEPM7_Change);
             // 
             // comboBox51
             // 
@@ -988,19 +988,19 @@ namespace serialport
             this.label92.Text = "EEP_LDO(V)";
             this.label92.MouseHover += new System.EventHandler(this.Multi_MouseHover);
             // 
-            // value33
+            // value32
             // 
-            this.value33.Font = new System.Drawing.Font("宋体", 12F);
-            this.value33.Location = new System.Drawing.Point(399, 460);
-            this.value33.Maximum = new decimal(new int[] {
+            this.value32.Font = new System.Drawing.Font("宋体", 12F);
+            this.value32.Location = new System.Drawing.Point(399, 460);
+            this.value32.Maximum = new decimal(new int[] {
             127,
             0,
             0,
             0});
-            this.value33.Name = "value33";
-            this.value33.Size = new System.Drawing.Size(50, 26);
-            this.value33.TabIndex = 32;
-            this.value33.ValueChanged += new System.EventHandler(this.EEPM8_Change);
+            this.value32.Name = "value32";
+            this.value32.Size = new System.Drawing.Size(50, 26);
+            this.value32.TabIndex = 32;
+            this.value32.ValueChanged += new System.EventHandler(this.EEPM8_Change);
             // 
             // comboBox37
             // 
@@ -1014,20 +1014,20 @@ namespace serialport
             this.comboBox37.TabIndex = 78;
             this.comboBox37.TextChanged += new System.EventHandler(this.EEPM6_CB_Change);
             // 
-            // value39
+            // value38
             // 
-            this.value39.Enabled = false;
-            this.value39.Font = new System.Drawing.Font("宋体", 12F);
-            this.value39.Location = new System.Drawing.Point(1098, 577);
-            this.value39.Maximum = new decimal(new int[] {
+            this.value38.Enabled = false;
+            this.value38.Font = new System.Drawing.Font("宋体", 12F);
+            this.value38.Location = new System.Drawing.Point(1098, 577);
+            this.value38.Maximum = new decimal(new int[] {
             255,
             0,
             0,
             0});
-            this.value39.Name = "value39";
-            this.value39.Size = new System.Drawing.Size(50, 26);
-            this.value39.TabIndex = 38;
-            this.value39.ValueChanged += new System.EventHandler(this.EEPM12_14_Change);
+            this.value38.Name = "value38";
+            this.value38.Size = new System.Drawing.Size(50, 26);
+            this.value38.TabIndex = 38;
+            this.value38.ValueChanged += new System.EventHandler(this.EEPM12_14_Change);
             // 
             // label93
             // 
@@ -1120,19 +1120,19 @@ namespace serialport
             this.label115.TabIndex = 385;
             this.label115.Text = "I FULL(mA)";
             // 
-            // value34
+            // value33
             // 
-            this.value34.Font = new System.Drawing.Font("宋体", 12F);
-            this.value34.Location = new System.Drawing.Point(562, 460);
-            this.value34.Maximum = new decimal(new int[] {
+            this.value33.Font = new System.Drawing.Font("宋体", 12F);
+            this.value33.Location = new System.Drawing.Point(562, 460);
+            this.value33.Maximum = new decimal(new int[] {
             255,
             0,
             0,
             0});
-            this.value34.Name = "value34";
-            this.value34.Size = new System.Drawing.Size(50, 26);
-            this.value34.TabIndex = 33;
-            this.value34.ValueChanged += new System.EventHandler(this.EEPM9_Change);
+            this.value33.Name = "value33";
+            this.value33.Size = new System.Drawing.Size(50, 26);
+            this.value33.TabIndex = 33;
+            this.value33.ValueChanged += new System.EventHandler(this.EEPM9_Change);
             // 
             // label107
             // 
@@ -1279,20 +1279,20 @@ namespace serialport
             this.label101.Text = "EEP_ODIOUT";
             this.label101.MouseHover += new System.EventHandler(this.Multi_MouseHover);
             // 
-            // value38
+            // value37
             // 
-            this.value38.Enabled = false;
-            this.value38.Font = new System.Drawing.Font("宋体", 12F);
-            this.value38.Location = new System.Drawing.Point(1098, 529);
-            this.value38.Maximum = new decimal(new int[] {
+            this.value37.Enabled = false;
+            this.value37.Font = new System.Drawing.Font("宋体", 12F);
+            this.value37.Location = new System.Drawing.Point(1098, 529);
+            this.value37.Maximum = new decimal(new int[] {
             255,
             0,
             0,
             0});
-            this.value38.Name = "value38";
-            this.value38.Size = new System.Drawing.Size(50, 26);
-            this.value38.TabIndex = 37;
-            this.value38.ValueChanged += new System.EventHandler(this.EEPM12_14_Change);
+            this.value37.Name = "value37";
+            this.value37.Size = new System.Drawing.Size(50, 26);
+            this.value37.TabIndex = 37;
+            this.value37.ValueChanged += new System.EventHandler(this.EEPM12_14_Change);
             // 
             // comboBox57
             // 
@@ -1393,20 +1393,20 @@ namespace serialport
             this.comboBox56.TabIndex = 95;
             this.comboBox56.TextChanged += new System.EventHandler(this.EEPM11_CB_Change);
             // 
-            // value37
+            // value36
             // 
-            this.value37.Enabled = false;
-            this.value37.Font = new System.Drawing.Font("宋体", 12F);
-            this.value37.Location = new System.Drawing.Point(1099, 481);
-            this.value37.Maximum = new decimal(new int[] {
+            this.value36.Enabled = false;
+            this.value36.Font = new System.Drawing.Font("宋体", 12F);
+            this.value36.Location = new System.Drawing.Point(1099, 481);
+            this.value36.Maximum = new decimal(new int[] {
             255,
             0,
             0,
             0});
-            this.value37.Name = "value37";
-            this.value37.Size = new System.Drawing.Size(50, 26);
-            this.value37.TabIndex = 36;
-            this.value37.ValueChanged += new System.EventHandler(this.EEPM12_14_Change);
+            this.value36.Name = "value36";
+            this.value36.Size = new System.Drawing.Size(50, 26);
+            this.value36.TabIndex = 36;
+            this.value36.ValueChanged += new System.EventHandler(this.EEPM12_14_Change);
             // 
             // label105
             // 
@@ -1504,19 +1504,19 @@ namespace serialport
             this.comboBox25.TabIndex = 77;
             this.comboBox25.TextChanged += new System.EventHandler(this.Diagnostic_CB_Change);
             // 
-            // value25
+            // value24
             // 
-            this.value25.Font = new System.Drawing.Font("宋体", 12F);
-            this.value25.Location = new System.Drawing.Point(139, 284);
-            this.value25.Maximum = new decimal(new int[] {
+            this.value24.Font = new System.Drawing.Font("宋体", 12F);
+            this.value24.Location = new System.Drawing.Point(139, 284);
+            this.value24.Maximum = new decimal(new int[] {
             255,
             0,
             0,
             0});
-            this.value25.Name = "value25";
-            this.value25.Size = new System.Drawing.Size(50, 26);
-            this.value25.TabIndex = 24;
-            this.value25.ValueChanged += new System.EventHandler(this.FS0_Change);
+            this.value24.Name = "value24";
+            this.value24.Size = new System.Drawing.Size(50, 26);
+            this.value24.TabIndex = 24;
+            this.value24.ValueChanged += new System.EventHandler(this.FS0_Change);
             // 
             // comboBox26
             // 
@@ -1697,47 +1697,47 @@ namespace serialport
             this.comboBox15.TabIndex = 63;
             this.comboBox15.TextChanged += new System.EventHandler(this.FS1_CB_Change);
             // 
-            // value30
-            // 
-            this.value30.Font = new System.Drawing.Font("宋体", 12F);
-            this.value30.Location = new System.Drawing.Point(997, 284);
-            this.value30.Maximum = new decimal(new int[] {
-            15,
-            0,
-            0,
-            0});
-            this.value30.Name = "value30";
-            this.value30.Size = new System.Drawing.Size(50, 26);
-            this.value30.TabIndex = 29;
-            this.value30.ValueChanged += new System.EventHandler(this.Diagnostic_Change);
-            // 
-            // value28
-            // 
-            this.value28.Font = new System.Drawing.Font("宋体", 12F);
-            this.value28.Location = new System.Drawing.Point(629, 284);
-            this.value28.Maximum = new decimal(new int[] {
-            15,
-            0,
-            0,
-            0});
-            this.value28.Name = "value28";
-            this.value28.Size = new System.Drawing.Size(50, 26);
-            this.value28.TabIndex = 27;
-            this.value28.ValueChanged += new System.EventHandler(this.FS1_Change);
-            // 
             // value29
             // 
             this.value29.Font = new System.Drawing.Font("宋体", 12F);
-            this.value29.Location = new System.Drawing.Point(869, 284);
+            this.value29.Location = new System.Drawing.Point(997, 284);
             this.value29.Maximum = new decimal(new int[] {
-            255,
+            15,
             0,
             0,
             0});
             this.value29.Name = "value29";
             this.value29.Size = new System.Drawing.Size(50, 26);
-            this.value29.TabIndex = 28;
+            this.value29.TabIndex = 29;
             this.value29.ValueChanged += new System.EventHandler(this.Diagnostic_Change);
+            // 
+            // value27
+            // 
+            this.value27.Font = new System.Drawing.Font("宋体", 12F);
+            this.value27.Location = new System.Drawing.Point(629, 284);
+            this.value27.Maximum = new decimal(new int[] {
+            15,
+            0,
+            0,
+            0});
+            this.value27.Name = "value27";
+            this.value27.Size = new System.Drawing.Size(50, 26);
+            this.value27.TabIndex = 27;
+            this.value27.ValueChanged += new System.EventHandler(this.FS1_Change);
+            // 
+            // value28
+            // 
+            this.value28.Font = new System.Drawing.Font("宋体", 12F);
+            this.value28.Location = new System.Drawing.Point(869, 284);
+            this.value28.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.value28.Name = "value28";
+            this.value28.Size = new System.Drawing.Size(50, 26);
+            this.value28.TabIndex = 28;
+            this.value28.ValueChanged += new System.EventHandler(this.Diagnostic_Change);
             // 
             // comboBox16
             // 
@@ -1751,33 +1751,33 @@ namespace serialport
             this.comboBox16.TabIndex = 62;
             this.comboBox16.TextChanged += new System.EventHandler(this.FS1_CB_Change);
             // 
-            // value27
-            // 
-            this.value27.Font = new System.Drawing.Font("宋体", 12F);
-            this.value27.Location = new System.Drawing.Point(501, 284);
-            this.value27.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.value27.Name = "value27";
-            this.value27.Size = new System.Drawing.Size(50, 26);
-            this.value27.TabIndex = 26;
-            this.value27.ValueChanged += new System.EventHandler(this.FS1_Change);
-            // 
             // value26
             // 
             this.value26.Font = new System.Drawing.Font("宋体", 12F);
-            this.value26.Location = new System.Drawing.Point(286, 284);
+            this.value26.Location = new System.Drawing.Point(501, 284);
             this.value26.Maximum = new decimal(new int[] {
-            15,
+            255,
             0,
             0,
             0});
             this.value26.Name = "value26";
             this.value26.Size = new System.Drawing.Size(50, 26);
-            this.value26.TabIndex = 25;
-            this.value26.ValueChanged += new System.EventHandler(this.FS0_Change);
+            this.value26.TabIndex = 26;
+            this.value26.ValueChanged += new System.EventHandler(this.FS1_Change);
+            // 
+            // value25
+            // 
+            this.value25.Font = new System.Drawing.Font("宋体", 12F);
+            this.value25.Location = new System.Drawing.Point(286, 284);
+            this.value25.Maximum = new decimal(new int[] {
+            15,
+            0,
+            0,
+            0});
+            this.value25.Name = "value25";
+            this.value25.Size = new System.Drawing.Size(50, 26);
+            this.value25.TabIndex = 25;
+            this.value25.ValueChanged += new System.EventHandler(this.FS0_Change);
             // 
             // comboBox17
             // 
@@ -2551,60 +2551,46 @@ namespace serialport
             this.label1.TabIndex = 120;
             this.label1.Text = "电流( mA )";
             // 
-            // value24p
-            // 
-            this.value24p.Location = new System.Drawing.Point(957, 226);
-            this.value24p.Name = "value24p";
-            this.value24p.ReadOnly = true;
-            this.value24p.Size = new System.Drawing.Size(87, 21);
-            this.value24p.TabIndex = 103;
-            this.value24p.TabStop = false;
-            // 
             // value23p
             // 
-            this.value23p.Location = new System.Drawing.Point(957, 192);
+            this.value23p.Location = new System.Drawing.Point(957, 226);
             this.value23p.Name = "value23p";
             this.value23p.ReadOnly = true;
             this.value23p.Size = new System.Drawing.Size(87, 21);
-            this.value23p.TabIndex = 102;
+            this.value23p.TabIndex = 103;
             this.value23p.TabStop = false;
-            // 
-            // value21p
-            // 
-            this.value21p.Location = new System.Drawing.Point(957, 124);
-            this.value21p.Name = "value21p";
-            this.value21p.ReadOnly = true;
-            this.value21p.Size = new System.Drawing.Size(87, 21);
-            this.value21p.TabIndex = 100;
-            this.value21p.TabStop = false;
             // 
             // value22p
             // 
-            this.value22p.Location = new System.Drawing.Point(957, 158);
+            this.value22p.Location = new System.Drawing.Point(957, 192);
             this.value22p.Name = "value22p";
             this.value22p.ReadOnly = true;
             this.value22p.Size = new System.Drawing.Size(87, 21);
-            this.value22p.TabIndex = 101;
+            this.value22p.TabIndex = 102;
             this.value22p.TabStop = false;
             // 
-            // value24
+            // value20p
             // 
-            this.value24.Font = new System.Drawing.Font("宋体", 12F);
-            this.value24.Location = new System.Drawing.Point(898, 223);
-            this.value24.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.value24.Name = "value24";
-            this.value24.Size = new System.Drawing.Size(50, 26);
-            this.value24.TabIndex = 23;
-            this.value24.ValueChanged += new System.EventHandler(this.PWMOUT_Change);
+            this.value20p.Location = new System.Drawing.Point(957, 124);
+            this.value20p.Name = "value20p";
+            this.value20p.ReadOnly = true;
+            this.value20p.Size = new System.Drawing.Size(87, 21);
+            this.value20p.TabIndex = 100;
+            this.value20p.TabStop = false;
+            // 
+            // value21p
+            // 
+            this.value21p.Location = new System.Drawing.Point(957, 158);
+            this.value21p.Name = "value21p";
+            this.value21p.ReadOnly = true;
+            this.value21p.Size = new System.Drawing.Size(87, 21);
+            this.value21p.TabIndex = 101;
+            this.value21p.TabStop = false;
             // 
             // value23
             // 
             this.value23.Font = new System.Drawing.Font("宋体", 12F);
-            this.value23.Location = new System.Drawing.Point(898, 189);
+            this.value23.Location = new System.Drawing.Point(898, 223);
             this.value23.Maximum = new decimal(new int[] {
             255,
             0,
@@ -2612,13 +2598,13 @@ namespace serialport
             0});
             this.value23.Name = "value23";
             this.value23.Size = new System.Drawing.Size(50, 26);
-            this.value23.TabIndex = 22;
+            this.value23.TabIndex = 23;
             this.value23.ValueChanged += new System.EventHandler(this.PWMOUT_Change);
             // 
             // value22
             // 
             this.value22.Font = new System.Drawing.Font("宋体", 12F);
-            this.value22.Location = new System.Drawing.Point(898, 155);
+            this.value22.Location = new System.Drawing.Point(898, 189);
             this.value22.Maximum = new decimal(new int[] {
             255,
             0,
@@ -2626,13 +2612,13 @@ namespace serialport
             0});
             this.value22.Name = "value22";
             this.value22.Size = new System.Drawing.Size(50, 26);
-            this.value22.TabIndex = 21;
+            this.value22.TabIndex = 22;
             this.value22.ValueChanged += new System.EventHandler(this.PWMOUT_Change);
             // 
             // value21
             // 
             this.value21.Font = new System.Drawing.Font("宋体", 12F);
-            this.value21.Location = new System.Drawing.Point(898, 121);
+            this.value21.Location = new System.Drawing.Point(898, 155);
             this.value21.Maximum = new decimal(new int[] {
             255,
             0,
@@ -2640,131 +2626,13 @@ namespace serialport
             0});
             this.value21.Name = "value21";
             this.value21.Size = new System.Drawing.Size(50, 26);
-            this.value21.TabIndex = 20;
+            this.value21.TabIndex = 21;
             this.value21.ValueChanged += new System.EventHandler(this.PWMOUT_Change);
-            // 
-            // value20p
-            // 
-            this.value20p.Location = new System.Drawing.Point(957, 90);
-            this.value20p.Name = "value20p";
-            this.value20p.ReadOnly = true;
-            this.value20p.Size = new System.Drawing.Size(87, 21);
-            this.value20p.TabIndex = 99;
-            this.value20p.TabStop = false;
-            // 
-            // value19p
-            // 
-            this.value19p.Location = new System.Drawing.Point(957, 56);
-            this.value19p.Name = "value19p";
-            this.value19p.ReadOnly = true;
-            this.value19p.Size = new System.Drawing.Size(87, 21);
-            this.value19p.TabIndex = 98;
-            this.value19p.TabStop = false;
-            // 
-            // value17p
-            // 
-            this.value17p.Location = new System.Drawing.Point(688, 192);
-            this.value17p.Name = "value17p";
-            this.value17p.ReadOnly = true;
-            this.value17p.Size = new System.Drawing.Size(87, 21);
-            this.value17p.TabIndex = 96;
-            this.value17p.TabStop = false;
-            // 
-            // value16p
-            // 
-            this.value16p.Location = new System.Drawing.Point(688, 158);
-            this.value16p.Name = "value16p";
-            this.value16p.ReadOnly = true;
-            this.value16p.Size = new System.Drawing.Size(87, 21);
-            this.value16p.TabIndex = 95;
-            this.value16p.TabStop = false;
-            // 
-            // value18p
-            // 
-            this.value18p.Location = new System.Drawing.Point(688, 226);
-            this.value18p.Name = "value18p";
-            this.value18p.ReadOnly = true;
-            this.value18p.Size = new System.Drawing.Size(87, 21);
-            this.value18p.TabIndex = 97;
-            this.value18p.TabStop = false;
-            // 
-            // value15p
-            // 
-            this.value15p.Location = new System.Drawing.Point(688, 124);
-            this.value15p.Name = "value15p";
-            this.value15p.ReadOnly = true;
-            this.value15p.Size = new System.Drawing.Size(87, 21);
-            this.value15p.TabIndex = 94;
-            this.value15p.TabStop = false;
-            // 
-            // value14p
-            // 
-            this.value14p.Location = new System.Drawing.Point(688, 90);
-            this.value14p.Name = "value14p";
-            this.value14p.ReadOnly = true;
-            this.value14p.Size = new System.Drawing.Size(87, 21);
-            this.value14p.TabIndex = 93;
-            this.value14p.TabStop = false;
-            // 
-            // value13p
-            // 
-            this.value13p.Location = new System.Drawing.Point(688, 56);
-            this.value13p.Name = "value13p";
-            this.value13p.ReadOnly = true;
-            this.value13p.Size = new System.Drawing.Size(87, 21);
-            this.value13p.TabIndex = 92;
-            this.value13p.TabStop = false;
-            // 
-            // value11d
-            // 
-            this.value11d.Location = new System.Drawing.Point(398, 192);
-            this.value11d.Name = "value11d";
-            this.value11d.ReadOnly = true;
-            this.value11d.Size = new System.Drawing.Size(87, 21);
-            this.value11d.TabIndex = 90;
-            this.value11d.TabStop = false;
-            // 
-            // value12d
-            // 
-            this.value12d.Location = new System.Drawing.Point(398, 226);
-            this.value12d.Name = "value12d";
-            this.value12d.ReadOnly = true;
-            this.value12d.Size = new System.Drawing.Size(87, 21);
-            this.value12d.TabIndex = 91;
-            this.value12d.TabStop = false;
-            // 
-            // value19
-            // 
-            this.value19.Font = new System.Drawing.Font("宋体", 12F);
-            this.value19.Location = new System.Drawing.Point(898, 53);
-            this.value19.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.value19.Name = "value19";
-            this.value19.Size = new System.Drawing.Size(50, 26);
-            this.value19.TabIndex = 18;
-            this.value19.ValueChanged += new System.EventHandler(this.PWMOUT_Change);
-            // 
-            // value16
-            // 
-            this.value16.Font = new System.Drawing.Font("宋体", 12F);
-            this.value16.Location = new System.Drawing.Point(629, 155);
-            this.value16.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.value16.Name = "value16";
-            this.value16.Size = new System.Drawing.Size(50, 26);
-            this.value16.TabIndex = 15;
-            this.value16.ValueChanged += new System.EventHandler(this.PWMOUT_Change);
             // 
             // value20
             // 
             this.value20.Font = new System.Drawing.Font("宋体", 12F);
-            this.value20.Location = new System.Drawing.Point(898, 87);
+            this.value20.Location = new System.Drawing.Point(898, 121);
             this.value20.Maximum = new decimal(new int[] {
             255,
             0,
@@ -2772,13 +2640,103 @@ namespace serialport
             0});
             this.value20.Name = "value20";
             this.value20.Size = new System.Drawing.Size(50, 26);
-            this.value20.TabIndex = 19;
+            this.value20.TabIndex = 20;
             this.value20.ValueChanged += new System.EventHandler(this.PWMOUT_Change);
+            // 
+            // value19p
+            // 
+            this.value19p.Location = new System.Drawing.Point(957, 90);
+            this.value19p.Name = "value19p";
+            this.value19p.ReadOnly = true;
+            this.value19p.Size = new System.Drawing.Size(87, 21);
+            this.value19p.TabIndex = 99;
+            this.value19p.TabStop = false;
+            // 
+            // value18p
+            // 
+            this.value18p.Location = new System.Drawing.Point(957, 56);
+            this.value18p.Name = "value18p";
+            this.value18p.ReadOnly = true;
+            this.value18p.Size = new System.Drawing.Size(87, 21);
+            this.value18p.TabIndex = 98;
+            this.value18p.TabStop = false;
+            // 
+            // value16p
+            // 
+            this.value16p.Location = new System.Drawing.Point(688, 192);
+            this.value16p.Name = "value16p";
+            this.value16p.ReadOnly = true;
+            this.value16p.Size = new System.Drawing.Size(87, 21);
+            this.value16p.TabIndex = 96;
+            this.value16p.TabStop = false;
+            // 
+            // value15p
+            // 
+            this.value15p.Location = new System.Drawing.Point(688, 158);
+            this.value15p.Name = "value15p";
+            this.value15p.ReadOnly = true;
+            this.value15p.Size = new System.Drawing.Size(87, 21);
+            this.value15p.TabIndex = 95;
+            this.value15p.TabStop = false;
+            // 
+            // value17p
+            // 
+            this.value17p.Location = new System.Drawing.Point(688, 226);
+            this.value17p.Name = "value17p";
+            this.value17p.ReadOnly = true;
+            this.value17p.Size = new System.Drawing.Size(87, 21);
+            this.value17p.TabIndex = 97;
+            this.value17p.TabStop = false;
+            // 
+            // value14p
+            // 
+            this.value14p.Location = new System.Drawing.Point(688, 124);
+            this.value14p.Name = "value14p";
+            this.value14p.ReadOnly = true;
+            this.value14p.Size = new System.Drawing.Size(87, 21);
+            this.value14p.TabIndex = 94;
+            this.value14p.TabStop = false;
+            // 
+            // value13p
+            // 
+            this.value13p.Location = new System.Drawing.Point(688, 90);
+            this.value13p.Name = "value13p";
+            this.value13p.ReadOnly = true;
+            this.value13p.Size = new System.Drawing.Size(87, 21);
+            this.value13p.TabIndex = 93;
+            this.value13p.TabStop = false;
+            // 
+            // value12p
+            // 
+            this.value12p.Location = new System.Drawing.Point(688, 56);
+            this.value12p.Name = "value12p";
+            this.value12p.ReadOnly = true;
+            this.value12p.Size = new System.Drawing.Size(87, 21);
+            this.value12p.TabIndex = 92;
+            this.value12p.TabStop = false;
+            // 
+            // value10d
+            // 
+            this.value10d.Location = new System.Drawing.Point(398, 192);
+            this.value10d.Name = "value10d";
+            this.value10d.ReadOnly = true;
+            this.value10d.Size = new System.Drawing.Size(87, 21);
+            this.value10d.TabIndex = 90;
+            this.value10d.TabStop = false;
+            // 
+            // value11d
+            // 
+            this.value11d.Location = new System.Drawing.Point(398, 226);
+            this.value11d.Name = "value11d";
+            this.value11d.ReadOnly = true;
+            this.value11d.Size = new System.Drawing.Size(87, 21);
+            this.value11d.TabIndex = 91;
+            this.value11d.TabStop = false;
             // 
             // value18
             // 
             this.value18.Font = new System.Drawing.Font("宋体", 12F);
-            this.value18.Location = new System.Drawing.Point(629, 223);
+            this.value18.Location = new System.Drawing.Point(898, 53);
             this.value18.Maximum = new decimal(new int[] {
             255,
             0,
@@ -2786,27 +2744,13 @@ namespace serialport
             0});
             this.value18.Name = "value18";
             this.value18.Size = new System.Drawing.Size(50, 26);
-            this.value18.TabIndex = 17;
+            this.value18.TabIndex = 18;
             this.value18.ValueChanged += new System.EventHandler(this.PWMOUT_Change);
-            // 
-            // value17
-            // 
-            this.value17.Font = new System.Drawing.Font("宋体", 12F);
-            this.value17.Location = new System.Drawing.Point(629, 189);
-            this.value17.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.value17.Name = "value17";
-            this.value17.Size = new System.Drawing.Size(50, 26);
-            this.value17.TabIndex = 16;
-            this.value17.ValueChanged += new System.EventHandler(this.PWMOUT_Change);
             // 
             // value15
             // 
             this.value15.Font = new System.Drawing.Font("宋体", 12F);
-            this.value15.Location = new System.Drawing.Point(629, 121);
+            this.value15.Location = new System.Drawing.Point(629, 155);
             this.value15.Maximum = new decimal(new int[] {
             255,
             0,
@@ -2814,13 +2758,55 @@ namespace serialport
             0});
             this.value15.Name = "value15";
             this.value15.Size = new System.Drawing.Size(50, 26);
-            this.value15.TabIndex = 14;
+            this.value15.TabIndex = 15;
             this.value15.ValueChanged += new System.EventHandler(this.PWMOUT_Change);
+            // 
+            // value19
+            // 
+            this.value19.Font = new System.Drawing.Font("宋体", 12F);
+            this.value19.Location = new System.Drawing.Point(898, 87);
+            this.value19.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.value19.Name = "value19";
+            this.value19.Size = new System.Drawing.Size(50, 26);
+            this.value19.TabIndex = 19;
+            this.value19.ValueChanged += new System.EventHandler(this.PWMOUT_Change);
+            // 
+            // value17
+            // 
+            this.value17.Font = new System.Drawing.Font("宋体", 12F);
+            this.value17.Location = new System.Drawing.Point(629, 223);
+            this.value17.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.value17.Name = "value17";
+            this.value17.Size = new System.Drawing.Size(50, 26);
+            this.value17.TabIndex = 17;
+            this.value17.ValueChanged += new System.EventHandler(this.PWMOUT_Change);
+            // 
+            // value16
+            // 
+            this.value16.Font = new System.Drawing.Font("宋体", 12F);
+            this.value16.Location = new System.Drawing.Point(629, 189);
+            this.value16.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.value16.Name = "value16";
+            this.value16.Size = new System.Drawing.Size(50, 26);
+            this.value16.TabIndex = 16;
+            this.value16.ValueChanged += new System.EventHandler(this.PWMOUT_Change);
             // 
             // value14
             // 
             this.value14.Font = new System.Drawing.Font("宋体", 12F);
-            this.value14.Location = new System.Drawing.Point(629, 87);
+            this.value14.Location = new System.Drawing.Point(629, 121);
             this.value14.Maximum = new decimal(new int[] {
             255,
             0,
@@ -2828,13 +2814,13 @@ namespace serialport
             0});
             this.value14.Name = "value14";
             this.value14.Size = new System.Drawing.Size(50, 26);
-            this.value14.TabIndex = 13;
+            this.value14.TabIndex = 14;
             this.value14.ValueChanged += new System.EventHandler(this.PWMOUT_Change);
             // 
             // value13
             // 
             this.value13.Font = new System.Drawing.Font("宋体", 12F);
-            this.value13.Location = new System.Drawing.Point(629, 53);
+            this.value13.Location = new System.Drawing.Point(629, 87);
             this.value13.Maximum = new decimal(new int[] {
             255,
             0,
@@ -2842,27 +2828,27 @@ namespace serialport
             0});
             this.value13.Name = "value13";
             this.value13.Size = new System.Drawing.Size(50, 26);
-            this.value13.TabIndex = 12;
+            this.value13.TabIndex = 13;
             this.value13.ValueChanged += new System.EventHandler(this.PWMOUT_Change);
             // 
             // value12
             // 
             this.value12.Font = new System.Drawing.Font("宋体", 12F);
-            this.value12.Location = new System.Drawing.Point(342, 223);
+            this.value12.Location = new System.Drawing.Point(629, 53);
             this.value12.Maximum = new decimal(new int[] {
-            63,
+            255,
             0,
             0,
             0});
             this.value12.Name = "value12";
             this.value12.Size = new System.Drawing.Size(50, 26);
-            this.value12.TabIndex = 11;
-            this.value12.ValueChanged += new System.EventHandler(this.IOUT_Change);
+            this.value12.TabIndex = 12;
+            this.value12.ValueChanged += new System.EventHandler(this.PWMOUT_Change);
             // 
             // value11
             // 
             this.value11.Font = new System.Drawing.Font("宋体", 12F);
-            this.value11.Location = new System.Drawing.Point(342, 189);
+            this.value11.Location = new System.Drawing.Point(342, 223);
             this.value11.Maximum = new decimal(new int[] {
             63,
             0,
@@ -2870,131 +2856,13 @@ namespace serialport
             0});
             this.value11.Name = "value11";
             this.value11.Size = new System.Drawing.Size(50, 26);
-            this.value11.TabIndex = 10;
+            this.value11.TabIndex = 11;
             this.value11.ValueChanged += new System.EventHandler(this.IOUT_Change);
-            // 
-            // value10d
-            // 
-            this.value10d.Location = new System.Drawing.Point(398, 158);
-            this.value10d.Name = "value10d";
-            this.value10d.ReadOnly = true;
-            this.value10d.Size = new System.Drawing.Size(87, 21);
-            this.value10d.TabIndex = 89;
-            this.value10d.TabStop = false;
-            // 
-            // value9d
-            // 
-            this.value9d.Location = new System.Drawing.Point(398, 124);
-            this.value9d.Name = "value9d";
-            this.value9d.ReadOnly = true;
-            this.value9d.Size = new System.Drawing.Size(87, 21);
-            this.value9d.TabIndex = 88;
-            this.value9d.TabStop = false;
-            // 
-            // value7d
-            // 
-            this.value7d.Location = new System.Drawing.Point(398, 56);
-            this.value7d.Name = "value7d";
-            this.value7d.ReadOnly = true;
-            this.value7d.Size = new System.Drawing.Size(87, 21);
-            this.value7d.TabIndex = 86;
-            this.value7d.TabStop = false;
-            // 
-            // value6d
-            // 
-            this.value6d.Location = new System.Drawing.Point(153, 226);
-            this.value6d.Name = "value6d";
-            this.value6d.ReadOnly = true;
-            this.value6d.Size = new System.Drawing.Size(87, 21);
-            this.value6d.TabIndex = 85;
-            this.value6d.TabStop = false;
-            // 
-            // value8d
-            // 
-            this.value8d.Location = new System.Drawing.Point(398, 90);
-            this.value8d.Name = "value8d";
-            this.value8d.ReadOnly = true;
-            this.value8d.Size = new System.Drawing.Size(87, 21);
-            this.value8d.TabIndex = 87;
-            this.value8d.TabStop = false;
-            // 
-            // value5d
-            // 
-            this.value5d.Location = new System.Drawing.Point(153, 192);
-            this.value5d.Name = "value5d";
-            this.value5d.ReadOnly = true;
-            this.value5d.Size = new System.Drawing.Size(87, 21);
-            this.value5d.TabIndex = 84;
-            this.value5d.TabStop = false;
-            // 
-            // value4d
-            // 
-            this.value4d.Location = new System.Drawing.Point(153, 158);
-            this.value4d.Name = "value4d";
-            this.value4d.ReadOnly = true;
-            this.value4d.Size = new System.Drawing.Size(87, 21);
-            this.value4d.TabIndex = 83;
-            this.value4d.TabStop = false;
-            // 
-            // value3d
-            // 
-            this.value3d.Location = new System.Drawing.Point(153, 124);
-            this.value3d.Name = "value3d";
-            this.value3d.ReadOnly = true;
-            this.value3d.Size = new System.Drawing.Size(87, 21);
-            this.value3d.TabIndex = 82;
-            this.value3d.TabStop = false;
-            // 
-            // value1d
-            // 
-            this.value1d.Location = new System.Drawing.Point(153, 56);
-            this.value1d.Name = "value1d";
-            this.value1d.ReadOnly = true;
-            this.value1d.Size = new System.Drawing.Size(87, 21);
-            this.value1d.TabIndex = 80;
-            this.value1d.TabStop = false;
-            // 
-            // value2d
-            // 
-            this.value2d.Location = new System.Drawing.Point(153, 90);
-            this.value2d.Name = "value2d";
-            this.value2d.ReadOnly = true;
-            this.value2d.Size = new System.Drawing.Size(87, 21);
-            this.value2d.TabIndex = 81;
-            this.value2d.TabStop = false;
-            // 
-            // value9
-            // 
-            this.value9.Font = new System.Drawing.Font("宋体", 12F);
-            this.value9.Location = new System.Drawing.Point(342, 121);
-            this.value9.Maximum = new decimal(new int[] {
-            63,
-            0,
-            0,
-            0});
-            this.value9.Name = "value9";
-            this.value9.Size = new System.Drawing.Size(50, 26);
-            this.value9.TabIndex = 8;
-            this.value9.ValueChanged += new System.EventHandler(this.IOUT_Change);
-            // 
-            // value6
-            // 
-            this.value6.Font = new System.Drawing.Font("宋体", 12F);
-            this.value6.Location = new System.Drawing.Point(97, 223);
-            this.value6.Maximum = new decimal(new int[] {
-            63,
-            0,
-            0,
-            0});
-            this.value6.Name = "value6";
-            this.value6.Size = new System.Drawing.Size(50, 26);
-            this.value6.TabIndex = 5;
-            this.value6.ValueChanged += new System.EventHandler(this.IOUT_Change);
             // 
             // value10
             // 
             this.value10.Font = new System.Drawing.Font("宋体", 12F);
-            this.value10.Location = new System.Drawing.Point(342, 155);
+            this.value10.Location = new System.Drawing.Point(342, 189);
             this.value10.Maximum = new decimal(new int[] {
             63,
             0,
@@ -3002,13 +2870,103 @@ namespace serialport
             0});
             this.value10.Name = "value10";
             this.value10.Size = new System.Drawing.Size(50, 26);
-            this.value10.TabIndex = 9;
+            this.value10.TabIndex = 10;
             this.value10.ValueChanged += new System.EventHandler(this.IOUT_Change);
+            // 
+            // value9d
+            // 
+            this.value9d.Location = new System.Drawing.Point(398, 158);
+            this.value9d.Name = "value9d";
+            this.value9d.ReadOnly = true;
+            this.value9d.Size = new System.Drawing.Size(87, 21);
+            this.value9d.TabIndex = 89;
+            this.value9d.TabStop = false;
+            // 
+            // value8d
+            // 
+            this.value8d.Location = new System.Drawing.Point(398, 124);
+            this.value8d.Name = "value8d";
+            this.value8d.ReadOnly = true;
+            this.value8d.Size = new System.Drawing.Size(87, 21);
+            this.value8d.TabIndex = 88;
+            this.value8d.TabStop = false;
+            // 
+            // value6d
+            // 
+            this.value6d.Location = new System.Drawing.Point(398, 56);
+            this.value6d.Name = "value6d";
+            this.value6d.ReadOnly = true;
+            this.value6d.Size = new System.Drawing.Size(87, 21);
+            this.value6d.TabIndex = 86;
+            this.value6d.TabStop = false;
+            // 
+            // value5d
+            // 
+            this.value5d.Location = new System.Drawing.Point(153, 226);
+            this.value5d.Name = "value5d";
+            this.value5d.ReadOnly = true;
+            this.value5d.Size = new System.Drawing.Size(87, 21);
+            this.value5d.TabIndex = 85;
+            this.value5d.TabStop = false;
+            // 
+            // value7d
+            // 
+            this.value7d.Location = new System.Drawing.Point(398, 90);
+            this.value7d.Name = "value7d";
+            this.value7d.ReadOnly = true;
+            this.value7d.Size = new System.Drawing.Size(87, 21);
+            this.value7d.TabIndex = 87;
+            this.value7d.TabStop = false;
+            // 
+            // value4d
+            // 
+            this.value4d.Location = new System.Drawing.Point(153, 192);
+            this.value4d.Name = "value4d";
+            this.value4d.ReadOnly = true;
+            this.value4d.Size = new System.Drawing.Size(87, 21);
+            this.value4d.TabIndex = 84;
+            this.value4d.TabStop = false;
+            // 
+            // value3d
+            // 
+            this.value3d.Location = new System.Drawing.Point(153, 158);
+            this.value3d.Name = "value3d";
+            this.value3d.ReadOnly = true;
+            this.value3d.Size = new System.Drawing.Size(87, 21);
+            this.value3d.TabIndex = 83;
+            this.value3d.TabStop = false;
+            // 
+            // value2d
+            // 
+            this.value2d.Location = new System.Drawing.Point(153, 124);
+            this.value2d.Name = "value2d";
+            this.value2d.ReadOnly = true;
+            this.value2d.Size = new System.Drawing.Size(87, 21);
+            this.value2d.TabIndex = 82;
+            this.value2d.TabStop = false;
+            // 
+            // value0d
+            // 
+            this.value0d.Location = new System.Drawing.Point(153, 56);
+            this.value0d.Name = "value0d";
+            this.value0d.ReadOnly = true;
+            this.value0d.Size = new System.Drawing.Size(87, 21);
+            this.value0d.TabIndex = 80;
+            this.value0d.TabStop = false;
+            // 
+            // value1d
+            // 
+            this.value1d.Location = new System.Drawing.Point(153, 90);
+            this.value1d.Name = "value1d";
+            this.value1d.ReadOnly = true;
+            this.value1d.Size = new System.Drawing.Size(87, 21);
+            this.value1d.TabIndex = 81;
+            this.value1d.TabStop = false;
             // 
             // value8
             // 
             this.value8.Font = new System.Drawing.Font("宋体", 12F);
-            this.value8.Location = new System.Drawing.Point(342, 87);
+            this.value8.Location = new System.Drawing.Point(342, 121);
             this.value8.Maximum = new decimal(new int[] {
             63,
             0,
@@ -3016,27 +2974,13 @@ namespace serialport
             0});
             this.value8.Name = "value8";
             this.value8.Size = new System.Drawing.Size(50, 26);
-            this.value8.TabIndex = 7;
+            this.value8.TabIndex = 8;
             this.value8.ValueChanged += new System.EventHandler(this.IOUT_Change);
-            // 
-            // value7
-            // 
-            this.value7.Font = new System.Drawing.Font("宋体", 12F);
-            this.value7.Location = new System.Drawing.Point(342, 53);
-            this.value7.Maximum = new decimal(new int[] {
-            63,
-            0,
-            0,
-            0});
-            this.value7.Name = "value7";
-            this.value7.Size = new System.Drawing.Size(50, 26);
-            this.value7.TabIndex = 6;
-            this.value7.ValueChanged += new System.EventHandler(this.IOUT_Change);
             // 
             // value5
             // 
             this.value5.Font = new System.Drawing.Font("宋体", 12F);
-            this.value5.Location = new System.Drawing.Point(97, 189);
+            this.value5.Location = new System.Drawing.Point(97, 223);
             this.value5.Maximum = new decimal(new int[] {
             63,
             0,
@@ -3044,13 +2988,55 @@ namespace serialport
             0});
             this.value5.Name = "value5";
             this.value5.Size = new System.Drawing.Size(50, 26);
-            this.value5.TabIndex = 4;
+            this.value5.TabIndex = 5;
             this.value5.ValueChanged += new System.EventHandler(this.IOUT_Change);
+            // 
+            // value9
+            // 
+            this.value9.Font = new System.Drawing.Font("宋体", 12F);
+            this.value9.Location = new System.Drawing.Point(342, 155);
+            this.value9.Maximum = new decimal(new int[] {
+            63,
+            0,
+            0,
+            0});
+            this.value9.Name = "value9";
+            this.value9.Size = new System.Drawing.Size(50, 26);
+            this.value9.TabIndex = 9;
+            this.value9.ValueChanged += new System.EventHandler(this.IOUT_Change);
+            // 
+            // value7
+            // 
+            this.value7.Font = new System.Drawing.Font("宋体", 12F);
+            this.value7.Location = new System.Drawing.Point(342, 87);
+            this.value7.Maximum = new decimal(new int[] {
+            63,
+            0,
+            0,
+            0});
+            this.value7.Name = "value7";
+            this.value7.Size = new System.Drawing.Size(50, 26);
+            this.value7.TabIndex = 7;
+            this.value7.ValueChanged += new System.EventHandler(this.IOUT_Change);
+            // 
+            // value6
+            // 
+            this.value6.Font = new System.Drawing.Font("宋体", 12F);
+            this.value6.Location = new System.Drawing.Point(342, 53);
+            this.value6.Maximum = new decimal(new int[] {
+            63,
+            0,
+            0,
+            0});
+            this.value6.Name = "value6";
+            this.value6.Size = new System.Drawing.Size(50, 26);
+            this.value6.TabIndex = 6;
+            this.value6.ValueChanged += new System.EventHandler(this.IOUT_Change);
             // 
             // value4
             // 
             this.value4.Font = new System.Drawing.Font("宋体", 12F);
-            this.value4.Location = new System.Drawing.Point(97, 155);
+            this.value4.Location = new System.Drawing.Point(97, 189);
             this.value4.Maximum = new decimal(new int[] {
             63,
             0,
@@ -3058,13 +3044,13 @@ namespace serialport
             0});
             this.value4.Name = "value4";
             this.value4.Size = new System.Drawing.Size(50, 26);
-            this.value4.TabIndex = 3;
+            this.value4.TabIndex = 4;
             this.value4.ValueChanged += new System.EventHandler(this.IOUT_Change);
             // 
             // value3
             // 
             this.value3.Font = new System.Drawing.Font("宋体", 12F);
-            this.value3.Location = new System.Drawing.Point(97, 121);
+            this.value3.Location = new System.Drawing.Point(97, 155);
             this.value3.Maximum = new decimal(new int[] {
             63,
             0,
@@ -3072,13 +3058,13 @@ namespace serialport
             0});
             this.value3.Name = "value3";
             this.value3.Size = new System.Drawing.Size(50, 26);
-            this.value3.TabIndex = 2;
+            this.value3.TabIndex = 3;
             this.value3.ValueChanged += new System.EventHandler(this.IOUT_Change);
             // 
             // value2
             // 
             this.value2.Font = new System.Drawing.Font("宋体", 12F);
-            this.value2.Location = new System.Drawing.Point(97, 87);
+            this.value2.Location = new System.Drawing.Point(97, 121);
             this.value2.Maximum = new decimal(new int[] {
             63,
             0,
@@ -3086,13 +3072,13 @@ namespace serialport
             0});
             this.value2.Name = "value2";
             this.value2.Size = new System.Drawing.Size(50, 26);
-            this.value2.TabIndex = 1;
+            this.value2.TabIndex = 2;
             this.value2.ValueChanged += new System.EventHandler(this.IOUT_Change);
             // 
             // value1
             // 
             this.value1.Font = new System.Drawing.Font("宋体", 12F);
-            this.value1.Location = new System.Drawing.Point(97, 53);
+            this.value1.Location = new System.Drawing.Point(97, 87);
             this.value1.Maximum = new decimal(new int[] {
             63,
             0,
@@ -3100,8 +3086,22 @@ namespace serialport
             0});
             this.value1.Name = "value1";
             this.value1.Size = new System.Drawing.Size(50, 26);
-            this.value1.TabIndex = 0;
+            this.value1.TabIndex = 1;
             this.value1.ValueChanged += new System.EventHandler(this.IOUT_Change);
+            // 
+            // value0
+            // 
+            this.value0.Font = new System.Drawing.Font("宋体", 12F);
+            this.value0.Location = new System.Drawing.Point(97, 53);
+            this.value0.Maximum = new decimal(new int[] {
+            63,
+            0,
+            0,
+            0});
+            this.value0.Name = "value0";
+            this.value0.Size = new System.Drawing.Size(50, 26);
+            this.value0.TabIndex = 0;
+            this.value0.ValueChanged += new System.EventHandler(this.IOUT_Change);
             // 
             // 电流组
             // 
@@ -3262,46 +3262,46 @@ namespace serialport
             this.Load += new System.EventHandler(this.Form2_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.value40)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.value35)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.value36)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.value31)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.value32)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.value33)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.value39)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.value34)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.value38)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.value37)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.value25)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.value35)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.value30)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.value28)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.value31)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.value32)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.value38)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.value33)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.value37)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.value36)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.value24)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.value29)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.value27)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.value28)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.value26)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.value24)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.value25)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.value23)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.value22)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.value21)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.value19)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.value16)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.value20)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.value18)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.value17)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.value15)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.value19)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.value17)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.value16)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.value14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.value13)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.value12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.value11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.value9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.value6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.value10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.value8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.value7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.value5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.value9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.value7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.value6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.value4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.value3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.value2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.value1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.value0)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -3314,52 +3314,52 @@ namespace serialport
         private System.Windows.Forms.Button sure;
         private System.Windows.Forms.Button cancel;
         private System.Windows.Forms.Button output;
-        private System.Windows.Forms.NumericUpDown value1;
-        private System.Windows.Forms.NumericUpDown value9;
-        private System.Windows.Forms.NumericUpDown value6;
-        private System.Windows.Forms.NumericUpDown value10;
+        private System.Windows.Forms.NumericUpDown value0;
         private System.Windows.Forms.NumericUpDown value8;
-        private System.Windows.Forms.NumericUpDown value7;
         private System.Windows.Forms.NumericUpDown value5;
+        private System.Windows.Forms.NumericUpDown value9;
+        private System.Windows.Forms.NumericUpDown value7;
+        private System.Windows.Forms.NumericUpDown value6;
         private System.Windows.Forms.NumericUpDown value4;
         private System.Windows.Forms.NumericUpDown value3;
         private System.Windows.Forms.NumericUpDown value2;
-        private System.Windows.Forms.NumericUpDown value39;
-        private System.Windows.Forms.NumericUpDown value36;
-        private System.Windows.Forms.NumericUpDown value40;
+        private System.Windows.Forms.NumericUpDown value1;
         private System.Windows.Forms.NumericUpDown value38;
-        private System.Windows.Forms.NumericUpDown value37;
         private System.Windows.Forms.NumericUpDown value35;
+        private System.Windows.Forms.NumericUpDown value39;
+        private System.Windows.Forms.NumericUpDown value37;
+        private System.Windows.Forms.NumericUpDown value36;
         private System.Windows.Forms.NumericUpDown value34;
         private System.Windows.Forms.NumericUpDown value33;
         private System.Windows.Forms.NumericUpDown value32;
         private System.Windows.Forms.NumericUpDown value31;
-        private System.Windows.Forms.TextBox value24p;
+        private System.Windows.Forms.NumericUpDown value30;
         private System.Windows.Forms.TextBox value23p;
-        private System.Windows.Forms.TextBox value21p;
         private System.Windows.Forms.TextBox value22p;
-        private System.Windows.Forms.NumericUpDown value24;
+        private System.Windows.Forms.TextBox value20p;
+        private System.Windows.Forms.TextBox value21p;
         private System.Windows.Forms.NumericUpDown value23;
         private System.Windows.Forms.NumericUpDown value22;
         private System.Windows.Forms.NumericUpDown value21;
-        private System.Windows.Forms.TextBox value20p;
+        private System.Windows.Forms.NumericUpDown value20;
         private System.Windows.Forms.TextBox value19p;
-        private System.Windows.Forms.TextBox value17p;
-        private System.Windows.Forms.TextBox value16p;
         private System.Windows.Forms.TextBox value18p;
+        private System.Windows.Forms.TextBox value16p;
         private System.Windows.Forms.TextBox value15p;
+        private System.Windows.Forms.TextBox value17p;
         private System.Windows.Forms.TextBox value14p;
         private System.Windows.Forms.TextBox value13p;
-        private System.Windows.Forms.NumericUpDown value19;
-        private System.Windows.Forms.NumericUpDown value16;
-        private System.Windows.Forms.NumericUpDown value20;
+        private System.Windows.Forms.TextBox value12p;
         private System.Windows.Forms.NumericUpDown value18;
-        private System.Windows.Forms.NumericUpDown value17;
         private System.Windows.Forms.NumericUpDown value15;
+        private System.Windows.Forms.NumericUpDown value19;
+        private System.Windows.Forms.NumericUpDown value17;
+        private System.Windows.Forms.NumericUpDown value16;
         private System.Windows.Forms.NumericUpDown value14;
         private System.Windows.Forms.NumericUpDown value13;
         private System.Windows.Forms.NumericUpDown value12;
         private System.Windows.Forms.NumericUpDown value11;
+        private System.Windows.Forms.NumericUpDown value10;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
@@ -3395,20 +3395,20 @@ namespace serialport
         private System.Windows.Forms.Label label37;
         private System.Windows.Forms.Label label38;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox value11d;
-        private System.Windows.Forms.TextBox value12d;
         private System.Windows.Forms.TextBox value10d;
+        private System.Windows.Forms.TextBox value11d;
         private System.Windows.Forms.TextBox value9d;
-        private System.Windows.Forms.TextBox value7d;
-        private System.Windows.Forms.TextBox value6d;
         private System.Windows.Forms.TextBox value8d;
+        private System.Windows.Forms.TextBox value6d;
         private System.Windows.Forms.TextBox value5d;
+        private System.Windows.Forms.TextBox value7d;
         private System.Windows.Forms.TextBox value4d;
         private System.Windows.Forms.TextBox value3d;
-        private System.Windows.Forms.TextBox value1d;
         private System.Windows.Forms.TextBox value2d;
+        private System.Windows.Forms.TextBox value0d;
+        private System.Windows.Forms.TextBox value1d;
         private System.Windows.Forms.ComboBox comboBox25;
-        private System.Windows.Forms.NumericUpDown value25;
+        private System.Windows.Forms.NumericUpDown value24;
         private System.Windows.Forms.ComboBox comboBox26;
         private System.Windows.Forms.ComboBox comboBox27;
         private System.Windows.Forms.ComboBox comboBox28;
@@ -3424,12 +3424,12 @@ namespace serialport
         private System.Windows.Forms.ComboBox comboBox13;
         private System.Windows.Forms.ComboBox comboBox14;
         private System.Windows.Forms.ComboBox comboBox15;
-        private System.Windows.Forms.NumericUpDown value30;
-        private System.Windows.Forms.NumericUpDown value28;
         private System.Windows.Forms.NumericUpDown value29;
-        private System.Windows.Forms.ComboBox comboBox16;
         private System.Windows.Forms.NumericUpDown value27;
+        private System.Windows.Forms.NumericUpDown value28;
+        private System.Windows.Forms.ComboBox comboBox16;
         private System.Windows.Forms.NumericUpDown value26;
+        private System.Windows.Forms.NumericUpDown value25;
         private System.Windows.Forms.ComboBox comboBox17;
         private System.Windows.Forms.Label label39;
         private System.Windows.Forms.ComboBox comboBox18;

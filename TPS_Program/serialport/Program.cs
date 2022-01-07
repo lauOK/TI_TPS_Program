@@ -321,7 +321,6 @@ namespace serialport
 
             return 4;
         }
-
 #if false
         /* 读2个字节 */
         static byte tps_read_2byte(byte addr, byte reg, ref byte[] buf)
@@ -371,11 +370,6 @@ namespace serialport
 
             return 4;
         }
-
 #endif
-        /****************************************************************************
-         * TPS Frame Over
-         * ************************************************************************/
-
     }
 }

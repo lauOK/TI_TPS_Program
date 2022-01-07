@@ -196,9 +196,9 @@ namespace serialport
 
         private void Clear_RSV_Click(object sender, EventArgs e)//清除接收区
         {
-            for (int i = 1; i < 25; i++)
+            for (int i = 0; i < 24; i++)
             {
-                if (i < 13)
+                if (i < 12)
                 {
                     TextBox tb = (TextBox)this.groupBox1.Controls["value" + i.ToString()];
                     tb.Text = null;
@@ -216,9 +216,9 @@ namespace serialport
 
         private void Clear_Tran_Click(object sender, EventArgs e)//清除发送区
         {
-            for (int i = 1; i < 25; i++)
+            for (int i = 0; i < 24; i++)
             {
-                if (i < 13)
+                if (i < 12)
                 {
                     TextBox tb = (TextBox)this.groupBox1.Controls["value" + i.ToString() + "d"];
                     tb.Text = null;
@@ -376,15 +376,15 @@ namespace serialport
 
         private void Input_Data_Change()
         {
-            for (int i = 1; i < 13; i++)
+            for (int i = 0; i < 12; i++)
             {
                 TextBox tb = (TextBox)this.groupBox1.Controls["value" + i.ToString() + "d"];
-                tb.Text = ((double)Data.EEPvalue[i - 1] / (double)63 * Data.IFULL).ToString("0.000000");
+                tb.Text = ((double)Data.EEPvalue[i] / (double)63 * Data.IFULL).ToString("0.000000");
             }
-            for (int i = 13; i < 25; i++)
+            for (int i = 12; i < 24; i++)
             {
                 TextBox tb = (TextBox)this.groupBox1.Controls["value" + i.ToString() + "p"];
-                tb.Text = ((double)Data.EEPvalue[i - 1] / (double)255 * (double)100).ToString("#0.0");
+                tb.Text = ((double)Data.EEPvalue[i] / (double)255 * (double)100).ToString("#0.0");
             }
         }
 
@@ -400,17 +400,17 @@ namespace serialport
                     data_output[i] = Convert.ToByte(str.Substring(i * 2, 2), 16);
                 }
 
-                for (int i = 1; i < 25; i++)
+                for (int i = 0; i < 24; i++)
                 {
-                    if (i < 13)
+                    if (i < 12)
                     {
                         TextBox tb = (TextBox)this.groupBox1.Controls["value" + i.ToString()];
-                        tb.Text = ((double)data_output[(i - 1) * 6 + 4] / (double)63 * Data.IFULL).ToString("0.000000");
+                        tb.Text = ((double)data_output[(i) * 6 + 4] / (double)63 * Data.IFULL).ToString("0.000000");
                     }
                     else
                     {
                         TextBox tb = (TextBox)this.groupBox1.Controls["value" + i.ToString()];
-                        tb.Text = ((double)data_output[(i - 1) * 6 + 4] / (double)255 * (double)100).ToString("#0.0");
+                        tb.Text = ((double)data_output[(i) * 6 + 4] / (double)255 * (double)100).ToString("#0.0");
                     }
                 }
             }

@@ -23,10 +23,10 @@ namespace serialport
 
         private void Form2_Load(object sender, EventArgs e)
         {
-            for (int i = 1; i < 41; i++)
+            for (int i = 0; i < 40; i++)
             {
                 NumericUpDown nud = (NumericUpDown)this.panel2.Controls["value" + i.ToString()];
-                nud.Value = Data.EEPvalue[i - 1];
+                nud.Value = Data.EEPvalue[i];
             }
             Data_Refresh();
             CRC_Check();
@@ -37,10 +37,10 @@ namespace serialport
 
         private void Sure_Click(object sender, EventArgs e)//确定
         {
-            for (int i = 1; i < 41; i++)
+            for (int i = 0; i < 40; i++)
             {
                 NumericUpDown nud = (NumericUpDown)this.panel2.Controls["value" + i.ToString()];
-                Data.EEPvalue[i - 1] = (byte)nud.Value;
+                Data.EEPvalue[i] = (byte)nud.Value;
             }
             fm1.I_Full.Text = Data.IFULL.ToString("0.000000");
             fm1.tb_devaddr.Text = Data.addr_to_write.ToString();
@@ -71,11 +71,11 @@ namespace serialport
                     string col_txt = "ADDRESS" + "," + "VALUE";
                     sw.WriteLine(col_txt);
 
-                    for (int i = 1; i < 41; i++)
+                    for (int i = 0; i < 40; i++)
                     {
                         string row_txt;
                         NumericUpDown nud = (NumericUpDown)this.panel2.Controls["value" + i.ToString()];
-                        row_txt = Data.EEPaddress[i - 1].ToString() + "," + nud.Value.ToString();
+                        row_txt = Data.EEPaddress[i].ToString() + "," + nud.Value.ToString();
                         sw.WriteLine(row_txt);
                     }
                     sw.Flush();
@@ -95,14 +95,14 @@ namespace serialport
                 I_Full.Text = Data.IFULL.ToString("0.000000");
             }
 
-            for (int i = 1; i < 13; i++)
+            for (int i = 0; i < 12; i++)
             {
                 NumericUpDown nud = (NumericUpDown)(this.panel2.Controls["value" + i.ToString()]);
                 TextBox tb = (TextBox)this.panel2.Controls["value" + i.ToString() + "d"];
                 tb.Text = (nud.Value / nud.Maximum * Convert.ToDecimal(Data.IFULL)).ToString("0.000000");
             }
 
-            for (int i = 13; i < 25; i++)
+            for (int i = 12; i < 24; i++)
             {
                 NumericUpDown nud = (NumericUpDown)(this.panel2.Controls["value" + i.ToString()]);
                 TextBox tb = (TextBox)this.panel2.Controls["value" + i.ToString() + "p"];
@@ -156,14 +156,14 @@ namespace serialport
             bit10 = this.comboBox2.Text == "Enable" ? 1 : 0;
             bit11 = this.comboBox1.Text == "Enable" ? 1 : 0;
 
-            this.value25.Value = bit7 << 7 | bit6 << 6 | bit5 << 5 | bit4 << 4 | bit3 << 3 | bit2 << 2 | bit1 << 1 | bit0;
-            this.value26.Value = bit11 << 3 | bit10 << 2 | bit9 << 1 | bit8;
+            this.value24.Value = bit7 << 7 | bit6 << 6 | bit5 << 5 | bit4 << 4 | bit3 << 3 | bit2 << 2 | bit1 << 1 | bit0;
+            this.value25.Value = bit11 << 3 | bit10 << 2 | bit9 << 1 | bit8;
         }
 
         private void FS0_Change_CB()
         {
             byte temp;
-            temp = Convert.ToByte(this.value25.Value);
+            temp = Convert.ToByte(this.value24.Value);
             this.comboBox12.SelectedIndex = (temp & 1) == 1 ? 0 : 1;
             this.comboBox11.SelectedIndex = (temp & 2) == 2 ? 0 : 1;
             this.comboBox10.SelectedIndex = (temp & 4) == 4 ? 0 : 1;
@@ -172,7 +172,7 @@ namespace serialport
             this.comboBox7.SelectedIndex = (temp & 32) == 32 ? 0 : 1;
             this.comboBox6.SelectedIndex = (temp & 64) == 64 ? 0 : 1;
             this.comboBox5.SelectedIndex = (temp & 128) == 128 ? 0 : 1;
-            temp = Convert.ToByte(this.value26.Value);
+            temp = Convert.ToByte(this.value25.Value);
             this.comboBox4.SelectedIndex = (temp & 1) == 1 ? 0 : 1;
             this.comboBox3.SelectedIndex = (temp & 2) == 2 ? 0 : 1;
             this.comboBox2.SelectedIndex = (temp & 4) == 4 ? 0 : 1;
@@ -209,14 +209,14 @@ namespace serialport
             bit10 = this.comboBox23.Text == "Enable" ? 1 : 0;
             bit11 = this.comboBox24.Text == "Enable" ? 1 : 0;
 
-            this.value27.Value = bit7 << 7 | bit6 << 6 | bit5 << 5 | bit4 << 4 | bit3 << 3 | bit2 << 2 | bit1 << 1 | bit0;
-            this.value28.Value = bit11 << 3 | bit10 << 2 | bit9 << 1 | bit8;
+            this.value26.Value = bit7 << 7 | bit6 << 6 | bit5 << 5 | bit4 << 4 | bit3 << 3 | bit2 << 2 | bit1 << 1 | bit0;
+            this.value27.Value = bit11 << 3 | bit10 << 2 | bit9 << 1 | bit8;
         }
 
         private void FS1_Change_CB()
         {
             byte temp;
-            temp = Convert.ToByte(this.value27.Value);
+            temp = Convert.ToByte(this.value26.Value);
             this.comboBox13.SelectedIndex = (temp & 1) == 1 ? 0 : 1;
             this.comboBox14.SelectedIndex = (temp & 2) == 2 ? 0 : 1;
             this.comboBox15.SelectedIndex = (temp & 4) == 4 ? 0 : 1;
@@ -225,7 +225,7 @@ namespace serialport
             this.comboBox18.SelectedIndex = (temp & 32) == 32 ? 0 : 1;
             this.comboBox19.SelectedIndex = (temp & 64) == 64 ? 0 : 1;
             this.comboBox20.SelectedIndex = (temp & 128) == 128 ? 0 : 1;
-            temp = Convert.ToByte(this.value28.Value);
+            temp = Convert.ToByte(this.value27.Value);
             this.comboBox21.SelectedIndex = (temp & 1) == 1 ? 0 : 1;
             this.comboBox22.SelectedIndex = (temp & 2) == 2 ? 0 : 1;
             this.comboBox23.SelectedIndex = (temp & 4) == 4 ? 0 : 1;
@@ -262,14 +262,14 @@ namespace serialport
             bit10 = this.comboBox35.Text == "Enable" ? 1 : 0;
             bit11 = this.comboBox36.Text == "Enable" ? 1 : 0;
 
-            this.value29.Value = bit7 << 7 | bit6 << 6 | bit5 << 5 | bit4 << 4 | bit3 << 3 | bit2 << 2 | bit1 << 1 | bit0;
-            this.value30.Value = bit11 << 3 | bit10 << 2 | bit9 << 1 | bit8;
+            this.value28.Value = bit7 << 7 | bit6 << 6 | bit5 << 5 | bit4 << 4 | bit3 << 3 | bit2 << 2 | bit1 << 1 | bit0;
+            this.value29.Value = bit11 << 3 | bit10 << 2 | bit9 << 1 | bit8;
         }
 
         private void Diagnostic_Change_CB()
         {
             byte temp;
-            temp = Convert.ToByte(this.value29.Value);
+            temp = Convert.ToByte(this.value28.Value);
             this.comboBox25.SelectedIndex = (temp & 1) == 1 ? 0 : 1;
             this.comboBox26.SelectedIndex = (temp & 2) == 2 ? 0 : 1;
             this.comboBox27.SelectedIndex = (temp & 4) == 4 ? 0 : 1;
@@ -278,7 +278,7 @@ namespace serialport
             this.comboBox30.SelectedIndex = (temp & 32) == 32 ? 0 : 1;
             this.comboBox31.SelectedIndex = (temp & 64) == 64 ? 0 : 1;
             this.comboBox32.SelectedIndex = (temp & 128) == 128 ? 0 : 1;
-            temp = Convert.ToByte(this.value30.Value);
+            temp = Convert.ToByte(this.value29.Value);
             this.comboBox33.SelectedIndex = (temp & 1) == 1 ? 0 : 1;
             this.comboBox34.SelectedIndex = (temp & 2) == 2 ? 0 : 1;
             this.comboBox35.SelectedIndex = (temp & 4) == 4 ? 0 : 1;
@@ -303,7 +303,7 @@ namespace serialport
             bit4 = this.comboBox38.Text == "Enable" ? 1 : 0;
             bit6 = this.comboBox37.Text == "4.4" ? 1 : 0;
 
-            this.value31.Value = bit6 << 6 | bit4 << 4 | bit0_3;
+            this.value30.Value = bit6 << 6 | bit4 << 4 | bit0_3;
 
             Data.addr_to_write = bit0_3;
         }
@@ -311,7 +311,7 @@ namespace serialport
         private void EEPM6_Change_CB()
         {
             byte temp;
-            temp = Convert.ToByte(this.value31.Value);
+            temp = Convert.ToByte(this.value30.Value);
 
             this.comboBox37.SelectedIndex = (temp & 64) == 64 ? 1 : 0;
             this.comboBox38.SelectedIndex = (temp & 16) == 16 ? 0 : 1;
@@ -341,7 +341,7 @@ namespace serialport
             else
                 bit4_7 = this.comboBox40.SelectedIndex;
 
-            this.value32.Value = bit4_7 << 4 | bit3 << 3 | bit2 << 2 | bit0_1;
+            this.value31.Value = bit4_7 << 4 | bit3 << 3 | bit2 << 2 | bit0_1;
 
             ComboBox cb = sender as ComboBox;
             if (cb.Name == "comboBox43")
@@ -358,7 +358,7 @@ namespace serialport
         private void EEPM7_Change_CB()
         {
             byte temp;
-            temp = Convert.ToByte(this.value32.Value);
+            temp = Convert.ToByte(this.value31.Value);
 
             this.comboBox40.SelectedIndex = (temp & 0xf0) >> 4;
             this.comboBox41.SelectedIndex = (temp & 8) == 8 ? 0 : 1;
@@ -386,13 +386,13 @@ namespace serialport
             else
                 bit4_6 = this.comboBox44.SelectedIndex;
 
-            this.value33.Value = bit4_6 << 4 | bit0_3;
+            this.value32.Value = bit4_6 << 4 | bit0_3;
         }
 
         private void EEPM8_Change_CB()
         {
             byte temp;
-            temp = Convert.ToByte(this.value33.Value);
+            temp = Convert.ToByte(this.value32.Value);
 
             this.comboBox44.SelectedIndex = (temp & 0x70) >> 4;
             this.comboBox45.SelectedIndex = temp & 15;
@@ -418,13 +418,13 @@ namespace serialport
             else
                 bit4_7 = this.comboBox46.SelectedIndex;
 
-            this.value34.Value = bit4_7 << 4 | bit0_3;
+            this.value33.Value = bit4_7 << 4 | bit0_3;
         }
 
         private void EEPM9_Change_CB()
         {
             byte temp;
-            temp = Convert.ToByte(this.value34.Value);
+            temp = Convert.ToByte(this.value33.Value);
 
             this.comboBox46.SelectedIndex = (temp & 0xF0) >> 4;
             this.comboBox47.SelectedIndex = temp & 15;
@@ -450,13 +450,13 @@ namespace serialport
             else
                 bit4_7 = this.comboBox48.SelectedIndex;
 
-            this.value35.Value = bit4_7 << 4 | bit0_3;
+            this.value34.Value = bit4_7 << 4 | bit0_3;
         }
 
         private void EEPM10_Change_CB()
         {
             byte temp;
-            temp = Convert.ToByte(this.value35.Value);
+            temp = Convert.ToByte(this.value34.Value);
 
             this.comboBox48.SelectedIndex = (temp & 0xF0) >> 4;
             this.comboBox49.SelectedIndex = temp & 15;
@@ -487,13 +487,13 @@ namespace serialport
             bit6 = this.comboBox52.Text == "1" ? 1 : 0;
             bit7 = this.comboBox53.Text == "1" ? 1 : 0;
 
-            this.value36.Value = bit7 << 7 | bit6 << 6 | bit5 << 5 | bit4 << 4 | bit3 << 3 | bit2 << 2 | bit1 << 1 | bit0;
+            this.value35.Value = bit7 << 7 | bit6 << 6 | bit5 << 5 | bit4 << 4 | bit3 << 3 | bit2 << 2 | bit1 << 1 | bit0;
         }
 
         private void EEPM11_Change_CB()
         {
             byte temp;
-            temp = Convert.ToByte(this.value36.Value);
+            temp = Convert.ToByte(this.value35.Value);
 
             this.comboBox54.SelectedIndex = (temp & 1) == 1 ? 1 : 0;
             this.comboBox55.SelectedIndex = (temp & 2) == 2 ? 1 : 0;
@@ -529,10 +529,10 @@ namespace serialport
             byte[] temp = new byte[39];
             for (int i = 0; i < 39; i++)
             {
-                NumericUpDown nud = (NumericUpDown)this.panel2.Controls["value" + (i + 1).ToString()];
+                NumericUpDown nud = (NumericUpDown)this.panel2.Controls["value" + i.ToString()];
                 temp[i] = Convert.ToByte(nud.Value);
             }
-            this.value40.Value = Data.CRC(temp, 39);
+            this.value39.Value = Data.CRC(temp, 39);
         }
 
         //MouseHover Begin

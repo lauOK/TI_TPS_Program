@@ -67,18 +67,18 @@
             this.Rref = new System.Windows.Forms.TextBox();
             this.label_REF = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.value24 = new System.Windows.Forms.TextBox();
             this.value23 = new System.Windows.Forms.TextBox();
-            this.value21 = new System.Windows.Forms.TextBox();
             this.value22 = new System.Windows.Forms.TextBox();
             this.value20 = new System.Windows.Forms.TextBox();
+            this.value21 = new System.Windows.Forms.TextBox();
             this.value19 = new System.Windows.Forms.TextBox();
-            this.value17 = new System.Windows.Forms.TextBox();
-            this.value16 = new System.Windows.Forms.TextBox();
             this.value18 = new System.Windows.Forms.TextBox();
+            this.value16 = new System.Windows.Forms.TextBox();
             this.value15 = new System.Windows.Forms.TextBox();
+            this.value17 = new System.Windows.Forms.TextBox();
             this.value14 = new System.Windows.Forms.TextBox();
             this.value13 = new System.Windows.Forms.TextBox();
+            this.value12 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label34 = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
@@ -94,30 +94,30 @@
             this.label31 = new System.Windows.Forms.Label();
             this.label35 = new System.Windows.Forms.Label();
             this.label36 = new System.Windows.Forms.Label();
-            this.value24p = new System.Windows.Forms.TextBox();
             this.value23p = new System.Windows.Forms.TextBox();
-            this.value21p = new System.Windows.Forms.TextBox();
             this.value22p = new System.Windows.Forms.TextBox();
             this.value20p = new System.Windows.Forms.TextBox();
+            this.value21p = new System.Windows.Forms.TextBox();
             this.value19p = new System.Windows.Forms.TextBox();
-            this.value17p = new System.Windows.Forms.TextBox();
-            this.value16p = new System.Windows.Forms.TextBox();
             this.value18p = new System.Windows.Forms.TextBox();
+            this.value16p = new System.Windows.Forms.TextBox();
             this.value15p = new System.Windows.Forms.TextBox();
+            this.value17p = new System.Windows.Forms.TextBox();
             this.value14p = new System.Windows.Forms.TextBox();
             this.value13p = new System.Windows.Forms.TextBox();
-            this.value11 = new System.Windows.Forms.TextBox();
-            this.value12 = new System.Windows.Forms.TextBox();
+            this.value12p = new System.Windows.Forms.TextBox();
             this.value10 = new System.Windows.Forms.TextBox();
+            this.value11 = new System.Windows.Forms.TextBox();
             this.value9 = new System.Windows.Forms.TextBox();
-            this.value7 = new System.Windows.Forms.TextBox();
-            this.value6 = new System.Windows.Forms.TextBox();
             this.value8 = new System.Windows.Forms.TextBox();
+            this.value6 = new System.Windows.Forms.TextBox();
             this.value5 = new System.Windows.Forms.TextBox();
+            this.value7 = new System.Windows.Forms.TextBox();
             this.value4 = new System.Windows.Forms.TextBox();
             this.value3 = new System.Windows.Forms.TextBox();
-            this.value1 = new System.Windows.Forms.TextBox();
             this.value2 = new System.Windows.Forms.TextBox();
+            this.value0 = new System.Windows.Forms.TextBox();
+            this.value1 = new System.Windows.Forms.TextBox();
             this.label58 = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
@@ -133,18 +133,18 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.value11d = new System.Windows.Forms.TextBox();
-            this.value12d = new System.Windows.Forms.TextBox();
             this.value10d = new System.Windows.Forms.TextBox();
+            this.value11d = new System.Windows.Forms.TextBox();
             this.value9d = new System.Windows.Forms.TextBox();
-            this.value7d = new System.Windows.Forms.TextBox();
-            this.value6d = new System.Windows.Forms.TextBox();
             this.value8d = new System.Windows.Forms.TextBox();
+            this.value6d = new System.Windows.Forms.TextBox();
             this.value5d = new System.Windows.Forms.TextBox();
+            this.value7d = new System.Windows.Forms.TextBox();
             this.value4d = new System.Windows.Forms.TextBox();
             this.value3d = new System.Windows.Forms.TextBox();
-            this.value1d = new System.Windows.Forms.TextBox();
             this.value2d = new System.Windows.Forms.TextBox();
+            this.value0d = new System.Windows.Forms.TextBox();
+            this.value1d = new System.Windows.Forms.TextBox();
             this.tb_devaddr = new System.Windows.Forms.TextBox();
             this.label_devaddr = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
@@ -574,18 +574,18 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.value24);
             this.groupBox1.Controls.Add(this.value23);
-            this.groupBox1.Controls.Add(this.value21);
             this.groupBox1.Controls.Add(this.value22);
             this.groupBox1.Controls.Add(this.value20);
+            this.groupBox1.Controls.Add(this.value21);
             this.groupBox1.Controls.Add(this.value19);
-            this.groupBox1.Controls.Add(this.value17);
-            this.groupBox1.Controls.Add(this.value16);
             this.groupBox1.Controls.Add(this.value18);
+            this.groupBox1.Controls.Add(this.value16);
             this.groupBox1.Controls.Add(this.value15);
+            this.groupBox1.Controls.Add(this.value17);
             this.groupBox1.Controls.Add(this.value14);
             this.groupBox1.Controls.Add(this.value13);
+            this.groupBox1.Controls.Add(this.value12);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.label34);
             this.groupBox1.Controls.Add(this.label33);
@@ -601,30 +601,30 @@
             this.groupBox1.Controls.Add(this.label31);
             this.groupBox1.Controls.Add(this.label35);
             this.groupBox1.Controls.Add(this.label36);
-            this.groupBox1.Controls.Add(this.value24p);
             this.groupBox1.Controls.Add(this.value23p);
-            this.groupBox1.Controls.Add(this.value21p);
             this.groupBox1.Controls.Add(this.value22p);
             this.groupBox1.Controls.Add(this.value20p);
+            this.groupBox1.Controls.Add(this.value21p);
             this.groupBox1.Controls.Add(this.value19p);
-            this.groupBox1.Controls.Add(this.value17p);
-            this.groupBox1.Controls.Add(this.value16p);
             this.groupBox1.Controls.Add(this.value18p);
+            this.groupBox1.Controls.Add(this.value16p);
             this.groupBox1.Controls.Add(this.value15p);
+            this.groupBox1.Controls.Add(this.value17p);
             this.groupBox1.Controls.Add(this.value14p);
             this.groupBox1.Controls.Add(this.value13p);
-            this.groupBox1.Controls.Add(this.value11);
-            this.groupBox1.Controls.Add(this.value12);
+            this.groupBox1.Controls.Add(this.value12p);
             this.groupBox1.Controls.Add(this.value10);
+            this.groupBox1.Controls.Add(this.value11);
             this.groupBox1.Controls.Add(this.value9);
-            this.groupBox1.Controls.Add(this.value7);
-            this.groupBox1.Controls.Add(this.value6);
             this.groupBox1.Controls.Add(this.value8);
+            this.groupBox1.Controls.Add(this.value6);
             this.groupBox1.Controls.Add(this.value5);
+            this.groupBox1.Controls.Add(this.value7);
             this.groupBox1.Controls.Add(this.value4);
             this.groupBox1.Controls.Add(this.value3);
-            this.groupBox1.Controls.Add(this.value1);
             this.groupBox1.Controls.Add(this.value2);
+            this.groupBox1.Controls.Add(this.value0);
+            this.groupBox1.Controls.Add(this.value1);
             this.groupBox1.Controls.Add(this.label58);
             this.groupBox1.Controls.Add(this.label32);
             this.groupBox1.Controls.Add(this.label20);
@@ -640,18 +640,18 @@
             this.groupBox1.Controls.Add(this.label10);
             this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.value11d);
-            this.groupBox1.Controls.Add(this.value12d);
             this.groupBox1.Controls.Add(this.value10d);
+            this.groupBox1.Controls.Add(this.value11d);
             this.groupBox1.Controls.Add(this.value9d);
-            this.groupBox1.Controls.Add(this.value7d);
-            this.groupBox1.Controls.Add(this.value6d);
             this.groupBox1.Controls.Add(this.value8d);
+            this.groupBox1.Controls.Add(this.value6d);
             this.groupBox1.Controls.Add(this.value5d);
+            this.groupBox1.Controls.Add(this.value7d);
             this.groupBox1.Controls.Add(this.value4d);
             this.groupBox1.Controls.Add(this.value3d);
-            this.groupBox1.Controls.Add(this.value1d);
             this.groupBox1.Controls.Add(this.value2d);
+            this.groupBox1.Controls.Add(this.value0d);
+            this.groupBox1.Controls.Add(this.value1d);
             this.groupBox1.Location = new System.Drawing.Point(541, 7);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(640, 486);
@@ -659,101 +659,101 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "数据校对";
             // 
-            // value24
-            // 
-            this.value24.Location = new System.Drawing.Point(548, 451);
-            this.value24.Name = "value24";
-            this.value24.ReadOnly = true;
-            this.value24.Size = new System.Drawing.Size(87, 21);
-            this.value24.TabIndex = 466;
-            // 
             // value23
             // 
-            this.value23.Location = new System.Drawing.Point(548, 417);
+            this.value23.Location = new System.Drawing.Point(548, 451);
             this.value23.Name = "value23";
             this.value23.ReadOnly = true;
             this.value23.Size = new System.Drawing.Size(87, 21);
-            this.value23.TabIndex = 465;
-            // 
-            // value21
-            // 
-            this.value21.Location = new System.Drawing.Point(548, 349);
-            this.value21.Name = "value21";
-            this.value21.ReadOnly = true;
-            this.value21.Size = new System.Drawing.Size(87, 21);
-            this.value21.TabIndex = 463;
+            this.value23.TabIndex = 466;
             // 
             // value22
             // 
-            this.value22.Location = new System.Drawing.Point(548, 383);
+            this.value22.Location = new System.Drawing.Point(548, 417);
             this.value22.Name = "value22";
             this.value22.ReadOnly = true;
             this.value22.Size = new System.Drawing.Size(87, 21);
-            this.value22.TabIndex = 464;
+            this.value22.TabIndex = 465;
             // 
             // value20
             // 
-            this.value20.Location = new System.Drawing.Point(548, 315);
+            this.value20.Location = new System.Drawing.Point(548, 349);
             this.value20.Name = "value20";
             this.value20.ReadOnly = true;
             this.value20.Size = new System.Drawing.Size(87, 21);
-            this.value20.TabIndex = 462;
+            this.value20.TabIndex = 463;
+            // 
+            // value21
+            // 
+            this.value21.Location = new System.Drawing.Point(548, 383);
+            this.value21.Name = "value21";
+            this.value21.ReadOnly = true;
+            this.value21.Size = new System.Drawing.Size(87, 21);
+            this.value21.TabIndex = 464;
             // 
             // value19
             // 
-            this.value19.Location = new System.Drawing.Point(548, 281);
+            this.value19.Location = new System.Drawing.Point(548, 315);
             this.value19.Name = "value19";
             this.value19.ReadOnly = true;
             this.value19.Size = new System.Drawing.Size(87, 21);
-            this.value19.TabIndex = 461;
-            // 
-            // value17
-            // 
-            this.value17.Location = new System.Drawing.Point(548, 212);
-            this.value17.Name = "value17";
-            this.value17.ReadOnly = true;
-            this.value17.Size = new System.Drawing.Size(87, 21);
-            this.value17.TabIndex = 459;
-            // 
-            // value16
-            // 
-            this.value16.Location = new System.Drawing.Point(548, 178);
-            this.value16.Name = "value16";
-            this.value16.ReadOnly = true;
-            this.value16.Size = new System.Drawing.Size(87, 21);
-            this.value16.TabIndex = 458;
+            this.value19.TabIndex = 462;
             // 
             // value18
             // 
-            this.value18.Location = new System.Drawing.Point(548, 246);
+            this.value18.Location = new System.Drawing.Point(548, 281);
             this.value18.Name = "value18";
             this.value18.ReadOnly = true;
             this.value18.Size = new System.Drawing.Size(87, 21);
-            this.value18.TabIndex = 460;
+            this.value18.TabIndex = 461;
+            // 
+            // value16
+            // 
+            this.value16.Location = new System.Drawing.Point(548, 212);
+            this.value16.Name = "value16";
+            this.value16.ReadOnly = true;
+            this.value16.Size = new System.Drawing.Size(87, 21);
+            this.value16.TabIndex = 459;
             // 
             // value15
             // 
-            this.value15.Location = new System.Drawing.Point(548, 144);
+            this.value15.Location = new System.Drawing.Point(548, 178);
             this.value15.Name = "value15";
             this.value15.ReadOnly = true;
             this.value15.Size = new System.Drawing.Size(87, 21);
-            this.value15.TabIndex = 457;
+            this.value15.TabIndex = 458;
+            // 
+            // value17
+            // 
+            this.value17.Location = new System.Drawing.Point(548, 246);
+            this.value17.Name = "value17";
+            this.value17.ReadOnly = true;
+            this.value17.Size = new System.Drawing.Size(87, 21);
+            this.value17.TabIndex = 460;
             // 
             // value14
             // 
-            this.value14.Location = new System.Drawing.Point(548, 110);
+            this.value14.Location = new System.Drawing.Point(548, 144);
             this.value14.Name = "value14";
             this.value14.ReadOnly = true;
             this.value14.Size = new System.Drawing.Size(87, 21);
-            this.value14.TabIndex = 456;
+            this.value14.TabIndex = 457;
             // 
             // value13
             // 
-            this.value13.Location = new System.Drawing.Point(548, 76);
+            this.value13.Location = new System.Drawing.Point(548, 110);
             this.value13.Name = "value13";
             this.value13.ReadOnly = true;
             this.value13.Size = new System.Drawing.Size(87, 21);
-            this.value13.TabIndex = 455;
+            this.value13.TabIndex = 456;
+            // 
+            // value12
+            // 
+            this.value12.Location = new System.Drawing.Point(548, 76);
+            this.value12.Name = "value12";
+            this.value12.ReadOnly = true;
+            this.value12.Size = new System.Drawing.Size(87, 21);
+            this.value12.TabIndex = 455;
             // 
             // label8
             // 
@@ -905,197 +905,197 @@
             this.label36.TabIndex = 439;
             this.label36.Text = "写入占空比( % )";
             // 
-            // value24p
-            // 
-            this.value24p.Location = new System.Drawing.Point(449, 451);
-            this.value24p.Name = "value24p";
-            this.value24p.ReadOnly = true;
-            this.value24p.Size = new System.Drawing.Size(87, 21);
-            this.value24p.TabIndex = 438;
-            // 
             // value23p
             // 
-            this.value23p.Location = new System.Drawing.Point(449, 417);
+            this.value23p.Location = new System.Drawing.Point(449, 451);
             this.value23p.Name = "value23p";
             this.value23p.ReadOnly = true;
             this.value23p.Size = new System.Drawing.Size(87, 21);
-            this.value23p.TabIndex = 437;
-            // 
-            // value21p
-            // 
-            this.value21p.Location = new System.Drawing.Point(449, 349);
-            this.value21p.Name = "value21p";
-            this.value21p.ReadOnly = true;
-            this.value21p.Size = new System.Drawing.Size(87, 21);
-            this.value21p.TabIndex = 435;
+            this.value23p.TabIndex = 438;
             // 
             // value22p
             // 
-            this.value22p.Location = new System.Drawing.Point(449, 383);
+            this.value22p.Location = new System.Drawing.Point(449, 417);
             this.value22p.Name = "value22p";
             this.value22p.ReadOnly = true;
             this.value22p.Size = new System.Drawing.Size(87, 21);
-            this.value22p.TabIndex = 436;
+            this.value22p.TabIndex = 437;
             // 
             // value20p
             // 
-            this.value20p.Location = new System.Drawing.Point(449, 315);
+            this.value20p.Location = new System.Drawing.Point(449, 349);
             this.value20p.Name = "value20p";
             this.value20p.ReadOnly = true;
             this.value20p.Size = new System.Drawing.Size(87, 21);
-            this.value20p.TabIndex = 434;
+            this.value20p.TabIndex = 435;
+            // 
+            // value21p
+            // 
+            this.value21p.Location = new System.Drawing.Point(449, 383);
+            this.value21p.Name = "value21p";
+            this.value21p.ReadOnly = true;
+            this.value21p.Size = new System.Drawing.Size(87, 21);
+            this.value21p.TabIndex = 436;
             // 
             // value19p
             // 
-            this.value19p.Location = new System.Drawing.Point(449, 281);
+            this.value19p.Location = new System.Drawing.Point(449, 315);
             this.value19p.Name = "value19p";
             this.value19p.ReadOnly = true;
             this.value19p.Size = new System.Drawing.Size(87, 21);
-            this.value19p.TabIndex = 433;
-            // 
-            // value17p
-            // 
-            this.value17p.Location = new System.Drawing.Point(449, 212);
-            this.value17p.Name = "value17p";
-            this.value17p.ReadOnly = true;
-            this.value17p.Size = new System.Drawing.Size(87, 21);
-            this.value17p.TabIndex = 431;
-            // 
-            // value16p
-            // 
-            this.value16p.Location = new System.Drawing.Point(449, 178);
-            this.value16p.Name = "value16p";
-            this.value16p.ReadOnly = true;
-            this.value16p.Size = new System.Drawing.Size(87, 21);
-            this.value16p.TabIndex = 430;
+            this.value19p.TabIndex = 434;
             // 
             // value18p
             // 
-            this.value18p.Location = new System.Drawing.Point(449, 246);
+            this.value18p.Location = new System.Drawing.Point(449, 281);
             this.value18p.Name = "value18p";
             this.value18p.ReadOnly = true;
             this.value18p.Size = new System.Drawing.Size(87, 21);
-            this.value18p.TabIndex = 432;
+            this.value18p.TabIndex = 433;
+            // 
+            // value16p
+            // 
+            this.value16p.Location = new System.Drawing.Point(449, 212);
+            this.value16p.Name = "value16p";
+            this.value16p.ReadOnly = true;
+            this.value16p.Size = new System.Drawing.Size(87, 21);
+            this.value16p.TabIndex = 431;
             // 
             // value15p
             // 
-            this.value15p.Location = new System.Drawing.Point(449, 144);
+            this.value15p.Location = new System.Drawing.Point(449, 178);
             this.value15p.Name = "value15p";
             this.value15p.ReadOnly = true;
             this.value15p.Size = new System.Drawing.Size(87, 21);
-            this.value15p.TabIndex = 429;
+            this.value15p.TabIndex = 430;
+            // 
+            // value17p
+            // 
+            this.value17p.Location = new System.Drawing.Point(449, 246);
+            this.value17p.Name = "value17p";
+            this.value17p.ReadOnly = true;
+            this.value17p.Size = new System.Drawing.Size(87, 21);
+            this.value17p.TabIndex = 432;
             // 
             // value14p
             // 
-            this.value14p.Location = new System.Drawing.Point(449, 110);
+            this.value14p.Location = new System.Drawing.Point(449, 144);
             this.value14p.Name = "value14p";
             this.value14p.ReadOnly = true;
             this.value14p.Size = new System.Drawing.Size(87, 21);
-            this.value14p.TabIndex = 428;
+            this.value14p.TabIndex = 429;
             // 
             // value13p
             // 
-            this.value13p.Location = new System.Drawing.Point(449, 76);
+            this.value13p.Location = new System.Drawing.Point(449, 110);
             this.value13p.Name = "value13p";
             this.value13p.ReadOnly = true;
             this.value13p.Size = new System.Drawing.Size(87, 21);
-            this.value13p.TabIndex = 427;
+            this.value13p.TabIndex = 428;
             // 
-            // value11
+            // value12p
             // 
-            this.value11.Location = new System.Drawing.Point(214, 417);
-            this.value11.Name = "value11";
-            this.value11.ReadOnly = true;
-            this.value11.Size = new System.Drawing.Size(87, 21);
-            this.value11.TabIndex = 425;
-            // 
-            // value12
-            // 
-            this.value12.Location = new System.Drawing.Point(214, 451);
-            this.value12.Name = "value12";
-            this.value12.ReadOnly = true;
-            this.value12.Size = new System.Drawing.Size(87, 21);
-            this.value12.TabIndex = 426;
+            this.value12p.Location = new System.Drawing.Point(449, 76);
+            this.value12p.Name = "value12p";
+            this.value12p.ReadOnly = true;
+            this.value12p.Size = new System.Drawing.Size(87, 21);
+            this.value12p.TabIndex = 427;
             // 
             // value10
             // 
-            this.value10.Location = new System.Drawing.Point(214, 383);
+            this.value10.Location = new System.Drawing.Point(214, 417);
             this.value10.Name = "value10";
             this.value10.ReadOnly = true;
             this.value10.Size = new System.Drawing.Size(87, 21);
-            this.value10.TabIndex = 424;
+            this.value10.TabIndex = 425;
+            // 
+            // value11
+            // 
+            this.value11.Location = new System.Drawing.Point(214, 451);
+            this.value11.Name = "value11";
+            this.value11.ReadOnly = true;
+            this.value11.Size = new System.Drawing.Size(87, 21);
+            this.value11.TabIndex = 426;
             // 
             // value9
             // 
-            this.value9.Location = new System.Drawing.Point(214, 349);
+            this.value9.Location = new System.Drawing.Point(214, 383);
             this.value9.Name = "value9";
             this.value9.ReadOnly = true;
             this.value9.Size = new System.Drawing.Size(87, 21);
-            this.value9.TabIndex = 423;
-            // 
-            // value7
-            // 
-            this.value7.Location = new System.Drawing.Point(214, 281);
-            this.value7.Name = "value7";
-            this.value7.ReadOnly = true;
-            this.value7.Size = new System.Drawing.Size(87, 21);
-            this.value7.TabIndex = 421;
-            // 
-            // value6
-            // 
-            this.value6.Location = new System.Drawing.Point(214, 249);
-            this.value6.Name = "value6";
-            this.value6.ReadOnly = true;
-            this.value6.Size = new System.Drawing.Size(87, 21);
-            this.value6.TabIndex = 420;
+            this.value9.TabIndex = 424;
             // 
             // value8
             // 
-            this.value8.Location = new System.Drawing.Point(214, 315);
+            this.value8.Location = new System.Drawing.Point(214, 349);
             this.value8.Name = "value8";
             this.value8.ReadOnly = true;
             this.value8.Size = new System.Drawing.Size(87, 21);
-            this.value8.TabIndex = 422;
+            this.value8.TabIndex = 423;
+            // 
+            // value6
+            // 
+            this.value6.Location = new System.Drawing.Point(214, 281);
+            this.value6.Name = "value6";
+            this.value6.ReadOnly = true;
+            this.value6.Size = new System.Drawing.Size(87, 21);
+            this.value6.TabIndex = 421;
             // 
             // value5
             // 
-            this.value5.Location = new System.Drawing.Point(214, 215);
+            this.value5.Location = new System.Drawing.Point(214, 249);
             this.value5.Name = "value5";
             this.value5.ReadOnly = true;
             this.value5.Size = new System.Drawing.Size(87, 21);
-            this.value5.TabIndex = 419;
+            this.value5.TabIndex = 420;
+            // 
+            // value7
+            // 
+            this.value7.Location = new System.Drawing.Point(214, 315);
+            this.value7.Name = "value7";
+            this.value7.ReadOnly = true;
+            this.value7.Size = new System.Drawing.Size(87, 21);
+            this.value7.TabIndex = 422;
             // 
             // value4
             // 
-            this.value4.Location = new System.Drawing.Point(214, 181);
+            this.value4.Location = new System.Drawing.Point(214, 215);
             this.value4.Name = "value4";
             this.value4.ReadOnly = true;
             this.value4.Size = new System.Drawing.Size(87, 21);
-            this.value4.TabIndex = 418;
+            this.value4.TabIndex = 419;
             // 
             // value3
             // 
-            this.value3.Location = new System.Drawing.Point(214, 147);
+            this.value3.Location = new System.Drawing.Point(214, 181);
             this.value3.Name = "value3";
             this.value3.ReadOnly = true;
             this.value3.Size = new System.Drawing.Size(87, 21);
-            this.value3.TabIndex = 417;
-            // 
-            // value1
-            // 
-            this.value1.Location = new System.Drawing.Point(214, 79);
-            this.value1.Name = "value1";
-            this.value1.ReadOnly = true;
-            this.value1.Size = new System.Drawing.Size(87, 21);
-            this.value1.TabIndex = 415;
+            this.value3.TabIndex = 418;
             // 
             // value2
             // 
-            this.value2.Location = new System.Drawing.Point(214, 113);
+            this.value2.Location = new System.Drawing.Point(214, 147);
             this.value2.Name = "value2";
             this.value2.ReadOnly = true;
             this.value2.Size = new System.Drawing.Size(87, 21);
-            this.value2.TabIndex = 416;
+            this.value2.TabIndex = 417;
+            // 
+            // value0
+            // 
+            this.value0.Location = new System.Drawing.Point(214, 79);
+            this.value0.Name = "value0";
+            this.value0.ReadOnly = true;
+            this.value0.Size = new System.Drawing.Size(87, 21);
+            this.value0.TabIndex = 415;
+            // 
+            // value1
+            // 
+            this.value1.Location = new System.Drawing.Point(214, 113);
+            this.value1.Name = "value1";
+            this.value1.ReadOnly = true;
+            this.value1.Size = new System.Drawing.Size(87, 21);
+            this.value1.TabIndex = 416;
             // 
             // label58
             // 
@@ -1247,101 +1247,101 @@
             this.label6.TabIndex = 400;
             this.label6.Text = "写入电流( mA )";
             // 
-            // value11d
-            // 
-            this.value11d.Location = new System.Drawing.Point(117, 417);
-            this.value11d.Name = "value11d";
-            this.value11d.ReadOnly = true;
-            this.value11d.Size = new System.Drawing.Size(87, 21);
-            this.value11d.TabIndex = 398;
-            // 
-            // value12d
-            // 
-            this.value12d.Location = new System.Drawing.Point(117, 451);
-            this.value12d.Name = "value12d";
-            this.value12d.ReadOnly = true;
-            this.value12d.Size = new System.Drawing.Size(87, 21);
-            this.value12d.TabIndex = 399;
-            // 
             // value10d
             // 
-            this.value10d.Location = new System.Drawing.Point(117, 383);
+            this.value10d.Location = new System.Drawing.Point(117, 417);
             this.value10d.Name = "value10d";
             this.value10d.ReadOnly = true;
             this.value10d.Size = new System.Drawing.Size(87, 21);
-            this.value10d.TabIndex = 397;
+            this.value10d.TabIndex = 398;
+            // 
+            // value11d
+            // 
+            this.value11d.Location = new System.Drawing.Point(117, 451);
+            this.value11d.Name = "value11d";
+            this.value11d.ReadOnly = true;
+            this.value11d.Size = new System.Drawing.Size(87, 21);
+            this.value11d.TabIndex = 399;
             // 
             // value9d
             // 
-            this.value9d.Location = new System.Drawing.Point(117, 349);
+            this.value9d.Location = new System.Drawing.Point(117, 383);
             this.value9d.Name = "value9d";
             this.value9d.ReadOnly = true;
             this.value9d.Size = new System.Drawing.Size(87, 21);
-            this.value9d.TabIndex = 396;
-            // 
-            // value7d
-            // 
-            this.value7d.Location = new System.Drawing.Point(117, 281);
-            this.value7d.Name = "value7d";
-            this.value7d.ReadOnly = true;
-            this.value7d.Size = new System.Drawing.Size(87, 21);
-            this.value7d.TabIndex = 394;
-            // 
-            // value6d
-            // 
-            this.value6d.Location = new System.Drawing.Point(117, 249);
-            this.value6d.Name = "value6d";
-            this.value6d.ReadOnly = true;
-            this.value6d.Size = new System.Drawing.Size(87, 21);
-            this.value6d.TabIndex = 393;
+            this.value9d.TabIndex = 397;
             // 
             // value8d
             // 
-            this.value8d.Location = new System.Drawing.Point(117, 315);
+            this.value8d.Location = new System.Drawing.Point(117, 349);
             this.value8d.Name = "value8d";
             this.value8d.ReadOnly = true;
             this.value8d.Size = new System.Drawing.Size(87, 21);
-            this.value8d.TabIndex = 395;
+            this.value8d.TabIndex = 396;
+            // 
+            // value6d
+            // 
+            this.value6d.Location = new System.Drawing.Point(117, 281);
+            this.value6d.Name = "value6d";
+            this.value6d.ReadOnly = true;
+            this.value6d.Size = new System.Drawing.Size(87, 21);
+            this.value6d.TabIndex = 394;
             // 
             // value5d
             // 
-            this.value5d.Location = new System.Drawing.Point(117, 215);
+            this.value5d.Location = new System.Drawing.Point(117, 249);
             this.value5d.Name = "value5d";
             this.value5d.ReadOnly = true;
             this.value5d.Size = new System.Drawing.Size(87, 21);
-            this.value5d.TabIndex = 392;
+            this.value5d.TabIndex = 393;
+            // 
+            // value7d
+            // 
+            this.value7d.Location = new System.Drawing.Point(117, 315);
+            this.value7d.Name = "value7d";
+            this.value7d.ReadOnly = true;
+            this.value7d.Size = new System.Drawing.Size(87, 21);
+            this.value7d.TabIndex = 395;
             // 
             // value4d
             // 
-            this.value4d.Location = new System.Drawing.Point(117, 181);
+            this.value4d.Location = new System.Drawing.Point(117, 215);
             this.value4d.Name = "value4d";
             this.value4d.ReadOnly = true;
             this.value4d.Size = new System.Drawing.Size(87, 21);
-            this.value4d.TabIndex = 391;
+            this.value4d.TabIndex = 392;
             // 
             // value3d
             // 
-            this.value3d.Location = new System.Drawing.Point(117, 147);
+            this.value3d.Location = new System.Drawing.Point(117, 181);
             this.value3d.Name = "value3d";
             this.value3d.ReadOnly = true;
             this.value3d.Size = new System.Drawing.Size(87, 21);
-            this.value3d.TabIndex = 390;
-            // 
-            // value1d
-            // 
-            this.value1d.Location = new System.Drawing.Point(117, 79);
-            this.value1d.Name = "value1d";
-            this.value1d.ReadOnly = true;
-            this.value1d.Size = new System.Drawing.Size(87, 21);
-            this.value1d.TabIndex = 388;
+            this.value3d.TabIndex = 391;
             // 
             // value2d
             // 
-            this.value2d.Location = new System.Drawing.Point(117, 113);
+            this.value2d.Location = new System.Drawing.Point(117, 147);
             this.value2d.Name = "value2d";
             this.value2d.ReadOnly = true;
             this.value2d.Size = new System.Drawing.Size(87, 21);
-            this.value2d.TabIndex = 389;
+            this.value2d.TabIndex = 390;
+            // 
+            // value0d
+            // 
+            this.value0d.Location = new System.Drawing.Point(117, 79);
+            this.value0d.Name = "value0d";
+            this.value0d.ReadOnly = true;
+            this.value0d.Size = new System.Drawing.Size(87, 21);
+            this.value0d.TabIndex = 388;
+            // 
+            // value1d
+            // 
+            this.value1d.Location = new System.Drawing.Point(117, 113);
+            this.value1d.Name = "value1d";
+            this.value1d.ReadOnly = true;
+            this.value1d.Size = new System.Drawing.Size(87, 21);
+            this.value1d.TabIndex = 389;
             // 
             // tb_devaddr
             // 
@@ -1456,30 +1456,30 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox value11d;
-        private System.Windows.Forms.TextBox value12d;
         private System.Windows.Forms.TextBox value10d;
+        private System.Windows.Forms.TextBox value11d;
         private System.Windows.Forms.TextBox value9d;
-        private System.Windows.Forms.TextBox value7d;
-        private System.Windows.Forms.TextBox value6d;
         private System.Windows.Forms.TextBox value8d;
+        private System.Windows.Forms.TextBox value6d;
         private System.Windows.Forms.TextBox value5d;
+        private System.Windows.Forms.TextBox value7d;
         private System.Windows.Forms.TextBox value4d;
         private System.Windows.Forms.TextBox value3d;
-        private System.Windows.Forms.TextBox value1d;
         private System.Windows.Forms.TextBox value2d;
-        private System.Windows.Forms.TextBox value11;
-        private System.Windows.Forms.TextBox value12;
+        private System.Windows.Forms.TextBox value0d;
+        private System.Windows.Forms.TextBox value1d;
         private System.Windows.Forms.TextBox value10;
+        private System.Windows.Forms.TextBox value11;
         private System.Windows.Forms.TextBox value9;
-        private System.Windows.Forms.TextBox value7;
-        private System.Windows.Forms.TextBox value6;
         private System.Windows.Forms.TextBox value8;
+        private System.Windows.Forms.TextBox value6;
         private System.Windows.Forms.TextBox value5;
+        private System.Windows.Forms.TextBox value7;
         private System.Windows.Forms.TextBox value4;
         private System.Windows.Forms.TextBox value3;
-        private System.Windows.Forms.TextBox value1;
         private System.Windows.Forms.TextBox value2;
+        private System.Windows.Forms.TextBox value0;
+        private System.Windows.Forms.TextBox value1;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.Label label33;
@@ -1495,30 +1495,30 @@
         private System.Windows.Forms.Label label31;
         private System.Windows.Forms.Label label35;
         private System.Windows.Forms.Label label36;
-        private System.Windows.Forms.TextBox value24p;
         private System.Windows.Forms.TextBox value23p;
-        private System.Windows.Forms.TextBox value21p;
         private System.Windows.Forms.TextBox value22p;
         private System.Windows.Forms.TextBox value20p;
+        private System.Windows.Forms.TextBox value21p;
         private System.Windows.Forms.TextBox value19p;
-        private System.Windows.Forms.TextBox value17p;
-        private System.Windows.Forms.TextBox value16p;
         private System.Windows.Forms.TextBox value18p;
+        private System.Windows.Forms.TextBox value16p;
         private System.Windows.Forms.TextBox value15p;
+        private System.Windows.Forms.TextBox value17p;
         private System.Windows.Forms.TextBox value14p;
         private System.Windows.Forms.TextBox value13p;
-        private System.Windows.Forms.TextBox value24;
+        private System.Windows.Forms.TextBox value12p;
         private System.Windows.Forms.TextBox value23;
-        private System.Windows.Forms.TextBox value21;
         private System.Windows.Forms.TextBox value22;
         private System.Windows.Forms.TextBox value20;
+        private System.Windows.Forms.TextBox value21;
         private System.Windows.Forms.TextBox value19;
-        private System.Windows.Forms.TextBox value17;
-        private System.Windows.Forms.TextBox value16;
         private System.Windows.Forms.TextBox value18;
+        private System.Windows.Forms.TextBox value16;
         private System.Windows.Forms.TextBox value15;
+        private System.Windows.Forms.TextBox value17;
         private System.Windows.Forms.TextBox value14;
         private System.Windows.Forms.TextBox value13;
+        private System.Windows.Forms.TextBox value12;
         public System.Windows.Forms.TextBox tb_devaddr;
         private System.Windows.Forms.Label label_devaddr;
     }
