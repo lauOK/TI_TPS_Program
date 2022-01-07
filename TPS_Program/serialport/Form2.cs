@@ -667,14 +667,14 @@ namespace serialport
             toolTip.ShowAlways = true;
             switch (lb.Text)
             {
-                case "EEP_LDO (V)": toolTip.SetToolTip(lb, "EEPM6，LDO输出电压设置"); break;
+                case "EEP_LDO(V)": toolTip.SetToolTip(lb, "EEPM6，LDO输出电压设置"); break;
                 case "EEP_EXPEN": toolTip.SetToolTip(lb, "EEPM6，PWM发生器指数调光使能"); break;
                 case "EEP_DEVADDR": toolTip.SetToolTip(lb, "EEPM6，芯片从地址设置"); break;
-                case "EEP_PWMFREQ (Hz)": toolTip.SetToolTip(lb, "EEPM7，PWM频率选择"); break;
+                case "EEP_PWMFREQ(Hz)": toolTip.SetToolTip(lb, "EEPM7，PWM频率选择"); break;
                 case "EEP_INTADDR": toolTip.SetToolTip(lb, "EEPM7，芯片从地址选择由外部引脚或内部寄存器配置"); break;
                 case "EEP_OFAF": toolTip.SetToolTip(lb, "EEPM7，One Fail Others On/One Fail All Fail"); break;
                 case "EEP_FLTIMEOUT": toolTip.SetToolTip(lb, "EEPM8，FlexWire超时设置"); break;
-                case "EEP_ADCLOWSYPTH (V)": toolTip.SetToolTip(lb, "EEPM8，ADC电源监视阈值设定"); break;
+                case "EEP_ADCLOWSYPTH(V)": toolTip.SetToolTip(lb, "EEPM8，ADC电源监视阈值设定"); break;
                 case "EEP_ODIOUT": toolTip.SetToolTip(lb, "EEPM9，按需诊断输出电流设置"); break;
                 case "EEP_INITTIMER": toolTip.SetToolTip(lb, "EEPM9，按需诊断脉冲宽度设置"); break;
                 case "EEP_ODPW": toolTip.SetToolTip(lb, "EEPM10，看门狗时钟设置"); break;
