@@ -30,10 +30,11 @@
         {
             this.components = new System.ComponentModel.Container();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.TPS_Test = new System.Windows.Forms.Button();
+            this.DataRead = new System.Windows.Forms.Button();
             this.Clear_Tran = new System.Windows.Forms.Button();
             this.DataSet = new System.Windows.Forms.Button();
             this.Clear_RSV = new System.Windows.Forms.Button();
+            this.TPS_Test = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
             this.label_Rx = new System.Windows.Forms.Label();
@@ -157,7 +158,7 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.TPS_Test);
+            this.panel2.Controls.Add(this.DataRead);
             this.panel2.Controls.Add(this.Clear_Tran);
             this.panel2.Controls.Add(this.DataSet);
             this.panel2.Controls.Add(this.Clear_RSV);
@@ -166,17 +167,17 @@
             this.panel2.Size = new System.Drawing.Size(180, 137);
             this.panel2.TabIndex = 1;
             // 
-            // TPS_Test
+            // DataRead
             // 
-            this.TPS_Test.BackColor = System.Drawing.Color.ForestGreen;
-            this.TPS_Test.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.TPS_Test.Location = new System.Drawing.Point(12, 68);
-            this.TPS_Test.Name = "TPS_Test";
-            this.TPS_Test.Size = new System.Drawing.Size(154, 30);
-            this.TPS_Test.TabIndex = 10;
-            this.TPS_Test.Text = "参数读取";
-            this.TPS_Test.UseVisualStyleBackColor = false;
-            this.TPS_Test.Click += new System.EventHandler(this.TPS_Test_Click);
+            this.DataRead.BackColor = System.Drawing.Color.ForestGreen;
+            this.DataRead.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.DataRead.Location = new System.Drawing.Point(12, 68);
+            this.DataRead.Name = "DataRead";
+            this.DataRead.Size = new System.Drawing.Size(154, 30);
+            this.DataRead.TabIndex = 394;
+            this.DataRead.Text = "参数读取";
+            this.DataRead.UseVisualStyleBackColor = false;
+            this.DataRead.Click += new System.EventHandler(this.DataRead_Click);
             // 
             // Clear_Tran
             // 
@@ -212,6 +213,18 @@
             this.Clear_RSV.Text = "清除接收";
             this.Clear_RSV.UseVisualStyleBackColor = true;
             this.Clear_RSV.Click += new System.EventHandler(this.Clear_RSV_Click);
+            // 
+            // TPS_Test
+            // 
+            this.TPS_Test.BackColor = System.Drawing.Color.ForestGreen;
+            this.TPS_Test.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.TPS_Test.Location = new System.Drawing.Point(438, 397);
+            this.TPS_Test.Name = "TPS_Test";
+            this.TPS_Test.Size = new System.Drawing.Size(88, 33);
+            this.TPS_Test.TabIndex = 10;
+            this.TPS_Test.Text = "数据校对";
+            this.TPS_Test.UseVisualStyleBackColor = false;
+            this.TPS_Test.Click += new System.EventHandler(this.TPS_Test_Click);
             // 
             // panel4
             // 
@@ -521,16 +534,16 @@
             this.Input_path.Location = new System.Drawing.Point(6, 399);
             this.Input_path.Name = "Input_path";
             this.Input_path.ReadOnly = true;
-            this.Input_path.Size = new System.Drawing.Size(409, 29);
+            this.Input_path.Size = new System.Drawing.Size(336, 29);
             this.Input_path.TabIndex = 7;
             // 
             // Data_input
             // 
             this.Data_input.BackColor = System.Drawing.Color.ForestGreen;
             this.Data_input.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Data_input.Location = new System.Drawing.Point(432, 395);
+            this.Data_input.Location = new System.Drawing.Point(348, 397);
             this.Data_input.Name = "Data_input";
-            this.Data_input.Size = new System.Drawing.Size(93, 36);
+            this.Data_input.Size = new System.Drawing.Size(88, 33);
             this.Data_input.TabIndex = 6;
             this.Data_input.Text = "数据导入";
             this.Data_input.UseVisualStyleBackColor = false;
@@ -1367,6 +1380,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1191, 498);
+            this.Controls.Add(this.TPS_Test);
             this.Controls.Add(this.tb_devaddr);
             this.Controls.Add(this.label_devaddr);
             this.Controls.Add(this.I_Full);
@@ -1521,6 +1535,7 @@
         private System.Windows.Forms.TextBox value12;
         public System.Windows.Forms.TextBox tb_devaddr;
         private System.Windows.Forms.Label label_devaddr;
+        private System.Windows.Forms.Button DataRead;
     }
 }
 

@@ -388,6 +388,24 @@ namespace serialport
             }
         }
 
+        private void DataRead_Click(object sender, EventArgs e)
+        {
+            if (serialPort1.IsOpen)
+            {
+                OutputBox.Clear();
+                for (int i = 0; i < 39; i++)
+                {
+                    byte length = Data.TPS_read_1byte(Data.addr, Data.EEPaddress[i], ref buf);
+                    serialPort1.Write(buf, 0, length);
+                    System.Threading.Thread.Sleep(10);
+                }
+            }
+            else
+            {
+                MessageBox.Show("请打开串口");
+            }
+        }
+
         private void Output_Data_Check()
         {
             string str = OutputBox.Text.Replace("\r\n", "");
