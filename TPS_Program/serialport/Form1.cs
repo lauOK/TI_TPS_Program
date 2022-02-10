@@ -297,6 +297,8 @@ namespace serialport
             {
                 MutilAddr.Checked = false;
             }
+            else
+                MutilAddr.Checked = true;
         }
 
         private void MutilAddr_CheckedChanged(object sender, EventArgs e)
@@ -305,6 +307,8 @@ namespace serialport
             {
                 OneAddr.Checked = false;
             }
+            else
+                OneAddr.Checked = true;
         }
 
         private void Data_input_Click(object sender, EventArgs e)
