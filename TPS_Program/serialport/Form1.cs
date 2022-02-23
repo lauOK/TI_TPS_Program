@@ -397,7 +397,7 @@ namespace serialport
             if (serialPort1.IsOpen)
             {
                 OutputBox.Clear();
-                for (int i = 0; i < 39; i++)
+                for (int i = 0; i < 40; i++)
                 {
                     byte length = Data.TPS_read_1byte(Data.addr, Data.EEPaddress[i], ref buf);
                     serialPort1.Write(buf, 0, length);
@@ -408,6 +408,11 @@ namespace serialport
             {
                 MessageBox.Show("请打开串口");
             }
+        }
+
+        private void Addr_TextChanged(object sender, EventArgs e)
+        {
+            Data.addr = Convert.ToByte(Addr.Text);
         }
 
         private void Output_Data_Check()

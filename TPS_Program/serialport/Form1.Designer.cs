@@ -339,6 +339,7 @@
             this.Addr.Size = new System.Drawing.Size(91, 20);
             this.Addr.TabIndex = 12;
             this.Addr.SelectedIndexChanged += new System.EventHandler(this.Addr_SelectedIndexChanged);
+            this.Addr.TextChanged += new System.EventHandler(this.Addr_TextChanged);
             // 
             // EEP_Program
             // 
